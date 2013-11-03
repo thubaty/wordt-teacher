@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+
+
+    <script src="/js/jquery-1.9.1.js"/>
+
+
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen"/>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+
+
+    <script>
+        $(function () {
+            $(".alert-info").tooltip();
+        });
+    </script>
+</h:head>
+<h:body>
+
+    <h:form>
+
+        <div class="alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        </div>
+
+
+        <div class="container"></div>
+        <div style="width:500px; padding-left: 500px;">
+        <ui:repeat value="#{wordController.wordList}" var="word" >
+            <!--<div class="row">
+                <div class="span4">
+                    <span class="label #{word.style}"><h:outputText value="#{word.slovak}"/></span>
+                </div>
+                <div class="span5">-->
+           <!--<span class="label #{word.style}" title="#{word.english}">
+                <h:outputText value="#{word.slovak}"/>
+            </span>-->
+
+            <div class="alert alert-info" title="#{word.english}">#{word.slovak}</div>
+
+
+
+            <!--   </div>
+           </div>-->
+        </ui:repeat>
+        </div>
+
+
+
+
+
+        <input class="btn btn-default" type="button" value="Input"/>
+    </h:form>
+
+
+</h:body>
+
+
+</html>
