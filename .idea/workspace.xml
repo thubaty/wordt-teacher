@@ -1,76 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_9_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_6_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_5_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_5_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_3_5_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_5_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-repository/src/test/java/sk/th/word/WordRepositoryImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/admin/admin.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-repository/src/test/resources/data.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/themes/tooltipster-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/themes/tooltipster-noir.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/themes/tooltipster-punk.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/themes/tooltipster-shadow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/tooltipster/tooltipster.css" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_aop_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_asm_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_beans_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_context_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_core_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_expression_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_jdbc_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_test_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_tx_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_1_1_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_spring_web_3_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_1_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/Word.java" afterPath="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/Word.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepository.java" afterPath="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java" afterPath="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/src/main/resources/data.sql" afterPath="$PROJECT_DIR$/wordteacher-repository/src/main/resources/data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/pom.xml" afterPath="$PROJECT_DIR$/wordteacher-repository/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/src/main/resources/repositoryContext.xml" afterPath="$PROJECT_DIR$/wordteacher-repository/src/main/resources/repositoryContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" afterPath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" afterPath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" afterPath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" afterPath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher.iml" afterPath="$PROJECT_DIR$/wordteacher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wordteacher_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wordteacher_web_war_exploded.xml" />
+    <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="template">
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\style.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-noir.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-punk.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-shadow.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\tooltipster.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index2.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index4.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index5.xhtml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383591442546" ignored="false" />
-    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383584619174" ignored="false" />
+    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383595611462" ignored="false" />
     <file path="$PROJECT_DIR$/../karibikProjekt/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166731448" ignored="false" />
     <file path="$PROJECT_DIR$/../Zhovnabitch2/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166749157" ignored="false" />
     <file path="/index.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1382991133466" ignored="false" />
@@ -100,7 +55,7 @@
     <file path="/index4.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383250560457" ignored="false" />
     <file path="/index5.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383501044497" ignored="false" />
     <file path="/import.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581796358" ignored="false" />
-    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383594007235" ignored="false" />
+    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383594954390" ignored="false" />
     <file path="/db.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581747515" ignored="false" />
     <file path="/words.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581680812" ignored="false" />
     <file path="/repositoryContext.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383589555103" ignored="false" />
@@ -178,11 +133,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.xhtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="54" selection-start="872" selection-end="872" vertical-scroll-proportion="0.54545456">
+            <state line="33" column="34" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="words.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.xhtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/import.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="49" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5271318">
+              <folding>
+                <marker date="1383581821419" expanded="true" signature="522:550" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,23 +165,14 @@
       <file leaf-file-name="html_basic.taglib.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6544" column="4" selection-start="252321" selection-end="252321" vertical-scroll-proportion="0.0">
+            <state line="5813" column="4" selection-start="224052" selection-end="224052" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/app.css">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -245,15 +211,6 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="45" column="61" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-4.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="39" selection-start="2669" selection-end="2669" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -722,62 +679,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -830,11 +731,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\css" />
+      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\js" />
+      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\application\css" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\application" />
-      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources" />
-      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\css\application" />
-      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\admin" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
@@ -1299,7 +1200,15 @@
       <created>1383583656857</created>
       <updated>1383583656857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="template">
+      <created>1383594035698</created>
+      <updated>1383594035698</updated>
+    </task>
+    <task id="LOCAL-00005" summary="template">
+      <created>1383595163585</created>
+      <updated>1383595163585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1401,15 +1310,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="65" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/main/resources/data.sql">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1497,14 +1397,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/application/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/css/app.css">
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1520,15 +1413,31 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6544" column="4" selection-start="252321" selection-end="252321" vertical-scroll-proportion="0.0">
+        <state line="5813" column="4" selection-start="224052" selection-end="224052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="54" selection-start="872" selection-end="872" vertical-scroll-proportion="0.54545456">
+        <state line="33" column="34" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/import.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="49" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5271318">
+          <folding>
+            <marker date="1383581821419" expanded="true" signature="522:550" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
