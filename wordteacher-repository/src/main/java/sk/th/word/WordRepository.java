@@ -1,5 +1,9 @@
 package sk.th.word;
 
+import sk.th.Word;
+
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: tohy
@@ -9,6 +13,5 @@ package sk.th.word;
  */
 public interface WordRepository {
 
-
-
+    List<Word> findAll();
 }

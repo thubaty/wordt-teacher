@@ -1,11 +1,23 @@
 package sk.th.word;
 
-/**
- * Created with IntelliJ IDEA.
- * User: tohy
- * Date: 04.11.13
- * Time: 17:41
- * To change this template use File | Settings | File Templates.
- */
+import org.springframework.stereotype.Repository;
+import sk.th.Word;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceUnit;
+import java.util.ArrayList;
+import java.util.List;
+
+@Repository
 public class WordRepositoryImpl implements WordRepository {
+
+    @PersistenceContext
+    EntityManager entityManager;
+
+    @Override
+    public List<Word> findAll() {
+        List resultList = entityManager.createQuery("select w from Word w").getResultList();
+        return resultList;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }

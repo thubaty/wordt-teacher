@@ -2,13 +2,22 @@ package sk.th;
 
 import org.springframework.util.Assert;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Random;
 
+@Entity
+@Table(name="Word")
 public class Word {
 
+    @Id
     private String slovak;
 
     private String english;
+
+    public Word() {
+    }
 
     public Word(String english, String slovak) {
         Assert.notNull(english);
