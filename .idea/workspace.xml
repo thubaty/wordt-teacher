@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="template">
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-light.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-noir.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-punk.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\themes\tooltipster-shadow.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\css\tooltipster\tooltipster.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index2.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index3.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index4.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\old\index5.xhtml" afterPath="" />
+    <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383591442546" ignored="false" />
-    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383595611462" ignored="false" />
+    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383595624423" ignored="false" />
     <file path="$PROJECT_DIR$/../karibikProjekt/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166731448" ignored="false" />
     <file path="$PROJECT_DIR$/../Zhovnabitch2/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166749157" ignored="false" />
     <file path="/index.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1382991133466" ignored="false" />
@@ -55,9 +39,9 @@
     <file path="/index4.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383250560457" ignored="false" />
     <file path="/index5.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383501044497" ignored="false" />
     <file path="/import.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581796358" ignored="false" />
-    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383594954390" ignored="false" />
+    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383595799052" ignored="false" />
     <file path="/db.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581747515" ignored="false" />
-    <file path="/words.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581680812" ignored="false" />
+    <file path="/words.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383595929611" ignored="false" />
     <file path="/repositoryContext.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383589555103" ignored="false" />
     <file path="/WordRepositoryImpl.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383589489413" ignored="false" />
     <file path="/WordRepositoryImplTest.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383589790095" ignored="false" />
@@ -124,102 +108,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/admin/admin.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="493" selection-end="493" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="34" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="words.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="34" column="9" selection-start="1333" selection-end="1333" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.xhtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/import.xhtml">
+      <file leaf-file-name="template.xhtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="49" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5271318">
-              <folding>
-                <marker date="1383581821419" expanded="true" signature="522:550" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html_basic.taglib.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5813" column="4" selection-start="224052" selection-end="224052" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="70" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="61" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-4.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-repositoryContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="31" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+            <state line="29" column="72" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.47341773">
               <folding />
             </state>
           </provider>
@@ -243,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/wordteacher-service/pom.xml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java" />
         <option value="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepository.java" />
         <option value="$PROJECT_DIR$/wordteacher-repository/pom.xml" />
@@ -258,6 +158,7 @@
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/admin/admin.xhtml" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
       </list>
     </option>
@@ -1208,7 +1109,11 @@
       <created>1383595163585</created>
       <updated>1383595163585</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="template">
+      <created>1383595626521</created>
+      <updated>1383595626521</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1360,16 +1265,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml">
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/import.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+        <state line="12" column="49" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5271318">
+          <folding>
+            <marker date="1383581821419" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/admin/admin.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="493" selection-end="493" vertical-scroll-proportion="0.5416667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5813" column="4" selection-start="224052" selection-end="224052" vertical-scroll-proportion="0.31591448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="810" selection-end="810" vertical-scroll-proportion="0.33254156">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="70" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.2692308">
+        <state line="5" column="70" selection-start="104" selection-end="104" vertical-scroll-proportion="0.20833333">
           <folding />
         </state>
       </provider>
@@ -1385,59 +1320,29 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="61" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-4.44">
+        <state line="45" column="61" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.27139366">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/resources/webContext.xml">
+    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/admin/admin.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="493" selection-end="493" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5813" column="4" selection-start="224052" selection-end="224052" vertical-scroll-proportion="0.0">
+        <state line="12" column="31" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.48456058">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="34" column="9" selection-start="1333" selection-end="1333" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-0.0">
+        <state line="29" column="72" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.47341773">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/import.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="49" selection-start="485" selection-end="485" vertical-scroll-proportion="0.5271318">
-          <folding>
-            <marker date="1383581821419" expanded="true" signature="522:550" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
