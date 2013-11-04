@@ -34,18 +34,18 @@
 <h:body>
 
     <h:form id="wordForm">
-        <f:metadata>
-            <f:event type="preRenderView" listener="#{wordController.init}"/>
-        </f:metadata>
+        <ui:insert name="metadata"/>
+
+        <ui:insert name="selectedMenuName"/>
 
         <div class="container">
 
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="index5.xhtml">Words<span class="badge"> <h:outputText
+                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="words.xhtml">Words<span class="badge"> <h:outputText
                             value="#{wordController.wordCount}"/></span></a></li>
-                    <li><a href="#">About</a></li>
-                    <li class="active"><a href="import.xhtml">Import</a></li>
+                    <li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="db.xhtml">DB</a></li>
+                    <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="import.xhtml">Import</a></li>
                 </ul>
                 <h3 class="text-muted">Master Of Disaster</h3>
 

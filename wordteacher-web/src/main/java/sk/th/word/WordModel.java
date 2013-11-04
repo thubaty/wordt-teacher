@@ -1,8 +1,7 @@
 package sk.th.word;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import org.springframework.ui.Model;
+import sk.th.Word;
 
 import java.util.List;
 

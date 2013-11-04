@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/wordteacher.iml" filepath="$PROJECT_DIR$/wordteacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" filepath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" filepath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" filepath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" filepath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" />
     </modules>

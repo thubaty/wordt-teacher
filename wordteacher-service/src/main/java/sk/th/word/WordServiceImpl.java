@@ -4,6 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
+import sk.th.Word;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;

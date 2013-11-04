@@ -1,4 +1,4 @@
-package sk.th.word;
+package sk.th;
 
 import org.springframework.util.Assert;
 

@@ -1,5 +1,7 @@
 package sk.th.word;
 
+import sk.th.Word;
+
 import java.util.List;
 
 /**

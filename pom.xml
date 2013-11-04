@@ -17,6 +17,8 @@
     <modules>
         <module>wordteacher-web</module>
         <module>wordteacher-service</module>
+        <module>wordteacher-repository</module>
+        <module>wordteacher-model</module>
     </modules>
 
     <dependencies>
