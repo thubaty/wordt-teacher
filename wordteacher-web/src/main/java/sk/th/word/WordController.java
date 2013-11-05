@@ -3,6 +3,7 @@ package sk.th.word;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import sk.th.Word;
+import sk.th.wordmanager.SecurityUtil;
 
 import javax.faces.event.ActionEvent;
 import java.io.BufferedReader;
@@ -81,5 +82,9 @@ public class WordController {
     public void dangerActionListener(ActionEvent e) {
         System.out.println("danger");
         Collections.shuffle(wordModel.getWords());
+    }
+
+    public String getCurrentUser() {
+        return SecurityUtil.getCurrentUserName();
     }
 }
