@@ -87,4 +87,6 @@ public class WordController {
     public String getCurrentUser() {
         return SecurityUtil.getCurrentUserName();
     }
+
+
 }

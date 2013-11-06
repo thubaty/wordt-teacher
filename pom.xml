@@ -10,7 +10,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <springframework.version>3.1.1.RELEASE</springframework.version>
+        <springframework.version>3.2.1.RELEASE</springframework.version>
+        <springframework.security.version>3.1.4.RELEASE</springframework.security.version>
         <primafaces.version>3.4</primafaces.version>
     </properties>
 
@@ -72,19 +73,30 @@
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <artifactId>org.springframework.security.core</artifactId>
+            <version>${springframework.security.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>org.springframework.beans</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org.springframework.context</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <artifactId>org.springframework.security.config</artifactId>
+            <version>${springframework.security.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-            <version>3.0.5.RELEASE</version>
+            <artifactId>org.springframework.security.web</artifactId>
+            <version>${springframework.security.version}</version>
         </dependency>
 
         <dependency>
@@ -140,16 +152,20 @@
             <version>1.5.8</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>10.2.0.1.0</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -167,5 +183,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
