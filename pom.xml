@@ -193,6 +193,12 @@
             <artifactId>ojdbc14</artifactId>
             <version>10.2.0.1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.omnifaces</groupId>
+            <artifactId>omnifaces</artifactId>
+            <version>1.6.3</version> <!-- Or 1.7-SNAPSHOT -->
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

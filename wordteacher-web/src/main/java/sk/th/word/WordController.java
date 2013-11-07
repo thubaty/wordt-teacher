@@ -31,44 +31,19 @@ public class WordController {
     public WordController( WordService wordService, WordModel wordModel) throws IOException {
         this.wordService = wordService;
         this.wordModel = wordModel;
-        this.file = readFile();
-        List<Word> words = wordService.parseWords(file);
-        wordModel.setWords(words);
     }
 
     public void init() {
-        List<Word> words = wordModel.getWords();
-        wordModel.setCurrentWord(words.get(0));
-    }
-
-    String readFile()
-            throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\tohy\\IdeaProjects\\wordteacher\\wordteacher-web\\src\\main\\resources\\testdata.txt"));
-        StringBuffer stringBuffer = new StringBuffer();
-        String line = null;
-        while ((line = bufferedReader.readLine()) != null) {
-            stringBuffer.append(line).append("\n");
-        }
-        System.out.println(stringBuffer);
-        return stringBuffer.toString();
     }
 
     private String word;
-
-    public String getWord() {
-        return word;
-    }
-
-    public void setWord(String word) {
-        this.word = word;
-    }
 
     public List<Word> getWordList() {
         return wordModel.getWords();
     }
 
     public Integer getWordCount() {
-        return wordModel.getWords().size();
+        return 1000;
     }
 
     public void dangerActionListener(ActionEvent e) {

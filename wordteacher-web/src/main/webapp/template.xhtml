@@ -1,6 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:o="http://omnifaces.org/ui"
+      xmlns:fn="http://omnifaces.org/functions"
       xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
@@ -37,7 +39,8 @@
 
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words<span class="badge"> <h:outputText
+                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words<span
+                            class="badge"> <h:outputText
                             value="#{wordController.wordCount}"/></span></a></li>
                     <li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>
                     <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
@@ -45,26 +48,23 @@
                 <h3 class="text-muted">Master Of Disaster</h3>
             </div>
 
-           <ui:insert name="content"/>
+
+            <o:messages var="message" globalOnly="true">
+                <ui:fragment rendered="#{message.severity == 'INFO'}">
+                    <div class="alert alert-success">#{message.summary}</div>
+                </ui:fragment>
+                <ui:fragment rendered="#{message.severity != 'INFO'}">
+                    <div class="alert alert-danger">#{message.summary}</div>
+                </ui:fragment>
+            </o:messages>
+
+            <ui:insert name="content"/>
 
             <br/>
 
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" style="width: 35%">
-                    <span class="sr-only">35% Complete (success)</span>
-                </div>
-                <div class="progress-bar progress-bar-warning" style="width: 50%">
-                    <span class="sr-only">20% Complete (warning)</span>
-                </div>
-                <div class="progress-bar progress-bar-danger" style="width: 15%">
-                    <span class="sr-only">10% Complete (danger)</span>
-                </div>
-            </div>
-
-
             <div class="footer">
                 <div class="pull-right">
-                <h:outputLink value="/admin/admin.xhtml">admin</h:outputLink>
+                    <h:outputLink value="/admin/admin.xhtml">admin</h:outputLink>
                 </div>
             </div>
         </div>

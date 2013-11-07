@@ -1,6 +1,7 @@
 package sk.th.word;
 
 import sk.th.Word;
+import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ public interface WordService {
 
     List<Word> findAllWords();
 
-    List<Word> parseWords(String words);
+    List<Word> parseWords(String words) throws InvalidFormatException;
 
     void importWords(List<Word> words);
 }

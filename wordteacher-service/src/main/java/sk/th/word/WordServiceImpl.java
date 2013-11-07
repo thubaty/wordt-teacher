@@ -6,7 +6,9 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 import sk.th.Word;
+import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -35,16 +37,21 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public List<Word> parseWords(String words) {
+    public List<Word> parseWords(String words) throws InvalidFormatException {
         Assert.notNull(words);
         ArrayList<Word> ret = new ArrayList<Word>();
         String[] rows = words.split("\n");
         for (String row : rows) {
+            if (StringUtils.isEmpty(row)) {
+                throw new InvalidFormatException("empty row");
+            }
             String[] columns = row.split("-");
             if (columns.length < 2) {
-                throw new RuntimeException(columns[0]);
+                throw new InvalidFormatException(row);
             }
-
+            if (StringUtils.isEmpty(columns[1].trim())) {
+                throw new InvalidFormatException(row);
+            }
             Word w = new Word(columns[0], columns[1]);
             ret.add(w);
         }
