@@ -21,6 +21,8 @@ public class WordModel {
 
     private Word currentWord;
 
+    private Integer wordCount;
+
     public Word getCurrentWord() {
         return currentWord;
     }
@@ -43,5 +45,13 @@ public class WordModel {
 
     public void setWords(List<Word> words) {
         this.words = words;
+    }
+
+    public Integer getWordCount() {
+        return wordCount;
+    }
+
+    public void setWordCount(Integer wordCount) {
+        this.wordCount = wordCount;
     }
 }

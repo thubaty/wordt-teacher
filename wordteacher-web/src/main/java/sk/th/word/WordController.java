@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import sk.th.Word;
 import sk.th.wordmanager.SecurityUtil;
 
+import javax.annotation.PostConstruct;
 import javax.faces.event.ActionEvent;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,13 +13,6 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: tohy
- * Date: 07.10.13
- * Time: 20:00
- * To change this template use File | Settings | File Templates.
- */
 @Controller
 public class WordController {
 
@@ -33,27 +27,23 @@ public class WordController {
         this.wordModel = wordModel;
     }
 
-    public void init() {
+    @PostConstruct
+    private void init() {
+        List<Word> allWords = wordService.findAllWords();
+        wordModel.setWordCount(allWords.size());
     }
 
-    private String word;
-
-    public List<Word> getWordList() {
-        return wordModel.getWords();
-    }
-
-    public Integer getWordCount() {
-        return 1000;
+    public void initWord() {
+        List<Word> allWords = wordService.findAllWords();
+        Collections.shuffle(allWords);
+        wordModel.setCurrentWord(allWords.get(0));
     }
 
     public void dangerActionListener(ActionEvent e) {
-        System.out.println("danger");
-        Collections.shuffle(wordModel.getWords());
+        initWord();
     }
 
     public String getCurrentUser() {
         return SecurityUtil.getCurrentUserName();
     }
-
-
 }
