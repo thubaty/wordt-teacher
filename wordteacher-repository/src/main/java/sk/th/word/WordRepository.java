@@ -14,4 +14,6 @@ import java.util.List;
 public interface WordRepository {
 
     List<Word> findAll();
+
+    void importWords(List<Word> words);
 }

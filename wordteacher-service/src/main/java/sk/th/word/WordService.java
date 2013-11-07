@@ -13,9 +13,9 @@ import java.util.List;
  */
 public interface WordService {
 
-    List<String> findAllWords();
-
-    List<String> findWords(String word);
+    List<Word> findAllWords();
 
     List<Word> parseWords(String words);
+
+    void importWords(List<Word> words);
 }

@@ -27,31 +27,9 @@ public class WordServiceTest {
 
     @Test
     public void testFirst1() throws Exception {
-        List<String> allWords = wordService.findAllWords();
+        List<Word> allWords = wordService.findAllWords();
         Assert.assertNotNull(allWords);
-        System.out.println(allWords);
     }
 
-    @Test
-    public void testParseWords() throws Exception {
-        {
-            String wordsText = "hello - ahoj";
-            List<Word> words = wordService.parseWords(wordsText);
-            Assert.assertNotNull(words);
-            Assert.assertEquals(1, words.size());
-            Assert.assertEquals("hello", words.get(0).getEnglish());
-            Assert.assertEquals("ahoj", words.get(0).getSlovak());
-        }
 
-        {
-            String wordsText = "hello - ahoj \n welcome - vitaj";
-            List<Word> words = wordService.parseWords(wordsText);
-            Assert.assertNotNull(words);
-            Assert.assertEquals(2, words.size());
-            Assert.assertEquals("hello", words.get(0).getEnglish());
-            Assert.assertEquals("ahoj", words.get(0).getSlovak());
-            Assert.assertEquals("welcome", words.get(1).getEnglish());
-            Assert.assertEquals("vitaj", words.get(1).getSlovak());
-        }
-    }
 }

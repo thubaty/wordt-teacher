@@ -1,8 +1,10 @@
 package sk.th.word;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import sk.th.Word;
 
@@ -23,34 +25,13 @@ import java.util.List;
 @Service
 public class WordServiceImpl implements WordService {
 
-    @Resource
-    private DataSource dataSource;
+    @Autowired
+    private WordRepository wordRepository;
 
     @Override
-    public List<String> findAllWords() {
-
-        JdbcTemplate t = new JdbcTemplate(dataSource);
-        List<String> ret = t.query("select amount from MONEY m", new RowMapper<String>() {
-            @Override
-            public String mapRow(ResultSet rs, int rowNum) throws SQLException {
-                return rs.getString(1);
-            }
-        });
-        return ret;
-    }
-
-    @Override
-    public List<String> findWords(String word) {
-
-        JdbcTemplate t = new JdbcTemplate(dataSource);
-        List<String> ret = t.query("select amount from MONEY m where amount like ?", new RowMapper<String>() {
-            @Override
-            public String mapRow(ResultSet rs, int rowNum) throws SQLException {
-                return rs.getString(1);
-            }
-        }, word);
-        return ret;
-
+    @Transactional(readOnly = true)
+    public List<Word> findAllWords() {
+        return wordRepository.findAll();
     }
 
     @Override
@@ -68,5 +49,11 @@ public class WordServiceImpl implements WordService {
             ret.add(w);
         }
         return ret;
+    }
+
+    @Override
+    @Transactional
+    public void importWords(List<Word> words) {
+        wordRepository.importWords(words);
     }
 }

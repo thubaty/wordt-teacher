@@ -20,4 +20,12 @@ public class WordRepositoryImpl implements WordRepository {
         List resultList = entityManager.createQuery("select w from Word w").getResultList();
         return resultList;  //To change body of implemented methods use File | Settings | File Templates.
     }
+
+    @Override
+    public void importWords(List<Word> words) {
+        for (Word word : words) {
+            entityManager.merge(word);
+        }
+        entityManager.flush();
+    }
 }

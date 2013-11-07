@@ -63,14 +63,6 @@ public class WordController {
         this.word = word;
     }
 
-    public List<String> complete(String query) {
-        return wordService.findWords(query);
-    }
-
-    public String getText() {
-        return "spring hellooouuuuu";
-    }
-
     public List<Word> getWordList() {
         return wordModel.getWords();
     }

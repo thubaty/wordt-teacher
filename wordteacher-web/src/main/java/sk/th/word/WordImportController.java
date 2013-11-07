@@ -13,11 +13,13 @@ public class WordImportController {
     @Autowired
     private WordService wordService;
 
+    @Autowired
     private WordImportModel wordImportModel;
 
     public void importActionListener(ActionEvent e) {
         String importString = wordImportModel.getImportString();
         List<Word> words = wordService.parseWords(importString);
         System.out.println(words.size());
+        wordService.importWords(words);
     }
 }
