@@ -1,6 +1,8 @@
 package sk.th.word;
 
-import sk.th.Word;
+import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.Language;
+import sk.th.pipifax.entity.WordEntity;
 
 import java.util.List;
 
@@ -13,7 +15,7 @@ import java.util.List;
  */
 public interface WordRepository {
 
-    List<Word> findAll();
+    List<WordEntity> findAll(String currentUserName, LanguagCode currentLanguage);
 
-    void importWords(List<Word> words);
+    void importWords(List<WordEntity> words, Language language);
 }

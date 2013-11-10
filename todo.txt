@@ -1,4 +1,8 @@
 import do db
 logout, meno benutzera
+usera do wordu
 stats
 user management
+sorgen von morgen
+tags
+narocnost

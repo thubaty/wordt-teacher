@@ -1,4 +1,4 @@
-package sk.th.wordmanager;
+package sk.th.pipifax.util;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;

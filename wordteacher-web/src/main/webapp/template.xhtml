@@ -27,6 +27,12 @@
 </h:head>
 <h:body>
 
+
+    <f:metadata>
+        <f:event type="preRenderView" listener="#{wordController.initTemplate}"/>
+    </f:metadata>
+
+
     <h:form id="wordForm">
         <ui:insert name="metadata"/>
 
@@ -34,8 +40,18 @@
 
         <div class="container">
 
-            <div class="well well-sm">#{wordController.currentUser}</div>
-
+            <div class="well well-sm">
+            #{wordController.currentUser}
+                <div class="pull-right">
+                    <h:outputLink value="/admin/admin.xhtml">login</h:outputLink>
+                    <span class="label #{settingsModel.currentLanguage.code=='EN'? 'label-success':'label-default'}">
+                        <h:commandLink actionListener="#{settingsController.switchToEnglish}">EN</h:commandLink>
+                    </span>
+                    <span class="label #{settingsModel.currentLanguage.code=='DE'? 'label-success':'label-default'}">
+                        <h:commandLink actionListener="#{settingsController.switchToGerman}">DE</h:commandLink>
+                    </span>
+                </div>
+            </div>
 
             <div class="header">
                 <ul class="nav nav-pills pull-right">
@@ -45,7 +61,8 @@
                     <li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>
                     <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
                 </ul>
-                <h3 class="text-muted"><h:graphicImage value="resources/fax.gif" style="margin-right: 10px"/>Pipifax</h3>
+                <h3 class="text-muted"><h:graphicImage value="resources/fax.gif" style="margin-right: 10px"/>Pipifax
+                </h3>
             </div>
 
 
@@ -61,12 +78,6 @@
             <ui:insert name="content"/>
 
             <br/>
-
-            <div class="footer">
-                <div class="pull-right">
-                    <h:outputLink value="/admin/admin.xhtml">admin</h:outputLink>
-                </div>
-            </div>
         </div>
 
         <!-- Bootstrap core JavaScript

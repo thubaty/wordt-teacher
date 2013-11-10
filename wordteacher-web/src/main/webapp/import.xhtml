@@ -10,6 +10,13 @@
 
     <ui:define name="content">
         <div>
+
+            language:
+            <h:selectOneMenu value="#{wordImportModel.language}" converter="omnifaces.SelectItemsIndexConverter">
+               <f:selectItems value="#{codeController.languages}" var="language" itemValue="#{language}" itemLabel="#{language.code}"/>
+            </h:selectOneMenu>
+            <br/>
+
             import words:
             <p:inputTextarea style="width: 100%; height: 300px;" value="#{wordImportModel.importString}">
 

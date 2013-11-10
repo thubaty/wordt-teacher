@@ -1,7 +1,7 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Component;
-import sk.th.Word;
+import sk.th.pipifax.entity.WordEntity;
 
 import java.util.List;
 
@@ -17,17 +17,17 @@ public class WordModel {
 
     private String text;
 
-    private List<Word> words;
+    private List<WordEntity> words;
 
-    private Word currentWord;
+    private WordEntity currentWord;
 
     private Integer wordCount;
 
-    public Word getCurrentWord() {
+    public WordEntity getCurrentWord() {
         return currentWord;
     }
 
-    public void setCurrentWord(Word currentWord) {
+    public void setCurrentWord(WordEntity currentWord) {
         this.currentWord = currentWord;
     }
 
@@ -39,11 +39,11 @@ public class WordModel {
         this.text = text;
     }
 
-    public List<Word> getWords() {
+    public List<WordEntity> getWords() {
         return words;
     }
 
-    public void setWords(List<Word> words) {
+    public void setWords(List<WordEntity> words) {
         this.words = words;
     }
 

@@ -8,8 +8,6 @@
 
     <import resource="classpath:repositoryContext.xml"/>
 
-    <jdbc:initialize-database data-source="dataSource" enabled="true">
-        <jdbc:script location="classpath:data.sql"/>
-    </jdbc:initialize-database>
+    <import resource="dbInfrastructure.xml"/>
 
 </beans>

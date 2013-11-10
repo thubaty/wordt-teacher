@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import sk.th.Word;
+import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.entity.WordEntity;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class WordRepositoryImplTest {
 
     @Test
     public void testFindAll() throws Exception {
-        List<Word> wordBag = wordRepository.findAll();
+        List<WordEntity> wordBag = wordRepository.findAll("anonymousUser", LanguagCode.EN);
         Assert.assertNotNull(wordBag);
         Assert.assertEquals(2, wordBag.size());
     }

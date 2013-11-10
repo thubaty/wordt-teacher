@@ -1,6 +1,7 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Component;
+import sk.th.pipifax.Language;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,11 +15,21 @@ public class WordImportModel {
 
     private String importString;
 
+    private Language language;
+
     public String getImportString() {
         return importString;
     }
 
     public void setImportString(String importString) {
         this.importString = importString;
+    }
+
+    public Language getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 }

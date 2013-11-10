@@ -3,7 +3,7 @@ package sk.th.word;
 import org.omnifaces.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import sk.th.Word;
+import sk.th.pipifax.entity.WordEntity;
 import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
 import javax.faces.event.ActionEvent;
@@ -20,13 +20,13 @@ public class WordImportController {
 
     public void importActionListener(ActionEvent e) {
         String importString = wordImportModel.getImportString();
-        List<Word> words = null;
+        List<WordEntity> words = null;
         try {
             words = wordService.parseWords(importString);
         } catch (InvalidFormatException ex) {
             Messages.addGlobalError("Cannot parse file - " + ex.getLine());
         }
-        wordService.importWords(words);
+        wordService.importWords(words, wordImportModel.getLanguage());
         Messages.addGlobalInfo("{0} lines imported", words.size());
     }
 }
