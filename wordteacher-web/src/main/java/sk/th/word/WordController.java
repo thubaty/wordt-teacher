@@ -20,8 +20,6 @@ public class WordController {
 
     private final SettingsModel settingsModel;
 
-    private String file;
-
     @Autowired
     public WordController(WordService wordService, WordModel wordModel, SettingsModel settingsModel) throws IOException {
         this.wordService = wordService;
@@ -29,22 +27,26 @@ public class WordController {
         this.settingsModel = settingsModel;
     }
 
+    public void updateWordCount() {
+        String currentUserName = SecurityUtil.getCurrentUserName();
+        List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
+        wordModel.setWordCount(allWords.size());
+    }
+
     public void initTemplate() {
         if (wordModel.getWordCount() == null) {
-            String currentUserName = SecurityUtil.getCurrentUserName();
-            List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
-            wordModel.setWordCount(allWords.size());
+            updateWordCount();
         }
     }
 
     public void initWord() {
         String currentUserName = SecurityUtil.getCurrentUserName();
-        //todo do not load
-        List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
-        wordModel.setWordCount(allWords.size());
-        if (allWords.size() > 0) {
+        if (wordModel.getWordCount() != null && wordModel.getWordCount() > 0) {
+            List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
             Collections.shuffle(allWords);
             wordModel.setCurrentWord(allWords.get(0));
+        } else {
+            wordModel.setCurrentWord(null);
         }
     }
 

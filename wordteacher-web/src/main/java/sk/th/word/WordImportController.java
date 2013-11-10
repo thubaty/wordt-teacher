@@ -13,6 +13,9 @@ import java.util.List;
 public class WordImportController {
 
     @Autowired
+    private WordController wordController;
+
+    @Autowired
     private WordService wordService;
 
     @Autowired
@@ -27,6 +30,7 @@ public class WordImportController {
             Messages.addGlobalError("Cannot parse file - " + ex.getLine());
         }
         wordService.importWords(words, wordImportModel.getLanguage());
+        wordController.updateWordCount();
         Messages.addGlobalInfo("{0} lines imported", words.size());
     }
 }

@@ -1,9 +1,9 @@
 package sk.th.pipifax.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import sk.th.pipifax.Language;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -14,6 +14,8 @@ public class UserEntity {
     Long id;
 
     String username;
+
+    private List<Language> languageList;
 
     public Long getId() {
         return id;
