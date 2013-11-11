@@ -15,6 +15,7 @@ public class UserEntity {
 
     String username;
 
+    @Transient
     private List<Language> languageList;
 
     public Long getId() {

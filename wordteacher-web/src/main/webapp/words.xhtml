@@ -17,13 +17,12 @@
     <ui:define name="content">
         <div class="well well-sm">
         <div>
-            <div>
-                <button type="button" class="btn btn-default tooltipbtn" data-toggle="tooltip" title=""
-                        data-placement="right"
-                        data-original-title="#{wordModel.currentWord.english}">#{wordModel.currentWord.slovak}</button>
+            <div class="well well-sm flipper" style="background-color: #00F77C">
+                <div class="originalWord">#{wordModel.currentWord.slovak}</div>
+                <div class="translatedWord" style="display: none;">#{wordModel.currentWord.english}</div>
             </div>
             <br/>
-            <div>
+            <div class="text-center">
                 <button type="button" class="btn btn-danger" onclick="danger()">Neviem</button>
                 <button type="button" class="btn btn-warning" onclick="danger()">Jak tak</button>
                 <button type="button" class="btn btn-success" onclick="danger()">Viem</button>

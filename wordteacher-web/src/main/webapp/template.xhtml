@@ -14,6 +14,7 @@
 
     <title>Wordteacher</title>
 
+
     <h:outputScript name="js/jquery-1.9.1.js"/>
     <h:outputScript name="js/bootstrap.js"/>
     <h:outputStylesheet name="css/app.css"/>
@@ -41,7 +42,7 @@
         <div class="container">
 
             <div class="well well-sm">
-            #{wordController.currentUser}
+                #{wordController.currentUser}
                 <div class="pull-right">
                     <h:outputLink value="/admin/admin.xhtml">login</h:outputLink>
                     <span class="label #{settingsModel.currentLanguage.code=='EN'? 'label-success':'label-default'}">
@@ -88,6 +89,21 @@
             $(function () {
                 $(".tooltipbtn").tooltip();
             });
+
+            $('.flipper').hover(
+                    function () {
+                        $(this).find(".originalWord").hide();
+                        $(this).find(".translatedWord").show();
+                        $(this).css('background-color', '#01BFE5');
+
+                    },
+                    function () {
+                        $(this).find(".originalWord").show();
+                        $(this).find(".translatedWord").hide();
+                        $(this).css('background-color', '#00F77C');
+                    }
+                    //or do your job by binding two function handlers to distinguish between mouse events
+            );
         </script>
         <p:remoteCommand name="danger" actionListener="#{wordController.dangerActionListener}" update="@all"/>
     </h:form>

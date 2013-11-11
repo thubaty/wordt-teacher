@@ -1,8 +1,11 @@
-import do db
+import do db - vytunit chyby
 logout, meno benutzera
-usera do wordu
+
+ako spravit common db ? tak aby admin commitoval do db?
+
+loadovanie vytunit
+button pre kazdy language
+---------------------
 stats
-user management
-sorgen von morgen
 tags
 narocnost
