@@ -14,11 +14,11 @@
 
     <title>Wordteacher</title>
 
-
     <h:outputScript name="js/jquery-1.9.1.js"/>
     <h:outputScript name="js/bootstrap.js"/>
+    <h:outputScript name="js/jquery.fittext.js"/>
     <h:outputStylesheet name="css/app.css"/>
-    <h:outputStylesheet name="css/bootstrap.css"/>
+    <h:outputStylesheet name="css/slate.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +26,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </h:head>
-<h:body>
+<h:body style="bosycustom">
 
 
     <f:metadata>
@@ -54,7 +54,21 @@
                 </div>
             </div>
 
-            <div class="header">
+            <div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Action</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
                 <ul class="nav nav-pills pull-right">
                     <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words<span
                             class="badge"> <h:outputText
@@ -62,7 +76,7 @@
                     <li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>
                     <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
                 </ul>
-                <h3 class="text-muted"><h:graphicImage value="resources/fax.gif" style="margin-right: 10px"/>Pipifax
+                <h3 class="text-muted"><h:graphicImage width="100px" value="http://www.dezignwithaz.com/images/elephant.png" style="margin-right: 10px"/>Pipifax
                 </h3>
             </div>
 
@@ -87,22 +101,16 @@
 
         <script>
             $(function () {
-                $(".tooltipbtn").tooltip();
+                //$(".originalWord").fitText();
+                //$(".translatedWord").fitText();
             });
 
-            $('.flipper').hover(
+            $('.flipper').click(
                     function () {
-                        $(this).find(".originalWord").hide();
-                        $(this).find(".translatedWord").show();
-                        $(this).css('background-color', '#01BFE5');
+                        $(this).find(".originalWord").toggle();
+                        $(this).find(".translatedWord").toggle();
 
-                    },
-                    function () {
-                        $(this).find(".originalWord").show();
-                        $(this).find(".translatedWord").hide();
-                        $(this).css('background-color', '#00F77C');
                     }
-                    //or do your job by binding two function handlers to distinguish between mouse events
             );
         </script>
         <p:remoteCommand name="danger" actionListener="#{wordController.dangerActionListener}" update="@all"/>

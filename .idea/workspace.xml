@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/entity/UserEntity.java" afterPath="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/entity/UserEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/dto/Card.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/pipifax/util/SRSUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/pipifax/util/SRSUtilTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/jquery.fittext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/slate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383772404813" ignored="false" />
-    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384117391104" ignored="false" />
+    <file path="/Dummy.txt" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384192006009" ignored="false" />
     <file path="$PROJECT_DIR$/../karibikProjekt/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166731448" ignored="false" />
     <file path="$PROJECT_DIR$/../Zhovnabitch2/.idea/workspace.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381166749157" ignored="false" />
     <file path="/index.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1382991133466" ignored="false" />
     <file path="$PROJECT_DIR$/../helloWorld/pom.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381167526148" ignored="false" />
     <file path="/WordService.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383849998348" ignored="false" />
-    <file path="/fragment.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384115264661" ignored="false" />
+    <file path="/fragment.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384193859960" ignored="false" />
     <file path="/WordServiceImpl.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384099432461" ignored="false" />
     <file path="$PROJECT_DIR$/../spring-training/src/test/java/banking/internal/DefaultTransferServiceSpringTestIT.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381167842582" ignored="false" />
     <file path="/DefaultTransferServiceSpringTestIT.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1381167837646" ignored="false" />
@@ -36,15 +39,15 @@
     <file path="/app.js" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384189301450" ignored="false" />
     <file path="/Word.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383859304470" ignored="false" />
     <file path="/WordModel.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383854448213" ignored="false" />
-    <file path="/app.css" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383247412771" ignored="false" />
+    <file path="/app.css" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384422751598" ignored="false" />
     <file path="/index2.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383248729118" ignored="false" />
     <file path="/index3.html" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383249583302" ignored="false" />
     <file path="/index4.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383250560457" ignored="false" />
     <file path="/index5.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383501044497" ignored="false" />
     <file path="/import.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384095160339" ignored="false" />
-    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384190865430" ignored="false" />
+    <file path="/template.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384427248204" ignored="false" />
     <file path="/db.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383581747515" ignored="false" />
-    <file path="/words.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384191323223" ignored="false" />
+    <file path="/words.xhtml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384427513956" ignored="false" />
     <file path="/repositoryContext.xml" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1383765602432" ignored="false" />
     <file path="/WordRepositoryImpl.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384106062231" ignored="false" />
     <file path="/WordRepositoryImplTest.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384102042418" ignored="false" />
@@ -71,6 +74,8 @@
     <file path="/UserRepositoryImpl.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384096311388" ignored="false" />
     <file path="/SettingsController.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384114970795" ignored="false" />
     <file path="/SettingsModel.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384101003540" ignored="false" />
+    <file path="/Card.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384193816105" ignored="false" />
+    <file path="/SRSUtilTest.java" changelist="63df0d39-0a22-4fbb-a20a-d2771f955292" time="1384194059320" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,80 +139,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WordController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="55" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/entity/UserEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todo.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/sk/th/pipifax/web/SettingsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="41" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="words.xhtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="words.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.58082193">
+            <state line="17" column="41" selection-start="653" selection-end="653" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordModel.java">
+      <file leaf-file-name="SRSUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/pipifax/util/SRSUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+            <state line="31" column="52" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordImportController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordImportController.java">
+      <file leaf-file-name="SRSUtilTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/pipifax/util/SRSUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="42" selection-start="387" selection-end="442" vertical-scroll-proportion="0.0">
+            <state line="17" column="33" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Card.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/dto/Card.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.xhtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jquery.fittext.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/jquery.fittext.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.xhtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="57" selection-start="4171" selection-end="4171" vertical-scroll-proportion="-10.769231">
+            <state line="58" column="32" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.36790606">
               <folding>
-                <marker date="1384191186908" expanded="true" signature="2794:2812" placeholder="{...}" />
+                <marker date="1384428950718" expanded="true" signature="1162:1172" placeholder="{...}" />
+                <marker date="1384428950718" expanded="true" signature="3675:3693" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="108" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slate.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/slate.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="33" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +231,9 @@
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="208" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1384189314320" expanded="true" signature="37:115" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -250,11 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/word/WordServiceImpl.java" />
-        <option value="$PROJECT_DIR$/wordteacher-repository/src/test/java/sk/th/word/WordRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/word/WordServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/word/WordServiceTest.java" />
-        <option value="$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml" />
         <option value="$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/Language.java" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordModel.java" />
@@ -264,8 +265,13 @@
         <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
+        <option value="$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/dto/Card.java" />
+        <option value="$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/pipifax/util/SRSUtil.java" />
+        <option value="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/pipifax/util/SRSUtilTest.java" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/slate.css" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
       </list>
     </option>
   </component>
@@ -321,10 +327,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1598" />
-    <option name="height" value="858" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -735,6 +741,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -758,204 +798,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="th" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="th" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipifax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordteacher-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="th" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipifax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1077,6 +919,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordteacher-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipifax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -1084,7 +960,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/word" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -1110,17 +986,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="sk.th.pipifax.util" />
       <recent name="sk.th.word" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\js" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-repository\src\main\resources" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp" />
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-repository\src\test\resources" />
-      <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\bootstrap\js" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sk.th.pipifax" />
@@ -1154,34 +1031,6 @@
       <option name="PACKAGE_NAME" value="sk.th.word" />
       <option name="MAIN_CLASS_NAME" value="sk.th.word.WordServiceTest" />
       <option name="METHOD_NAME" value="testFirst1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="WordServiceTest.testParseWords" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sk.th.word.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="wordteacher-service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="sk.th.word" />
-      <option name="MAIN_CLASS_NAME" value="sk.th.word.WordServiceTest" />
-      <option name="METHOD_NAME" value="testParseWords" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1266,6 +1115,34 @@
       <option name="PACKAGE_NAME" value="sk.th.word" />
       <option name="MAIN_CLASS_NAME" value="sk.th.word.WordServiceImplTest" />
       <option name="METHOD_NAME" value="testStoreWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SRSUtilTest.testScoreCard" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sk.th.pipifax.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="wordteacher-service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="sk.th.pipifax.util" />
+      <option name="MAIN_CLASS_NAME" value="sk.th.pipifax.util.SRSUtilTest" />
+      <option name="METHOD_NAME" value="testScoreCard" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1584,18 +1461,18 @@
       <item index="0" class="java.lang.String" itemvalue="Maven.wordteacher [clean,install]" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.WordServiceTest.testFirst1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WordServiceTest.testParseWords" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WordRepositoryImplTest.testFindAll" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testImportWords" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testStoreWords" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WordRepositoryImplTest.testFindAll" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testImportWords" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testStoreWords" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.SRSUtilTest.testScoreCard" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WordRepositoryImplTest.testFindAll" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testStoreWords" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testImportWords" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WordServiceTest.testFirst1" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WordServiceTest.testParseWords" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SRSUtilTest.testScoreCard" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordRepositoryImplTest.testFindAll" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testStoreWords" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WordServiceImplTest.testImportWords" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WordServiceTest.testFirst1" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1683,11 +1560,15 @@
       <created>1384117395803</created>
       <updated>1384117395803</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="template">
+      <created>1384192010047</created>
+      <updated>1384192010047</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1598" height="858" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1695,13 +1576,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37339056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37235227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33590734" sideWeight="0.44351465" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33054394" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2575251" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1709,8 +1590,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15958816" sideWeight="0.6359833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33984375" sideWeight="0.62660944" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35425383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27854857" sideWeight="0.6276477" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35336193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1785,50 +1666,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/main/resources/repositoryContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/test/resources/test-repositoryContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/test/java/sk/th/word/WordRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/entity/WordEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="112" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="25" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
@@ -1847,7 +1684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="41" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1878,7 +1715,9 @@
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="208" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1384189314320" expanded="true" signature="37:115" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1891,19 +1730,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/js/jquery.fittext.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="57" selection-start="4171" selection-end="4171" vertical-scroll-proportion="-10.769231">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-model/src/main/java/sk/th/pipifax/dto/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/pipifax/util/SRSUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="52" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-service/src/test/java/sk/th/pipifax/util/SRSUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1384191186908" expanded="true" signature="2794:2812" placeholder="{...}" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="108" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/slate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.58082193">
+        <state line="17" column="41" selection-start="653" selection-end="653" vertical-scroll-proportion="-11.115385">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="32" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.36790606">
+          <folding>
+            <marker date="1384428950718" expanded="true" signature="1162:1172" placeholder="{...}" />
+            <marker date="1384428950718" expanded="true" signature="3675:3693" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

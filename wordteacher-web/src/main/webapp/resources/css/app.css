@@ -2,6 +2,7 @@
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url("http://rule-of-three.co.uk/wp-content/themes/ruleofthree/images/blackheaderbg.jpg");
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

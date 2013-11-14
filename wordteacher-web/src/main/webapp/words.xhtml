@@ -17,15 +17,14 @@
     <ui:define name="content">
         <div class="well well-sm">
         <div>
-            <div class="well well-sm flipper" style="background-color: #00F77C">
-                <div class="originalWord">#{wordModel.currentWord.slovak}</div>
-                <div class="translatedWord" style="display: none;">#{wordModel.currentWord.english}</div>
+            <div class="well well-sm flipper" style="cursor: pointer;">
+                <div class="originalWord">#{wordModel.currentWord.slovak}<div class="pull-right">[SVK]</div></div>
+                <div class="translatedWord" style="display: none;">#{wordModel.currentWord.english}<div class="pull-right">[ENG]</div></div>
             </div>
-            <br/>
             <div class="text-center">
-                <button type="button" class="btn btn-danger" onclick="danger()">Neviem</button>
-                <button type="button" class="btn btn-warning" onclick="danger()">Jak tak</button>
-                <button type="button" class="btn btn-success" onclick="danger()">Viem</button>
+                <button type="button" class="btn btn-danger btn-sm" onclick="danger()">Neviem</button>
+                <button type="button" class="btn btn-warning btn-sm" onclick="danger()">Jak tak</button>
+                <button type="button" class="btn btn-success btn-sm" onclick="danger()">Viem</button>
             </div>
         </div>
         </div>
