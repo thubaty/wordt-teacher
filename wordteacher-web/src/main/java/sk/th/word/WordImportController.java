@@ -27,10 +27,15 @@ public class WordImportController {
         try {
             words = wordService.parseWords(importString);
         } catch (InvalidFormatException ex) {
-            Messages.addGlobalError("Cannot parse file - " + ex.getLine());
+            List<String> lines = ex.getLine();
+            for (String line : lines) {
+                Messages.addGlobalError(line);
+                return;
+            }
         }
         wordService.importWords(words, wordImportModel.getLanguage());
         wordController.updateWordCount();
         Messages.addGlobalInfo("{0} lines imported", words.size());
+        wordImportModel.setImportString(null);
     }
 }

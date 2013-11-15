@@ -21,4 +21,6 @@ public interface WordService {
     List<WordEntity> parseWords(String words) throws InvalidFormatException;
 
     void importWords(List<WordEntity> words, Language language);
+
+    void updateWord(WordEntity currentWord);
 }

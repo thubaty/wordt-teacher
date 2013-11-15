@@ -1,5 +1,6 @@
 package sk.th.word;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,6 +15,7 @@ import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -42,21 +44,32 @@ public class WordServiceImpl implements WordService {
     public List<WordEntity> parseWords(String words) throws InvalidFormatException {
         Assert.notNull(words);
         ArrayList<WordEntity> ret = new ArrayList<WordEntity>();
+        List<String> invalidRows = new ArrayList<String>();
         String[] rows = words.split("\n");
+        int rowCounter = 0;
         for (String row : rows) {
+            rowCounter++;
             if (StringUtils.isEmpty(row)) {
-                throw new InvalidFormatException("empty row");
+                invalidRows.add(rowCounter + ". empty row");
+                continue;
             }
             String[] columns = row.split("-");
             if (columns.length < 2) {
-                throw new InvalidFormatException(row);
+                invalidRows.add(rowCounter + ". " + row);
+                continue;
             }
             if (StringUtils.isEmpty(columns[1].trim())) {
-                throw new InvalidFormatException(row);
+                invalidRows.add(rowCounter + ". " + row);
+                continue;
             }
             WordEntity w = new WordEntity(columns[0], columns[1]);
             ret.add(w);
         }
+
+        if (!invalidRows.isEmpty()) {
+            throw new InvalidFormatException(invalidRows);
+        }
+
         return ret;
     }
 
@@ -70,5 +83,11 @@ public class WordServiceImpl implements WordService {
             word.setLanguage(language);
         }
         wordRepository.importWords(words, language);
+    }
+
+    @Override
+    @Transactional
+    public void updateWord(WordEntity currentWord) {
+        wordRepository.updateWord(currentWord);
     }
 }

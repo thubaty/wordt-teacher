@@ -78,3 +78,13 @@ body {
         border-bottom: 0;
     }
 }
+.tangerine {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+.frederika {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 38px;
+    color: gainsboro;
+}

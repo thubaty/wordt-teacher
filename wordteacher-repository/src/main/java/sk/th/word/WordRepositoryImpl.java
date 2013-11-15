@@ -32,4 +32,9 @@ public class WordRepositoryImpl implements WordRepository {
         }
         entityManager.flush();
     }
+
+    @Override
+    public void updateWord(WordEntity currentWord) {
+        entityManager.merge(currentWord);
+    }
 }

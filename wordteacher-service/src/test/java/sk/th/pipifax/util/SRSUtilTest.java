@@ -7,17 +7,22 @@ public class SRSUtilTest {
 
     @Test
     public void testScoreCard() throws Exception {
-        Card c = new Card();
-        c.setCount(3);
-        c.setEFactor(2f);
-        c.setInterval(1);
-        System.out.println(c.getEFactor());
-        SRSUtil.scoreCard(c, 4);
-        System.out.println(c.getEFactor());
+        float newEfactor = SRSUtil.scoreCard(2.5f, 5);
+        int newInterval = SRSUtil.calcuateInterval(2.5f, 1, 1);
+        System.out.println(newEfactor + " rep in " + newInterval);
+        newEfactor = SRSUtil.scoreCard(newEfactor, 5);
+        newInterval = SRSUtil.calcuateInterval(newEfactor, newInterval, 2);
+        System.out.println(newEfactor + " rep in " + newInterval);
+        newEfactor = SRSUtil.scoreCard(newEfactor, 5);
+        newInterval = SRSUtil.calcuateInterval(newEfactor, newInterval, 3);
+        System.out.println(newEfactor + " rep in " + newInterval);
     }
 
     @Test
     public void testCalcuateInterval() throws Exception {
-        //SRSUtil.calcuateInterval();
+        int newInterval = SRSUtil.calcuateInterval(1.3f, 1, 1);
+
+
+        System.out.println(newInterval);
     }
 }

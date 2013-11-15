@@ -14,11 +14,15 @@
 
     <title>Wordteacher</title>
 
+
     <h:outputScript name="js/jquery-1.9.1.js"/>
     <h:outputScript name="js/bootstrap.js"/>
     <h:outputScript name="js/jquery.fittext.js"/>
+    <h:outputScript name="js/jquery.blockUI.js"/>
     <h:outputStylesheet name="css/app.css"/>
     <h:outputStylesheet name="css/slate.css"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"/>
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,45 +45,27 @@
 
         <div class="container">
 
-            <div class="well well-sm">
-                #{wordController.currentUser}
-                <div class="pull-right">
-                    <h:outputLink value="/admin/admin.xhtml">login</h:outputLink>
-                    <span class="label #{settingsModel.currentLanguage.code=='EN'? 'label-success':'label-default'}">
-                        <h:commandLink actionListener="#{settingsController.switchToEnglish}">EN</h:commandLink>
-                    </span>
-                    <span class="label #{settingsModel.currentLanguage.code=='DE'? 'label-success':'label-default'}">
-                        <h:commandLink actionListener="#{settingsController.switchToGerman}">DE</h:commandLink>
-                    </span>
-                </div>
-            </div>
 
             <div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Action</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
                 <ul class="nav nav-pills pull-right">
-                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words<span
+                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
+                        <a href="/words.xhtml">Words<span
                             class="badge"> <h:outputText
                             value="#{wordModel.wordCount}"/></span></a></li>
-                    <li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>
+                    <!--<li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>-->
                     <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
                 </ul>
-                <h3 class="text-muted"><h:graphicImage width="100px" value="http://www.dezignwithaz.com/images/elephant.png" style="margin-right: 10px"/>Pipifax
-                </h3>
-            </div>
 
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <h:graphicImage width="100px" value="http://www.fantishirt.de/out/pictures/7/xeule02,281,29.png.pagespeed.ic.68SFsGBFtn.png" style="margin-right: 10px"/>
+                    </a>
+                    <div class="media-body">
+                        <div class="frederika" style="font-weight: bold">Pipi<font color="#87ceeb">fax</font></div>
+                        spaced repetition v0.1
+                    </div>
+                </div>
+            </div>
 
             <o:messages var="message" globalOnly="true">
                 <ui:fragment rendered="#{message.severity == 'INFO'}">
@@ -100,6 +86,8 @@
         <!-- Placed at the end of the document so the pages load faster -->
 
         <script>
+            //$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+
             $(function () {
                 //$(".originalWord").fitText();
                 //$(".translatedWord").fitText();
@@ -112,8 +100,11 @@
 
                     }
             );
+
+            $('.btn').click(function() {
+                $('#pnl').block({ message: null });
+            });
         </script>
-        <p:remoteCommand name="danger" actionListener="#{wordController.dangerActionListener}" update="@all"/>
     </h:form>
 
 </h:body>

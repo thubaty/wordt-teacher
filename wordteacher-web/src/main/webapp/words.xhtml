@@ -16,18 +16,28 @@
 
     <ui:define name="content">
         <div class="well well-sm">
-        <div>
-            <div class="well well-sm flipper" style="cursor: pointer;">
-                <div class="originalWord">#{wordModel.currentWord.slovak}<div class="pull-right">[SVK]</div></div>
-                <div class="translatedWord" style="display: none;">#{wordModel.currentWord.english}<div class="pull-right">[ENG]</div></div>
+        <div id="pnl">
+            <div class="well well-sm flipper" style="cursor: pointer;background-image: url('/resources/webtreats_metal_4-512px.jpg')" unselectable="on"
+                 onselectstart="return false"
+                 onmousedown="return false;">
+                <div class="originalWord" style="color:black"><img src="/resources/sk.png" style="margin-right: 10px"/>#{wordModel.currentWord.slovak}</div>
+                <div class="translatedWord" style="display: none;color:black;"><img src="/resources/gb.png" style="margin-right: 10px"/>#{wordModel.currentWord.english}</div>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-danger btn-sm" onclick="danger()">Neviem</button>
-                <button type="button" class="btn btn-warning btn-sm" onclick="danger()">Jak tak</button>
-                <button type="button" class="btn btn-success btn-sm" onclick="danger()">Viem</button>
+                <button type="button" class="btn btn-danger btn-sm" id="saveBtn" onclick="donno()">Neviem</button>
+                <button type="button" class="btn btn-info btn-sm" onclick="solala()">Jak tak</button>
+                <button type="button" class="btn btn-primary btn-sm" onclick="solala()">Jak tak</button>
+                <button type="button" class="btn btn-default btn-sm" onclick="solala()">Jak tak</button>
+                <button type="button" class="btn btn-warning btn-sm" onclick="solala()">Jak tak</button>
+                <button type="button" class="btn btn-success btn-sm" onclick="easypeasy()">Viem</button>
             </div>
         </div>
         </div>
+
+
+        <p:remoteCommand name="donno" actionListener="#{wordController.donnoActionListener}" update="@all"/>
+        <p:remoteCommand name="solala" actionListener="#{wordController.solalaActionListener}" update="@all"/>
+        <p:remoteCommand name="easypeasy" actionListener="#{wordController.easypeasyActionListener}" update="@all"/>
     </ui:define>
 </ui:composition>
 

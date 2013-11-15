@@ -18,4 +18,6 @@ public interface WordRepository {
     List<WordEntity> findAll(String currentUserName, LanguagCode currentLanguage);
 
     void importWords(List<WordEntity> words, Language language);
+
+    void updateWord(WordEntity currentWord);
 }

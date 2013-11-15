@@ -4,6 +4,7 @@ import org.springframework.util.Assert;
 import sk.th.pipifax.Language;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Random;
 
 @Entity
@@ -23,6 +24,11 @@ public class WordEntity {
     @JoinColumn(name="user_id")
     private UserEntity user;
 
+    private float EFactor;
+    private int count;
+    private int interval;
+    private Timestamp modified;
+
     public WordEntity() {
     }
 
@@ -31,6 +37,8 @@ public class WordEntity {
         Assert.notNull(slovak);
         this.slovak = slovak.trim();
         this.english = english.trim();
+        this.count = 0;
+        this.EFactor = 2.5f;
     }
 
     public String getSlovak() {
@@ -63,6 +71,38 @@ public class WordEntity {
 
     public void setUser(UserEntity user) {
         this.user = user;
+    }
+
+    public float getEFactor() {
+        return EFactor;
+    }
+
+    public void setEFactor(float EFactor) {
+        this.EFactor = EFactor;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getInterval() {
+        return interval;
+    }
+
+    public void setInterval(int interval) {
+        this.interval = interval;
+    }
+
+    public Timestamp getModified() {
+        return modified;
+    }
+
+    public void setModified(Timestamp modified) {
+        this.modified = modified;
     }
 }
 

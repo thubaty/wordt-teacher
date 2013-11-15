@@ -9,20 +9,20 @@
     </ui:define>
 
     <ui:define name="content">
-        <div>
-
             language:
             <h:selectOneMenu value="#{wordImportModel.language}" converter="omnifaces.SelectItemsIndexConverter">
                <f:selectItems value="#{codeController.languages}" var="language" itemValue="#{language}" itemLabel="#{language.code}"/>
             </h:selectOneMenu>
             <br/>
 
-            import words:
-            <p:inputTextarea style="width: 100%; height: 300px;" value="#{wordImportModel.importString}">
+            <div class="well well-sm">
+                <p:inputTextarea placeholder="english - slovak" id="keyword" style="width: 100%; height: 300px;  background-image: url('/resources/furley_bg.png');" value="#{wordImportModel.importString}"/>
+                <div class="pull-right">
+                    <button type="button" class="btn btn-success btn-sm" onclick="importAction()">Import</button>
+                    <p:remoteCommand name="importAction" actionListener="#{wordImportController.importActionListener}" update="@all"/>
+                </div>
+            </div>
 
-            </p:inputTextarea>
-            <p:commandButton value="import" actionListener="#{wordImportController.importActionListener}" ajax="false"/>
-        </div>
     </ui:define>
 </ui:composition>
 

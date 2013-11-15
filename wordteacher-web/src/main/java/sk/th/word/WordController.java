@@ -3,11 +3,13 @@ package sk.th.word;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.pipifax.web.SettingsModel;
 
 import javax.faces.event.ActionEvent;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.Collections;
 import java.util.List;
 
@@ -50,9 +52,28 @@ public class WordController {
         }
     }
 
-    public void dangerActionListener(ActionEvent e) {
+    public void easypeasyActionListener(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 5);
+    }
+
+    public void solalaActionListener(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 3);
+    }
+
+
+    public void donnoActionListener(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 1);
+    }
+
+    public void updateWord(WordEntity word, int quality) {
+        word.setModified(new Timestamp(System.currentTimeMillis()));
+        word.setCount(word.getCount() + 1);
+        word.setInterval(SRSUtil.calcuateInterval(word.getEFactor(), word.getInterval(), word.getCount()));
+        word.setEFactor(SRSUtil.scoreCard(word.getEFactor(), quality));
+        wordService.updateWord(word);
         initWord();
     }
+
 
     public String getCurrentUser() {
         return SecurityUtil.getCurrentUserName();
