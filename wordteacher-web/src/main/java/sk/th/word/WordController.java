@@ -1,5 +1,6 @@
 package sk.th.word;
 
+import org.omnifaces.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import sk.th.pipifax.entity.WordEntity;
@@ -7,10 +8,11 @@ import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.pipifax.web.SettingsModel;
 
+import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.io.IOException;
 import java.sql.Timestamp;
-import java.util.Collections;
+import java.util.Calendar;
 import java.util.List;
 
 @Controller
@@ -41,14 +43,19 @@ public class WordController {
         }
     }
 
-    public void initWord() {
+    public void loadWord() {
         String currentUserName = SecurityUtil.getCurrentUserName();
-        if (wordModel.getWordCount() != null && wordModel.getWordCount() > 0) {
-            List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
-            Collections.shuffle(allWords);
-            wordModel.setCurrentWord(allWords.get(0));
-        } else {
-            wordModel.setCurrentWord(null);
+        WordEntity wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage());
+        wordModel.setCurrentWord(wordEntity);
+        if (wordEntity == null) {
+            Messages.addGlobalError("ziadne dalsie slovicka na ucenie kamosko");
+        }
+    }
+
+    public void initWord() {
+        FacesContext currentInstance = FacesContext.getCurrentInstance();
+        if (!currentInstance.isPostback()) {
+            loadWord();
         }
     }
 
@@ -68,10 +75,14 @@ public class WordController {
     public void updateWord(WordEntity word, int quality) {
         word.setModified(new Timestamp(System.currentTimeMillis()));
         word.setCount(word.getCount() + 1);
-        word.setInterval(SRSUtil.calcuateInterval(word.getEFactor(), word.getInterval(), word.getCount()));
+        int interval = SRSUtil.calcuateInterval(word.getEFactor(), word.getInterval(), word.getCount());
+        word.setInterval(interval);
         word.setEFactor(SRSUtil.scoreCard(word.getEFactor(), quality));
+        Calendar instance = Calendar.getInstance();
+        instance.add(Calendar.HOUR, interval*24);
+        word.setNextRepetition(new Timestamp(instance.getTime().getTime()));
         wordService.updateWord(word);
-        initWord();
+        loadWord();
     }
 
 

@@ -20,4 +20,6 @@ public interface WordRepository {
     void importWords(List<WordEntity> words, Language language);
 
     void updateWord(WordEntity currentWord);
+
+    List<WordEntity> loadLearnCandidates(String currentUserName, LanguagCode currentLanguage);
 }

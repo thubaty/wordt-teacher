@@ -11,6 +11,7 @@ public class SRSUtil {
 
     public static final int MAX_QUALITY = 3;
     public static final float E_FACTOR_FLOOR = 1.3f;
+    public static final float INITIAL_E_FACTOR = 2.5f;
 
     /**
      * Score a Card and set it's correct E-Factor.

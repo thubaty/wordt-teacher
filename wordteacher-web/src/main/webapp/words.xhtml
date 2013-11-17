@@ -11,28 +11,33 @@
     </ui:define>
 
     <ui:define name="selectedMenuName">
-       <ui:param name="selectedMenu" value="WORDS"/>
+        <ui:param name="selectedMenu" value="WORDS"/>
     </ui:define>
 
     <ui:define name="content">
-        <div class="well well-sm">
-        <div id="pnl">
-            <div class="well well-sm flipper" style="cursor: pointer;background-image: url('/resources/webtreats_metal_4-512px.jpg')" unselectable="on"
-                 onselectstart="return false"
-                 onmousedown="return false;">
-                <div class="originalWord" style="color:black"><img src="/resources/sk.png" style="margin-right: 10px"/>#{wordModel.currentWord.slovak}</div>
-                <div class="translatedWord" style="display: none;color:black;"><img src="/resources/gb.png" style="margin-right: 10px"/>#{wordModel.currentWord.english}</div>
+
+        <ui:fragment rendered="#{wordModel.currentWord != null}">
+            <div id="pnl">
+                <div class="well well-sm flipper"
+                     style="cursor: pointer;"
+                     unselectable="on"
+                     onselectstart="return false"
+                     onmousedown="return false;">
+                    <div class="originalWord frederika"><img src="/resources/sk.png"
+                                                                                 style="margin-right: 10px"/>#{wordModel.currentWord.slovak}
+                    </div>
+                    <div class="translatedWord frederika" style="display: none;"><img
+                            src="/resources/gb.png"
+                            style="margin-right: 10px"/>#{wordModel.currentWord.english}
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger btn-sm wordBtn" id="saveBtn" onclick="donno()">Neviem</button>
+                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="solala()">Jak tak</button>
+                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="easypeasy()">Viem</button>
+                </div>
             </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-danger btn-sm" id="saveBtn" onclick="donno()">Neviem</button>
-                <button type="button" class="btn btn-info btn-sm" onclick="solala()">Jak tak</button>
-                <button type="button" class="btn btn-primary btn-sm" onclick="solala()">Jak tak</button>
-                <button type="button" class="btn btn-default btn-sm" onclick="solala()">Jak tak</button>
-                <button type="button" class="btn btn-warning btn-sm" onclick="solala()">Jak tak</button>
-                <button type="button" class="btn btn-success btn-sm" onclick="easypeasy()">Viem</button>
-            </div>
-        </div>
-        </div>
+        </ui:fragment>
 
 
         <p:remoteCommand name="donno" actionListener="#{wordController.donnoActionListener}" update="@all"/>

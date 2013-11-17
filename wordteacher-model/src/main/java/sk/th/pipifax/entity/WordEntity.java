@@ -28,6 +28,8 @@ public class WordEntity {
     private int count;
     private int interval;
     private Timestamp modified;
+    @Column(name = "next_repetition")
+    private Timestamp nextRepetition;
 
     public WordEntity() {
     }
@@ -37,8 +39,6 @@ public class WordEntity {
         Assert.notNull(slovak);
         this.slovak = slovak.trim();
         this.english = english.trim();
-        this.count = 0;
-        this.EFactor = 2.5f;
     }
 
     public String getSlovak() {
@@ -103,6 +103,14 @@ public class WordEntity {
 
     public void setModified(Timestamp modified) {
         this.modified = modified;
+    }
+
+    public Timestamp getNextRepetition() {
+        return nextRepetition;
+    }
+
+    public void setNextRepetition(Timestamp nextRepetition) {
+        this.nextRepetition = nextRepetition;
     }
 }
 

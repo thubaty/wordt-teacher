@@ -1,6 +1,5 @@
 package sk.th.word;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,11 +10,12 @@ import sk.th.pipifax.Language;
 import sk.th.pipifax.UserRepository;
 import sk.th.pipifax.entity.UserEntity;
 import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.util.DateUtil;
+import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -81,6 +81,9 @@ public class WordServiceImpl implements WordService {
         for (WordEntity word : words) {
             word.setUser(userByUsername);
             word.setLanguage(language);
+            word.setCount(0);
+            word.setEFactor(SRSUtil.INITIAL_E_FACTOR);
+            word.setNextRepetition(DateUtil.getCurrentDate());
         }
         wordRepository.importWords(words, language);
     }
@@ -89,5 +92,15 @@ public class WordServiceImpl implements WordService {
     @Transactional
     public void updateWord(WordEntity currentWord) {
         wordRepository.updateWord(currentWord);
+    }
+
+    @Override
+    public WordEntity loadNextWord(String currentUserName, LanguagCode currentLanguage) {
+        List<WordEntity> candidates = wordRepository.loadLearnCandidates(currentUserName, currentLanguage);
+        if (candidates.size() == 0) {
+            return null;
+        } else {
+            return candidates.get(0);
+        }
     }
 }

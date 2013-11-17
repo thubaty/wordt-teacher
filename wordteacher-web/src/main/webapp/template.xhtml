@@ -18,11 +18,12 @@
     <h:outputScript name="js/jquery-1.9.1.js"/>
     <h:outputScript name="js/bootstrap.js"/>
     <h:outputScript name="js/jquery.fittext.js"/>
-    <h:outputScript name="js/jquery.blockUI.js"/>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <h:outputStylesheet name="css/app.css"/>
     <h:outputStylesheet name="css/slate.css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"/>
     <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,9 +45,7 @@
         <ui:insert name="selectedMenuName"/>
 
         <div class="container">
-
-
-            <div>
+            <div style="margin-bottom: 20px;">
                 <ul class="nav nav-pills pull-right">
                     <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
                         <a href="/words.xhtml">Words<span
@@ -58,7 +57,7 @@
 
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <h:graphicImage width="100px" value="http://www.fantishirt.de/out/pictures/7/xeule02,281,29.png.pagespeed.ic.68SFsGBFtn.png" style="margin-right: 10px"/>
+                        <h:graphicImage width="100px" value="/resources/owl.png" style="margin-right: 10px"/>
                     </a>
                     <div class="media-body">
                         <div class="frederika" style="font-weight: bold">Pipi<font color="#87ceeb">fax</font></div>
@@ -67,14 +66,7 @@
                 </div>
             </div>
 
-            <o:messages var="message" globalOnly="true">
-                <ui:fragment rendered="#{message.severity == 'INFO'}">
-                    <div class="alert alert-success">#{message.summary}</div>
-                </ui:fragment>
-                <ui:fragment rendered="#{message.severity != 'INFO'}">
-                    <div class="alert alert-danger">#{message.summary}</div>
-                </ui:fragment>
-            </o:messages>
+            <ui:include src="messages.xhtml"/>
 
             <ui:insert name="content"/>
 
@@ -101,8 +93,8 @@
                     }
             );
 
-            $('.btn').click(function() {
-                $('#pnl').block({ message: null });
+            $(".wordBtn").click(function() {
+                $( ".flipper" ).effect("bounce", "fast" );
             });
         </script>
     </h:form>

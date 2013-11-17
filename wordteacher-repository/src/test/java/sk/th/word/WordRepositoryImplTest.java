@@ -25,4 +25,11 @@ public class WordRepositoryImplTest {
         Assert.assertNotNull(wordBag);
         Assert.assertEquals(2, wordBag.size());
     }
+
+    @Test
+    public void testNextWord() throws Exception {
+        List<WordEntity> wordEntities = wordRepository.loadLearnCandidates("anonymousUser", LanguagCode.EN);
+        System.out.println(wordEntities.size());
+
+    }
 }

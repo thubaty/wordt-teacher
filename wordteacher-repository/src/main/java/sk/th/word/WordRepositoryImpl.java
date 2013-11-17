@@ -8,6 +8,7 @@ import sk.th.pipifax.entity.WordEntity;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
@@ -30,11 +31,18 @@ public class WordRepositoryImpl implements WordRepository {
         for (WordEntity word : words) {
             entityManager.merge(word);
         }
-        entityManager.flush();
     }
 
     @Override
     public void updateWord(WordEntity currentWord) {
         entityManager.merge(currentWord);
+    }
+
+    @Override
+    public List<WordEntity> loadLearnCandidates(String currentUserName, LanguagCode currentLanguage) {
+        TypedQuery<WordEntity> query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username and current_timestamp > w.nextRepetition order by w.nextRepetition", WordEntity.class);
+        query.setParameter("username", currentUserName);
+        query.setParameter("lang", currentLanguage);
+        return query.getResultList();
     }
 }
