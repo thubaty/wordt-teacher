@@ -59,29 +59,33 @@ public class WordController {
         }
     }
 
-    public void easypeasyActionListener(ActionEvent e) {
-        updateWord(wordModel.getCurrentWord(), 5);
+    public void repetition0(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 0);
     }
 
-    public void solalaActionListener(ActionEvent e) {
-        updateWord(wordModel.getCurrentWord(), 3);
-    }
-
-
-    public void donnoActionListener(ActionEvent e) {
+    public void repetition1(ActionEvent e) {
         updateWord(wordModel.getCurrentWord(), 1);
     }
 
+    public void repetition2(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 2);
+    }
+
+    public void repetition3(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 3);
+    }
+
+    public void repetition4(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 4);
+    }
+
+    public void repetition5(ActionEvent e) {
+        updateWord(wordModel.getCurrentWord(), 5);
+    }
+
     public void updateWord(WordEntity word, int quality) {
-        word.setModified(new Timestamp(System.currentTimeMillis()));
-        word.setCount(word.getCount() + 1);
-        int interval = SRSUtil.calcuateInterval(word.getEFactor(), word.getInterval(), word.getCount());
-        word.setInterval(interval);
-        word.setEFactor(SRSUtil.scoreCard(word.getEFactor(), quality));
-        Calendar instance = Calendar.getInstance();
-        instance.add(Calendar.HOUR, interval*24);
-        word.setNextRepetition(new Timestamp(instance.getTime().getTime()));
-        wordService.updateWord(word);
+        WordEntity repeatedWord = SRSUtil.repetition(word, quality);
+        wordService.updateWord(repeatedWord);
         loadWord();
     }
 

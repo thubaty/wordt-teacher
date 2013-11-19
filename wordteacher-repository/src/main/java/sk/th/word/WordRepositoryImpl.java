@@ -39,8 +39,16 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public List<WordEntity> loadLearnCandidates(String currentUserName, LanguagCode currentLanguage) {
+    public List<WordEntity> loadScheduledWords(String currentUserName, LanguagCode currentLanguage) {
         TypedQuery<WordEntity> query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username and current_timestamp > w.nextRepetition order by w.nextRepetition", WordEntity.class);
+        query.setParameter("username", currentUserName);
+        query.setParameter("lang", currentLanguage);
+        return query.getResultList();
+    }
+
+    @Override
+    public List<WordEntity> loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage) {
+        TypedQuery<WordEntity> query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username and w.lastQuality < 4 order by w.modified", WordEntity.class);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
         return query.getResultList();

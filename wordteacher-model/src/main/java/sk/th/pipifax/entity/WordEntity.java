@@ -31,6 +31,12 @@ public class WordEntity {
     @Column(name = "next_repetition")
     private Timestamp nextRepetition;
 
+    @Column(name = "last_quality")
+    private int lastQuality;
+
+    @Transient
+    private RepetitionMode mode;
+
     public WordEntity() {
     }
 
@@ -111,6 +117,22 @@ public class WordEntity {
 
     public void setNextRepetition(Timestamp nextRepetition) {
         this.nextRepetition = nextRepetition;
+    }
+
+    public int getLastQuality() {
+        return lastQuality;
+    }
+
+    public void setLastQuality(int lastQuality) {
+        this.lastQuality = lastQuality;
+    }
+
+    public RepetitionMode getMode() {
+        return mode;
+    }
+
+    public void setMode(RepetitionMode mode) {
+        this.mode = mode;
     }
 }
 

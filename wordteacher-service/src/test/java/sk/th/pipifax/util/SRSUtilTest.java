@@ -2,27 +2,62 @@ package sk.th.pipifax.util;
 
 import org.junit.Test;
 import sk.th.pipifax.dto.Card;
+import sk.th.pipifax.entity.RepetitionMode;
+import sk.th.pipifax.entity.WordEntity;
 
 public class SRSUtilTest {
 
+
     @Test
     public void testScoreCard() throws Exception {
-        float newEfactor = SRSUtil.scoreCard(2.5f, 5);
-        int newInterval = SRSUtil.calcuateInterval(2.5f, 1, 1);
-        System.out.println(newEfactor + " rep in " + newInterval);
-        newEfactor = SRSUtil.scoreCard(newEfactor, 5);
-        newInterval = SRSUtil.calcuateInterval(newEfactor, newInterval, 2);
-        System.out.println(newEfactor + " rep in " + newInterval);
-        newEfactor = SRSUtil.scoreCard(newEfactor, 5);
-        newInterval = SRSUtil.calcuateInterval(newEfactor, newInterval, 3);
-        System.out.println(newEfactor + " rep in " + newInterval);
+
+        WordEntity w = new WordEntity();
+        w.setEFactor(SRSUtil.INITIAL_E_FACTOR);
+        w.setCount(0);
+        w.setMode(RepetitionMode.LEARNING);
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
     }
 
     @Test
-    public void testCalcuateInterval() throws Exception {
-        int newInterval = SRSUtil.calcuateInterval(1.3f, 1, 1);
+    public void testScore2() throws Exception {
 
+        WordEntity w = new WordEntity();
+        w.setEFactor(SRSUtil.INITIAL_E_FACTOR);
+        w.setCount(0);
+        w.setMode(RepetitionMode.LEARNING);
 
-        System.out.println(newInterval);
+        w = SRSUtil.repetition(w, SRSUtil.HARD);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w.setMode(RepetitionMode.QA);
+
+        w = SRSUtil.repetition(w, SRSUtil.MEDIUM);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.MEDIUM);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.MEDIUM);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
+
+        w = SRSUtil.repetition(w, SRSUtil.CORRECT);
+        System.out.println("e:" + w.getEFactor() + ", i:" + w.getInterval());
     }
 }

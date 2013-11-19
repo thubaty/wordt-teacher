@@ -28,7 +28,7 @@ public class WordRepositoryImplTest {
 
     @Test
     public void testNextWord() throws Exception {
-        List<WordEntity> wordEntities = wordRepository.loadLearnCandidates("anonymousUser", LanguagCode.EN);
+        List<WordEntity> wordEntities = wordRepository.loadScheduledWords("anonymousUser", LanguagCode.EN);
         System.out.println(wordEntities.size());
 
     }

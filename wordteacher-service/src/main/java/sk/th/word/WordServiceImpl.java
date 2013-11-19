@@ -8,6 +8,7 @@ import org.springframework.util.StringUtils;
 import sk.th.pipifax.LanguagCode;
 import sk.th.pipifax.Language;
 import sk.th.pipifax.UserRepository;
+import sk.th.pipifax.entity.RepetitionMode;
 import sk.th.pipifax.entity.UserEntity;
 import sk.th.pipifax.entity.WordEntity;
 import sk.th.pipifax.util.DateUtil;
@@ -96,11 +97,22 @@ public class WordServiceImpl implements WordService {
 
     @Override
     public WordEntity loadNextWord(String currentUserName, LanguagCode currentLanguage) {
-        List<WordEntity> candidates = wordRepository.loadLearnCandidates(currentUserName, currentLanguage);
+        List<WordEntity> candidates = wordRepository.loadScheduledWords(currentUserName, currentLanguage);
         if (candidates.size() == 0) {
-            return null;
+            candidates = wordRepository.loadWordsWithLowQuality(currentUserName, currentLanguage);
+            if (candidates.size() == 0) {
+                return null;
+            } else {
+                System.out.println("----word scheduled (quality assetment) ----");
+                WordEntity candidate = candidates.get(0);
+                candidate.setMode(RepetitionMode.QA);
+                return candidate;
+            }
         } else {
-            return candidates.get(0);
+            System.out.println("----word scheduled----");
+            WordEntity candidate = candidates.get(0);
+            candidate.setMode(RepetitionMode.LEARNING);
+            return candidate;
         }
     }
 }

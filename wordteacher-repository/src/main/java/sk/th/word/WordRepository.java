@@ -21,5 +21,7 @@ public interface WordRepository {
 
     void updateWord(WordEntity currentWord);
 
-    List<WordEntity> loadLearnCandidates(String currentUserName, LanguagCode currentLanguage);
+    List<WordEntity> loadScheduledWords(String currentUserName, LanguagCode currentLanguage);
+
+    List<WordEntity> loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage);
 }
