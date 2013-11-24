@@ -1,11 +1,4 @@
-import do db - vytunit chyby
-logout, meno benutzera
-
-ako spravit common db ? tak aby admin commitoval do db?
-
-loadovanie vytunit
-button pre kazdy language
----------------------
-stats
-tags
-narocnost
+switch language
+switch user
+stats - kolko sloviciek este, ako vyzeraju
+levels

@@ -32,12 +32,12 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition0()" title="complete blackout">blackout</button>
-                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition1()" title="incorrect response">incorrect</button>
-                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">incorrect</button>
-                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">correct</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">correct</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition5()" title="perfect response">perfect</button>
+                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition0()" title="complete blackout">0</button>
+                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition1()" title="incorrect response">1</button>
+                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
+                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">3</button>
+                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">4</button>
+                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition5()" title="perfect response">5</button>
                 </div>
             </div>
         </ui:fragment>
@@ -49,6 +49,7 @@
         <p:remoteCommand name="repetition3" actionListener="#{wordController.repetition3}" update="@all"/>
         <p:remoteCommand name="repetition4" actionListener="#{wordController.repetition4}" update="@all"/>
         <p:remoteCommand name="repetition5" actionListener="#{wordController.repetition5}" update="@all"/>
+
     </ui:define>
 </ui:composition>
 
