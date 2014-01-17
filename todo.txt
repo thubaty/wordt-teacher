@@ -2,3 +2,7 @@ switch language
 switch user
 stats - kolko sloviciek este, ako vyzeraju
 levels
+
+ulozit
+upravit
+dat do skupin

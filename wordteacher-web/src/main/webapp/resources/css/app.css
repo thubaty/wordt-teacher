@@ -2,7 +2,7 @@
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url("http://rule-of-three.co.uk/wp-content/themes/ruleofthree/images/blackheaderbg.jpg");
+    background-color: #31b0d5;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -37,6 +37,9 @@ body {
 @media (min-width: 768px) {
     .container {
         max-width: 730px;
+        margin-top: 0px;
+        /*box-shadow: 7px 7px 5px black;*/
+        /*background-image: url("http://rule-of-three.co.uk/wp-content/themes/ruleofthree/images/blackheaderbg.jpg");*/
     }
 }
 
@@ -93,10 +96,16 @@ body {
 .frederika {
     font-family: 'Fredericka the Great', cursive;
     font-size: 38px;
-    color: gainsboro;
+    color: dimgrey;
 }
 
 .russoFont {
     font-family: 'Russo One', sans-serif;
     font-size: 20px;
+}
+
+.daysOneFont {
+    font-family: 'Days One', sans-serif;
+    font-size: 28px;
+    color: white;
 }

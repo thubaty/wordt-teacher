@@ -8,9 +8,13 @@
           <element id="module-output" name="wordteacher-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="helloWorld.jar">
+          <element id="archive" name="wordteacher-service-1.0-SNAPSHOT.jar">
             <element id="module-output" name="wordteacher-service" />
+          </element>
+          <element id="archive" name="wordteacher-repository-1.0-SNAPSHOT.jar">
             <element id="module-output" name="wordteacher-repository" />
+          </element>
+          <element id="archive" name="wordteacher-model-1.0-SNAPSHOT.jar">
             <element id="module-output" name="wordteacher-model" />
           </element>
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.1.2" />
