@@ -18,27 +18,36 @@
 
         <ui:fragment rendered="#{wordModel.currentWord != null}">
             <div id="pnl">
-                <div class="well well-sm flipper"
-                     style="cursor: pointer;"
-                     unselectable="on"
-                     onselectstart="return false"
-                     onmousedown="return false;">
-                    <div class="originalWord daysOneFont"><img src="/resources/sk.png"
-                                                                                 style="margin-right: 10px"/>#{wordModel.currentWord.slovak}
+                <div id="right wrapper" class="pull-right" style="width: 94%">
+                    <div class="flipper"
+                         style="cursor: pointer; border-left: 10px solid #3276b1; padding-left: 20px; margin-left: 10px; background-color: #272b30"
+                         unselectable="on"
+                         onselectstart="return false"
+                         onmousedown="return false;">
+                        <div style="color: green">Difficulity: HARD</div>
+                        <div class="frederika" style="border-bottom: 1px solid #585e62">#{wordModel.currentWord.slovak}
+                        </div>
+                        <div class="frederika originalWord">????</div>
+
+
+                        <div class="translatedWord frederika" style="display: none;">#{wordModel.currentWord.english}
+                        </div>
                     </div>
-                    <div class="translatedWord daysOneFont" style="display: none;"><img
-                            src="/resources/gb.png"
-                            style="margin-right: 10px"/>#{wordModel.currentWord.english}
+
+                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62">
+                        320 WORDS | Today: 110 WORDS
                     </div>
                 </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition0()" title="complete blackout">0</button>
-                    <button type="button" class="btn btn-danger btn-sm wordBtn" onclick="repetition1()" title="incorrect response">1</button>
-                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
-                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">3</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">4</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition5()" title="perfect response">5</button>
+
+                <div class="text-center" style="width: 10px;">
+                    <button type="button" class="btn btn-sm wordBtn" style="background-color: #020202; color: white" onclick="repetition0()" title="complete blackout">0</button>
+                    <button type="button" class="btn btn-sm wordBtn" style="background-color: #585e62; color: white" onclick="repetition1()" title="incorrect response">1</button>
+                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
+                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">3</button>
+                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">4</button>
+                    <button type="button" class="btn btn-sm wordBtn" style="background-color: green; color: white" onclick="repetition5()" title="perfect response">Perfect</button>
                 </div>
+
             </div>
         </ui:fragment>
 

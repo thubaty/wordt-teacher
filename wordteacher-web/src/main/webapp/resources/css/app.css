@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     padding-bottom: 20px;
     background-color: #31b0d5;
 }
@@ -96,7 +96,7 @@ body {
 .frederika {
     font-family: 'Fredericka the Great', cursive;
     font-size: 38px;
-    color: dimgrey;
+    color: #e5e5e5;
 }
 
 .russoFont {

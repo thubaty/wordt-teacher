@@ -17,9 +17,8 @@
 
     <h:outputScript name="js/jquery-1.9.1.js"/>
     <h:outputScript name="js/bootstrap.js"/>
-    <h:outputScript name="js/jquery.fittext.js"/>
     <h:outputStylesheet name="css/app.css"/>
-    <h:outputStylesheet name="css/slate.css"/>
+    <h:outputStylesheet name="css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"/>
     <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'/>
@@ -31,7 +30,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </h:head>
-<h:body style="background: url('http://joelb.me/scrollpath/assets/classy_fabric.png')">
+<h:body style="background: url('http://joelb.me/scrollpath/assets/classy_fabric.png'); margin-top: 0px;">
 
 
     <f:metadata>
@@ -44,9 +43,10 @@
 
         <ui:insert name="selectedMenuName"/>
 
+
         <div class="container">
-            <div style="margin-bottom: 20px;">
-                <ul class="nav nav-pills pull-right">
+            <div style="margin-top: 40px;margin-bottom: 5px; border-top:1px solid #3276b1">
+                <ul class="nav  pull-right">
                     <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
                         <a href="/words.xhtml">Words<span
                             class="badge"> <h:outputText
@@ -57,7 +57,7 @@
 
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <h:graphicImage width="85px" value="/resources/owl.png" style="margin-right: 10px"/>
+                        <h:graphicImage width="65px" value="/resources/owl.png" style="margin-right: 10px"/>
                     </a>
                     <div class="media-body">
                         <div class="frederika" style="font-weight: bold">Pipi<font color="#87ceeb">fax</font></div>
@@ -65,6 +65,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <ui:include src="messages.xhtml"/>
 
@@ -78,13 +80,6 @@
         <!-- Placed at the end of the document so the pages load faster -->
 
         <script>
-            //$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
-
-            $(function () {
-                //$(".originalWord").fitText();
-                //$(".translatedWord").fitText();
-            });
-
             $('.flipper').click(
                     function () {
                         $(this).find(".originalWord").toggle();
