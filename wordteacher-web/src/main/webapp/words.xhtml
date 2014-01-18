@@ -20,22 +20,22 @@
             <div id="pnl">
                 <div id="right wrapper" class="pull-right" style="width: 94%">
                     <div class="flipper"
-                         style="cursor: pointer; border-left: 10px solid #3276b1; padding-left: 20px; margin-left: 10px; background-color: #272b30"
+                         style="cursor: pointer; border-left: 7px solid #3276b1; padding-left: 20px; margin-left: 10px; background-color: #272b30"
                          unselectable="on"
                          onselectstart="return false"
                          onmousedown="return false;">
-                        <div style="color: green">Difficulity: HARD</div>
-                        <div class="frederika" style="border-bottom: 1px solid #585e62">#{wordModel.currentWord.slovak}
+                        <div style="color: green" class="pull-right">Difficulity: HARD | Probability : 12.9 | Count:22</div>
+                        <div class="frederika" style="border-bottom: 1px solid #585e62; padding-top: 15px;">#{wordModel.currentWord.slovak}
                         </div>
                         <div class="frederika originalWord">????</div>
-
-
                         <div class="translatedWord frederika" style="display: none;">#{wordModel.currentWord.english}
                         </div>
                     </div>
 
-                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62">
-                        320 WORDS | Today: 110 WORDS
+                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62; border-bottom:2px solid #3276b1">
+                        <span
+                                class="badge"> <h:outputText
+                                value="#{wordModel.wordCount}"/></span> WORDS | Today: 110 WORDS
                     </div>
                 </div>
 

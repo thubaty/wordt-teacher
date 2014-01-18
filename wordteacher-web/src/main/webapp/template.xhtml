@@ -19,6 +19,7 @@
     <h:outputScript name="js/bootstrap.js"/>
     <h:outputStylesheet name="css/app.css"/>
     <h:outputStylesheet name="css/bootstrap.css"/>
+    <h:outputStylesheet name="css/menu.css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"/>
     <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'/>
@@ -43,30 +44,29 @@
 
         <ui:insert name="selectedMenuName"/>
 
-
         <div class="container">
-            <div style="margin-top: 40px;margin-bottom: 5px; border-top:1px solid #3276b1">
-                <ul class="nav  pull-right">
-                    <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
-                        <a href="/words.xhtml">Words<span
-                            class="badge"> <h:outputText
-                            value="#{wordModel.wordCount}"/></span></a></li>
-                    <!--<li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>-->
-                    <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
-                </ul>
+            <div style="margin-top: 240px;margin-bottom: 5px; border-top:2px solid #3276b1">
+                <div class="menu">
+                    <ul class="pull-right">
+                        <li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/import.xhtml">Home</a></li>
+                        <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
+                            <a href="/words.xhtml">Words</a></li>
+                        <!--<li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>-->
+                        <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
+                        <li class="#{selectedMenu == 'INFO' ? 'active':''}"><a href="/import.xhtml">About</a></li>
+                    </ul>
+                </div>
 
                 <div class="media">
                     <a class="pull-left" href="#">
                         <h:graphicImage width="65px" value="/resources/owl.png" style="margin-right: 10px"/>
                     </a>
                     <div class="media-body">
-                        <div class="frederika" style="font-weight: bold">Pipi<font color="#87ceeb">fax</font></div>
-                        spaced repetition v0.1
+                        <div class="frederika" style="font-weight: bold; height: 42px;">Pizi<font color="#87ceeb">fax</font></div>
+                        <font color="white" size="1px">spaced repetition v0.1</font>
                     </div>
                 </div>
             </div>
-
-
 
             <ui:include src="messages.xhtml"/>
 
