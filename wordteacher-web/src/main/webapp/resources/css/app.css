@@ -109,3 +109,21 @@ body {
     font-size: 28px;
     color: white;
 }
+
+.mondaLogo {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 38px;
+    color: white;
+}
+
+.mondaNormal {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.mondaSmall {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 16px;
+    color: white;
+}

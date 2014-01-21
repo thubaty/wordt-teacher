@@ -24,22 +24,22 @@
                          unselectable="on"
                          onselectstart="return false"
                          onmousedown="return false;">
-                        <div style="color: green" class="pull-right">Difficulity: HARD | Probability : 12.9 | Count:22</div>
-                        <div class="frederika" style="border-bottom: 1px solid #585e62; padding-top: 15px;">#{wordModel.currentWord.slovak}
+                        <div style="color: green" class="mondaSmall pull-right">Difficulity: HARD | Probability : 12.9 | Count:22</div>
+                        <div class="mondaNormal" style="border-bottom: 1px solid #585e62; padding-top: 15px;">#{wordModel.currentWord.slovak}
                         </div>
-                        <div class="frederika originalWord">????</div>
-                        <div class="translatedWord frederika" style="display: none;">#{wordModel.currentWord.english}
+                        <div class="mondaNormal originalWord" style="padding-bottom: 15px">????</div>
+                        <div class="mondaNormal translatedWord" style="display: none; padding-bottom: 15px">#{wordModel.currentWord.english}
                         </div>
                     </div>
 
-                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62; border-bottom:2px solid #3276b1">
+                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62; border-bottom:2px solid #3276b1" class="mondaSmall">
                         <span
                                 class="badge"> <h:outputText
                                 value="#{wordModel.wordCount}"/></span> WORDS | Today: 110 WORDS
                     </div>
                 </div>
 
-                <div class="text-center" style="width: 10px;">
+                <div class="text-center" style="width: 10px; margin-left: 5px;">
                     <button type="button" class="btn btn-sm wordBtn" style="background-color: #020202; color: white" onclick="repetition0()" title="complete blackout">0</button>
                     <button type="button" class="btn btn-sm wordBtn" style="background-color: #585e62; color: white" onclick="repetition1()" title="incorrect response">1</button>
                     <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
