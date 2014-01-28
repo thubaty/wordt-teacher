@@ -17,53 +17,51 @@
     <ui:define name="content">
 
         <ui:fragment rendered="#{wordModel.currentWord != null}">
-            <div id="pnl">
-                <div id="right wrapper" class="pull-right" style="width: 94%">
-                    <div class="flipper"
-                         style="cursor: pointer; border-left: 7px solid #3276b1; padding-left: 0px; margin-left: 10px; background-color: #272b30"
+            <div id="pnl" class="wordz">
+                <div id="right wrapper" style="width: 100%">
+                    <div
+                         style="cursor: pointer; border-left: 7px solid #3276b1; padding-left: 0px;  background-color: #272b30"
                          unselectable="on"
                          onselectstart="return false"
                          onmousedown="return false;">
                         <div style="color: green" class="mondaSmall pull-right">Difficulity: HARD | Probability : 12.9 | Count:22</div>
-                        <div class="mondaNormal" style="border-bottom: 1px solid #585e62; padding-top: 15px; padding-left: 20px">#{wordModel.currentWord.slovak}
+                        <div class="mondaNormal" style="border-bottom: 1px solid #333333; padding-top: 15px; padding-left: 20px">#{wordModel.currentWord.slovak}
                         </div>
-                        <div class="mondaNormal originalWord" style="padding-bottom: 15px; padding-left: 20px">????</div>
-                        <div class="mondaNormal translatedWord" style="display: none; padding-bottom: 15px; padding-left: 20px">#{wordModel.currentWord.english}
+                        <div class="mondaNormal originalWord flipper" style="padding-bottom: 15px; padding-left: 20px">????</div>
+                        <div class="mondaNormal translatedWord flipper" style="display: none; padding-bottom: 15px; padding-left: 20px">#{wordModel.currentWord.english}
                         </div>
-                    </div>
-
-                    <div style="color: white; margin-left: 130px; margin-top: 20px; padding-left: 10px; height: 30px; background-color: #585e62; border-bottom:2px solid #3276b1" class="mondaSmall menu">
-                        <div class="menuSmall" style="border-bottom:2px solid #3276b1">
-                            <ul>
-                                <li><a href="/import.xhtml">0</a></li>
-                                <li><a href="/import.xhtml">1</a></li>
-                                <li><a href="/import.xhtml">2</a></li>
-                                <li><a href="/import.xhtml">3</a></li>
-                                <li><a href="/import.xhtml">4</a></li>
-                                <li><a href="/import.xhtml">5</a></li>
-                            </ul>
-                        </div>
-                        <div class="pull-right">
-                                <span
-                                        class="badge"> <h:outputText
-                                        value="#{wordModel.wordCount}"/></span> WORDS | Today: 110 WORDS
-                        </div>
-
                     </div>
                 </div>
 
-                <div class="text-center" style="width: 10px; margin-left: 5px;">
+                <div style="color: white; margin-top: 20px; padding-left: 7px; height: 45px; background-color: #282828; " class="mondaSmall">
+                    <div class="menuSmall" style="border-bottom:2px solid #3276b1">
+                        <ul>
+                            <li><a href="/import.xhtml">0</a></li>
+                            <li><a href="/import.xhtml">1</a></li>
+                            <li><a href="/import.xhtml">2</a></li>
+                            <li><a href="/import.xhtml">3</a></li>
+                            <li><a href="/import.xhtml">4</a></li>
+                            <li><a href="/import.xhtml">5</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right" style="vertical-align: middle">
+                                <span
+                                        class="badge"> <h:outputText
+                                        value="#{wordModel.wordCount}"/></span> WORDS | Today: 110 WORDS
+                    </div>
+
+                </div>
+
+             <!--   <div class="text-center" style="width: 10px; margin-left: 5px;">
                     <button type="button" class="btn btn-sm wordBtn" style="background-color: #020202; color: white" onclick="repetition0()" title="complete blackout">0</button>
                     <button type="button" class="btn btn-sm wordBtn" style="background-color: #585e62; color: white" onclick="repetition1()" title="incorrect response">1</button>
                     <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
                     <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">3</button>
                     <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">4</button>
                     <button type="button" class="btn btn-sm wordBtn" style="background-color: green; color: white" onclick="repetition5()" title="perfect response">Perfect</button>
-                </div>
+                </div>-->
 
             </div>
-
-
         </ui:fragment>
 
 

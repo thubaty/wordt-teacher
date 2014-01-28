@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="template&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/images/mraven.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/images/mravenecnik.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/images/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/java/org/omnifaces/resourcehandler/CombinedResourceHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/java/org/omnifaces/resourcehandler/CombinedResourceInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__com_sun_faces_jsf_api_2_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_1_26.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__com_sun_faces_jsf_impl_2_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_1_26.xml" />
-      <change type="MOVED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_omnifaces_omnifaces_1_6_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_omnifaces_omnifaces_1_7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/faces-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/menu.css" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/pom.xml" afterPath="$PROJECT_DIR$/wordteacher-web/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" afterPath="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" afterPath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" afterPath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" afterPath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" afterPath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher.iml" afterPath="$PROJECT_DIR$/wordteacher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wordteacher_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wordteacher_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
@@ -140,7 +122,7 @@
       <file leaf-file-name="template.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="109" selection-start="4382" selection-end="4382" vertical-scroll-proportion="-24.423077" vertical-offset="1048" max-vertical-offset="2057">
+            <state line="90" column="34" selection-start="4177" selection-end="4177" vertical-scroll-proportion="-18.538462" vertical-offset="1048" max-vertical-offset="2023">
               <folding />
             </state>
           </provider>
@@ -149,7 +131,7 @@
       <file leaf-file-name="words.xhtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="104" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.8636884" vertical-offset="62" max-vertical-offset="1462">
+            <state line="43" column="55" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.55211914" vertical-offset="249" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -158,7 +140,16 @@
       <file leaf-file-name="menu.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+            <state line="20" column="29" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="35" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2363">
               <folding />
             </state>
           </provider>
@@ -197,12 +188,12 @@
         <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/java/org/ominfaces/resourcehandler/CombinedResourceHandler.java" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/java/org/omnifaces/resourcehandler/CombinedResourceHandler.java" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/java/org/omnifaces/resourcehandler/CombinedResourceInfo.java" />
-        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/menu.css" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css" />
+        <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml" />
         <option value="$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml" />
       </list>
     </option>
@@ -1530,7 +1521,7 @@
       <workItem from="1389993561439" duration="75000" />
       <workItem from="1390326840403" duration="5247000" />
       <workItem from="1390504579767" duration="6791000" />
-      <workItem from="1390934477949" duration="1640000" />
+      <workItem from="1390934477949" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="small change">
       <created>1383505501558</created>
@@ -1628,11 +1619,15 @@
       <created>1390334034270</created>
       <updated>1390334034270</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="template&#10;">
+      <created>1390936178418</created>
+      <updated>1390936178418</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28730000" />
+    <option name="totallyTimeSpent" value="31640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1912,13 +1907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="13" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.0" vertical-offset="1677" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/sun/faces/jsf-impl/2.1.26/jsf-impl-2.1.26.jar!/com/sun/faces/application/resource/ResourceHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="22" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190" />
@@ -1951,7 +1939,17 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/omnifaces/omnifaces/1.7/omnifaces-1.7-sources.jar!/org/omnifaces/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="0" selection-start="9267" selection-end="9267" vertical-scroll-proportion="0.0" vertical-offset="3640" max-vertical-offset="11220" />
+        <state line="277" column="0" selection-start="9267" selection-end="9267" vertical-scroll-proportion="0.0" vertical-offset="3640" max-vertical-offset="11220">
+          <folding>
+            <element signature="e#0#23151#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10550#10580#0" expanded="false" />
+            <element signature="e#13503#13511#0" expanded="false" />
+            <element signature="e#14129#14135#0" expanded="false" />
+            <element signature="e#14913#14942#0" expanded="false" />
+            <element signature="e#22797#22843#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/org/omnifaces/resourcehandler/CombinedResourceInfo.java">
@@ -2024,23 +2022,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="109" selection-start="4382" selection-end="4382" vertical-scroll-proportion="-24.423077" vertical-offset="1048" max-vertical-offset="2057">
+        <state line="131" column="35" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="1464" max-vertical-offset="2363">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/resources/css/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+        <state line="20" column="29" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/template.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="34" selection-start="4177" selection-end="4177" vertical-scroll-proportion="-18.538462" vertical-offset="1048" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="104" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.8636884" vertical-offset="62" max-vertical-offset="1462">
+        <state line="43" column="55" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.55211914" vertical-offset="249" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,6 @@
 .menu, .menuSmall {
     width: 100%;
-    background-color: #333;
+    background-color: #282828;
 }
 
 .menu ul, .menuSmall ul {
@@ -18,22 +18,31 @@
     text-decoration: none;
     color: white;
     padding: 10px 10px;
-    background-color: #333;
+    background-color: #282828;
 }
 
 .menuSmall ul li a  {
     float: left;
     text-decoration: none;
     color: white;
-    padding: 0px 5px;
-    background-color: #333;
+    padding: 3px 20px 3px 20px;
+    background-color: #383838;
+    border-bottom:2px solid #3276b1;
 }
 
 .menu ul li a:visited, .menuSmall ul li a:visited {
     color: white;
 }
 
-.menu ul li a:hover, .menu ul li .current, .menuSmall ul li a:hover, .menuSmall ul li .current {
+.menu ul li a:hover, .menu ul li .current {
     color: #fff;
+    background-color: #0b75b2;
+}
+
+
+.menuSmall ul li a:hover, .menuSmall ul li .current {
+    color: #fff;
+    #border-top:2px solid #3276b1;
+    border-bottom:2px solid #3276b1;
     background-color: #0b75b2;
 }

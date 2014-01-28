@@ -47,7 +47,7 @@
         <ui:insert name="selectedMenuName"/>
 
         <div class="container">
-            <div style="margin-top: 240px;margin-bottom: 5px; border-top:2px solid #3276b1">
+            <div style="margin-top: 240px;margin-bottom: 10px; border-top:2px solid #3276b1">
                 <div class="menu">
                     <ul class="pull-right">
                         <li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/import.xhtml">Home</a></li>
@@ -74,12 +74,10 @@
 
             <ui:insert name="content"/>
 
+            <div class="copyrightFont pull-right" style="margin-top: 10px">@swisscode | v1.04
+            </div>
 
-
-            <br/>
         </div>
-
-        <span class="testClass">tutu </span>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -88,8 +86,8 @@
         <script>
             $('.flipper').click(
                     function () {
-                        $(this).find(".originalWord").toggle();
-                        $(this).find(".translatedWord").toggle();
+                        $('.wordz').find(".originalWord").toggle();
+                        $('.wordz').find(".translatedWord").toggle();
 
                     }
             );
