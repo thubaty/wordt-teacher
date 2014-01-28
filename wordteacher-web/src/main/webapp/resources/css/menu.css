@@ -1,24 +1,39 @@
-.menu{
+.menu, .menuSmall {
     width: 100%;
     background-color: #333;
 }
 
-.menu ul{
-    margin: 0; padding: 0;
-    float: left;}
+.menu ul, .menuSmall ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
 
-.menu ul li{
-    display: inline;}
+.menu ul li, .menuSmall ul li {
+    display: inline;
+}
 
-.menu ul li a{
-    float: left; text-decoration: none;
+.menu ul li a {
+    float: left;
+    text-decoration: none;
     color: white;
-    padding: 10.5px 11px;
-    background-color: #333; }
+    padding: 10px 10px;
+    background-color: #333;
+}
 
-.menu ul li a:visited{
-    color: white;}
+.menuSmall ul li a  {
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+    background-color: #333;
+}
 
-.menu ul li a:hover, .menu ul li .current{
+.menu ul li a:visited, .menuSmall ul li a:visited {
+    color: white;
+}
+
+.menu ul li a:hover, .menu ul li .current, .menuSmall ul li a:hover, .menuSmall ul li .current {
     color: #fff;
-    background-color:#0b75b2;}
+    background-color: #0b75b2;
+}

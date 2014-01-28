@@ -74,8 +74,12 @@
 
             <ui:insert name="content"/>
 
+
+
             <br/>
         </div>
+
+        <span class="testClass">tutu </span>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -89,6 +93,20 @@
 
                     }
             );
+
+            $('.mondaNormal').hover(
+                    function(){
+                        var $this = $(this);
+                        $this.data('bgcolor', $this.css('background-color')).css('background-color', '#282828');
+                    },
+                    function(){
+                        var $this = $(this);
+                        $this.css('background-color', $this.data('bgcolor'));
+                    }
+            );
+
+            translatedWord
+
         </script>
     </h:form>
 
