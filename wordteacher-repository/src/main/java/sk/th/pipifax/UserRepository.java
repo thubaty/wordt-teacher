@@ -1,6 +1,9 @@
 package sk.th.pipifax;
 
+import sk.th.pipifax.entity.TagEntity;
 import sk.th.pipifax.entity.UserEntity;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,5 +15,7 @@ import sk.th.pipifax.entity.UserEntity;
 public interface UserRepository {
 
     UserEntity findUserByUsername(String userName);
+
+    List<TagEntity> getTagsForUser(String username);
 
 }

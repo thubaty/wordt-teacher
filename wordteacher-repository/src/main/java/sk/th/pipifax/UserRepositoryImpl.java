@@ -1,6 +1,7 @@
 package sk.th.pipifax;
 
 import org.springframework.stereotype.Repository;
+import sk.th.pipifax.entity.TagEntity;
 import sk.th.pipifax.entity.UserEntity;
 
 import javax.persistence.EntityManager;
@@ -20,5 +21,12 @@ public class UserRepositoryImpl implements UserRepository {
         TypedQuery<UserEntity> query = entityManager.createQuery("select u from UserEntity u where u.username = :username", UserEntity.class);
         query.setParameter("username", userName);
         return query.getSingleResult();
+    }
+
+    @Override
+    public List<TagEntity> getTagsForUser(String userName) {
+        Query query = entityManager.createQuery("select u.tagSet from UserEntity u where u.username = :username");
+        query.setParameter("username", userName);
+        return query.getResultList();
     }
 }
