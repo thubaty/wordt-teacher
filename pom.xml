@@ -20,6 +20,7 @@
         <module>wordteacher-service</module>
         <module>wordteacher-repository</module>
         <module>wordteacher-model</module>
+        <module>wordteacher-dbmantain</module>
     </modules>
 
     <dependencies>
