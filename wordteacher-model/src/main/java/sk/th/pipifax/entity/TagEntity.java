@@ -8,7 +8,7 @@ import javax.persistence.Table;
  * Created by tohy on 14.02.14.
  */
 @Entity
-@Table(name="WordTag")
+@Table(name="pp_WordTag")
 public class TagEntity {
 
     @Id

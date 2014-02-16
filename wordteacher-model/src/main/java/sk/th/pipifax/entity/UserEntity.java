@@ -7,18 +7,20 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Table(name = "users")
+@Table(name = "pp_user")
 public class UserEntity {
 
     @Id
     @Column(name = "user_id")
-    Long id;
+    private Long id;
 
     @ManyToMany
     @JoinTable(name = "Usertag", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
     Set<TagEntity> tagSet;
 
-    String username;
+    private String username;
+
+    private String password;
 
     @Transient
     private List<Language> languageList;

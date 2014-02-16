@@ -5,7 +5,7 @@ import sk.th.pipifax.Language;
 import javax.persistence.*;
 
 @Entity
-@Table(name="WordDb")
+@Table(name="pp_WordDb")
 public class WordDbEntity {
 
     @Id
