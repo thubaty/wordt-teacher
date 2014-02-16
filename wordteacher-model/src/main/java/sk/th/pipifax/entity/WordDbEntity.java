@@ -3,9 +3,10 @@ package sk.th.pipifax.entity;
 import sk.th.pipifax.Language;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name="pp_WordDb")
+@Table(name = "pp_WordDb")
 public class WordDbEntity {
 
     @Id
@@ -14,12 +15,11 @@ public class WordDbEntity {
     private String translation;
 
     @ManyToOne
-    @JoinColumn(name="tag_id")
+    @JoinColumn(name = "tag_id")
     private TagEntity tag;
 
-    @ManyToOne
-    @JoinColumn(name="language_id")
-    private Language language;
+    @OneToMany(mappedBy = "word")
+    private List<UserWordEntity> userWords;
 
     public Long getId() {
         return id;
@@ -51,13 +51,5 @@ public class WordDbEntity {
 
     public void setTag(TagEntity tag) {
         this.tag = tag;
-    }
-
-    public Language getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(Language language) {
-        this.language = language;
     }
 }

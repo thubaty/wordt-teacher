@@ -10,7 +10,9 @@ import sk.th.pipifax.Language;
 import sk.th.pipifax.UserRepository;
 import sk.th.pipifax.entity.RepetitionMode;
 import sk.th.pipifax.entity.UserEntity;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.entity.UserWordEntity;
+import sk.th.pipifax.entity.WordDbEntity;
+import sk.th.pipifax.dto.WordDto;
 import sk.th.pipifax.util.DateUtil;
 import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
@@ -33,18 +35,23 @@ public class WordServiceImpl implements WordService {
     private WordRepository wordRepository;
 
     @Autowired
+    private WordDbRepository wordDbRepository;
+
+    @Autowired
     UserRepository userRepository;
+
 
     @Override
     @Transactional(readOnly = true)
-    public List<WordEntity> findAllWords(String currentUserName, LanguagCode currentLanguage) {
-        return wordRepository.findAll(currentUserName, currentLanguage);
+    public Long countAllWords(String currentUserName, LanguagCode currentLanguage) {
+        List<WordDbEntity> all = wordDbRepository.findAll(currentUserName, currentLanguage);
+        return new Long(all.size());
     }
 
     @Override
-    public List<WordEntity> parseWords(String words) throws InvalidFormatException {
+    public List<WordDto> parseWords(String words) throws InvalidFormatException {
         Assert.notNull(words);
-        ArrayList<WordEntity> ret = new ArrayList<WordEntity>();
+        ArrayList<WordDto> ret = new ArrayList<WordDto>();
         List<String> invalidRows = new ArrayList<String>();
         String[] rows = words.split("\n");
         int rowCounter = 0;
@@ -63,8 +70,8 @@ public class WordServiceImpl implements WordService {
                 invalidRows.add(rowCounter + ". " + row);
                 continue;
             }
-            WordEntity w = new WordEntity(columns[0], columns[1]);
-            ret.add(w);
+            /*WordDto w = new WordDto(columns[0], columns[1]);
+            ret.add(w);*/
         }
 
         if (!invalidRows.isEmpty()) {
@@ -76,12 +83,12 @@ public class WordServiceImpl implements WordService {
 
     @Override
     @Transactional
-    public void importWords(List<WordEntity> words, Language language) {
+    public void importWords(List<WordDto> words, Language language) {
         String currentUserName = SecurityUtil.getCurrentUserName();
         UserEntity userByUsername = userRepository.findUserByUsername(currentUserName);
-        for (WordEntity word : words) {
-            word.setUser(userByUsername);
-            word.setLanguage(language);
+        for (WordDto word : words) {
+            /*word.setUser(userByUsername);
+            word.setLanguage(language);*/
             word.setCount(0);
             word.setEFactor(SRSUtil.INITIAL_E_FACTOR);
             word.setNextRepetition(DateUtil.getCurrentDate());
@@ -91,28 +98,26 @@ public class WordServiceImpl implements WordService {
 
     @Override
     @Transactional
-    public void updateWord(WordEntity currentWord) {
+    public void updateWord(WordDto currentWord) {
         wordRepository.updateWord(currentWord);
     }
 
     @Override
-    public WordEntity loadNextWord(String currentUserName, LanguagCode currentLanguage) {
-        List<WordEntity> candidates = wordRepository.loadScheduledWords(currentUserName, currentLanguage);
-        if (candidates.size() == 0) {
-            candidates = wordRepository.loadWordsWithLowQuality(currentUserName, currentLanguage);
-            if (candidates.size() == 0) {
+    public WordDto loadNextWord(String currentUserName, LanguagCode currentLanguage) {
+        WordDbEntity candidate = wordRepository.loadScheduledWords(currentUserName, currentLanguage);
+        if (candidate == null) {
+            candidate = wordRepository.loadWordsWithLowQuality(currentUserName, currentLanguage);
+            if (candidate == null) {
                 return null;
             } else {
                 System.out.println("----word scheduled (quality assetment) ----");
-                WordEntity candidate = candidates.get(0);
-                candidate.setMode(RepetitionMode.QA);
-                return candidate;
+                UserWordEntity learningData = wordRepository.loadLearningData(currentUserName, candidate);
+                return new WordDto(candidate, learningData, RepetitionMode.QA);
             }
         } else {
             System.out.println("----word scheduled----");
-            WordEntity candidate = candidates.get(0);
-            candidate.setMode(RepetitionMode.LEARNING);
-            return candidate;
+            UserWordEntity learningData = wordRepository.loadLearningData(currentUserName, candidate);
+            return new WordDto(candidate, learningData, RepetitionMode.LEARNING);
         }
     }
 }

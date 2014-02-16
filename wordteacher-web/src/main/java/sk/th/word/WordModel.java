@@ -1,22 +1,20 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Component;
-import sk.th.pipifax.entity.WordEntity;
-
-import java.util.List;
+import sk.th.pipifax.dto.WordDto;
 
 @Component
 public class WordModel {
 
-    private WordEntity currentWord;
+    private WordDto currentWord;
 
     private Integer wordCount;
 
-    public WordEntity getCurrentWord() {
+    public WordDto getCurrentWord() {
         return currentWord;
     }
 
-    public void setCurrentWord(WordEntity currentWord) {
+    public void setCurrentWord(WordDto currentWord) {
         this.currentWord = currentWord;
     }
 

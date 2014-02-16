@@ -1,8 +1,9 @@
 package sk.th.pipifax.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import sk.th.pipifax.Language;
+
+import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Created by tohy on 14.02.14.
@@ -15,7 +16,13 @@ public class TagEntity {
     private Long id;
     private String name;
 
+    @ManyToMany
+    @JoinTable(name = "pp_Usertag", joinColumns = {@JoinColumn(name = "tag_id")}, inverseJoinColumns = {@JoinColumn(name = "user_id")})
+    Set<UserEntity> userSet;
 
+    @ManyToOne
+    @JoinColumn(name = "language_id")
+    private Language language;
 
     public Long getId() {
         return id;
@@ -31,5 +38,21 @@ public class TagEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<UserEntity> getUserSet() {
+        return userSet;
+    }
+
+    public void setUserSet(Set<UserEntity> userSet) {
+        this.userSet = userSet;
+    }
+
+    public Language getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(Language language) {
+        this.language = language;
     }
 }

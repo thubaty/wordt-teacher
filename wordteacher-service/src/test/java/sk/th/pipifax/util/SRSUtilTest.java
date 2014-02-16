@@ -1,9 +1,8 @@
 package sk.th.pipifax.util;
 
 import org.junit.Test;
-import sk.th.pipifax.dto.Card;
 import sk.th.pipifax.entity.RepetitionMode;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.dto.WordDto;
 
 public class SRSUtilTest {
 
@@ -11,7 +10,7 @@ public class SRSUtilTest {
     @Test
     public void testScoreCard() throws Exception {
 
-        WordEntity w = new WordEntity();
+        WordDto w = new WordDto();
         w.setEFactor(SRSUtil.INITIAL_E_FACTOR);
         w.setCount(0);
         w.setMode(RepetitionMode.LEARNING);
@@ -38,7 +37,7 @@ public class SRSUtilTest {
     @Test
     public void testScore2() throws Exception {
 
-        WordEntity w = new WordEntity();
+        WordDto w = new WordDto();
         w.setEFactor(SRSUtil.INITIAL_E_FACTOR);
         w.setCount(0);
         w.setMode(RepetitionMode.LEARNING);

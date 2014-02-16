@@ -11,11 +11,11 @@ import java.util.Set;
 public class UserEntity {
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "id")
     private Long id;
 
     @ManyToMany
-    @JoinTable(name = "Usertag", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
+    @JoinTable(name = "pp_Usertag", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {@JoinColumn(name = "tag_id")})
     Set<TagEntity> tagSet;
 
     private String username;

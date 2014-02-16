@@ -3,7 +3,9 @@ package sk.th.word;
 import org.springframework.stereotype.Repository;
 import sk.th.pipifax.LanguagCode;
 import sk.th.pipifax.Language;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.entity.UserWordEntity;
+import sk.th.pipifax.entity.WordDbEntity;
+import sk.th.pipifax.dto.WordDto;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,7 +20,7 @@ public class WordRepositoryImpl implements WordRepository {
     EntityManager entityManager;
 
     @Override
-    public List<WordEntity> findAll(String currentUserName, LanguagCode currentLanguage) {
+    public List<WordDto> findAll(String currentUserName, LanguagCode currentLanguage) {
         Query query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username ");
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
@@ -27,30 +29,45 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public void importWords(List<WordEntity> words, Language language) {
-        for (WordEntity word : words) {
+    public void importWords(List<WordDto> words, Language language) {
+        for (WordDto word : words) {
             entityManager.merge(word);
         }
     }
 
     @Override
-    public void updateWord(WordEntity currentWord) {
+    public void updateWord(WordDto currentWord) {
         entityManager.merge(currentWord);
     }
 
     @Override
-    public List<WordEntity> loadScheduledWords(String currentUserName, LanguagCode currentLanguage) {
-        TypedQuery<WordEntity> query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username and current_timestamp > w.nextRepetition order by w.nextRepetition", WordEntity.class);
+    public WordDbEntity loadScheduledWords(String currentUserName, LanguagCode currentLanguage) {
+        TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join t.language l where l.code = :lang and u.username = :username and (uw.nextRepetition is null or current_timestamp > uw.nextRepetition) order by uw.nextRepetition", WordDbEntity.class);
+        query.setMaxResults(1);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
-        return query.getResultList();
+        return query.getSingleResult();
     }
 
     @Override
-    public List<WordEntity> loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage) {
-        TypedQuery<WordEntity> query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username and w.lastQuality < 4 order by w.modified", WordEntity.class);
+    public UserWordEntity loadLearningData(String currentUserName, WordDbEntity wordDbEntity) {
+        TypedQuery<UserWordEntity> query = entityManager.createQuery("select uw from UserWordEntity uw left join uw.user u where u.username = :username and uw.word = :word", UserWordEntity.class);
+        query.setMaxResults(1);
+        query.setParameter("username", currentUserName);
+        query.setParameter("word", wordDbEntity);
+        try {
+            return query.getSingleResult();
+        } catch (javax.persistence.NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage) {
+        TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join w.language l where l.code = :lang and u.username = :username and uw.lastQuality < 4 order by uw.modified", WordDbEntity.class);
+        query.setMaxResults(1);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
-        return query.getResultList();
+        return query.getSingleResult();
     }
 }

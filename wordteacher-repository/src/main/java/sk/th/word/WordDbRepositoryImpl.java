@@ -2,6 +2,7 @@ package sk.th.word;
 
 import org.springframework.stereotype.Repository;
 import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
 
 import javax.persistence.EntityManager;
@@ -17,9 +18,10 @@ public class WordDbRepositoryImpl implements WordDbRepository {
     EntityManager entityManager;
 
     @Override
-    public List<WordDbEntity> findAll(LanguagCode currentLanguage) {
-        Query query = entityManager.createQuery("select w from WordDbEntity w left join w.language l where l.code = :lang ");
+    public List<WordDbEntity> findAll(String currentUserName, LanguagCode currentLanguage) {
+        Query query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.language l left join t.userSet u where l.code = :lang and u.username = :username");
         query.setParameter("lang", currentLanguage);
+        query.setParameter("username", currentUserName);
         return query.getResultList();
     }
 }

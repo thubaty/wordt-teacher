@@ -3,7 +3,7 @@ package sk.th.word;
 import org.omnifaces.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.dto.WordDto;
 import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.pipifax.web.SettingsModel;
@@ -11,8 +11,6 @@ import sk.th.word.sk.th.pipifax.web.SettingsModel;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.util.Calendar;
 import java.util.List;
 
 @Controller
@@ -33,8 +31,8 @@ public class WordController {
 
     public void updateWordCount() {
         String currentUserName = SecurityUtil.getCurrentUserName();
-        List<WordEntity> allWords = wordService.findAllWords(currentUserName, settingsModel.getCurrentLanguage());
-        wordModel.setWordCount(allWords.size());
+        Long count = wordService.countAllWords(currentUserName, settingsModel.getCurrentLanguage());
+        wordModel.setWordCount(count.intValue());
     }
 
     public void initTemplate() {
@@ -45,7 +43,7 @@ public class WordController {
 
     public void loadWord() {
         String currentUserName = SecurityUtil.getCurrentUserName();
-        WordEntity wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage());
+        WordDto wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage());
         wordModel.setCurrentWord(wordEntity);
         if (wordEntity == null) {
             Messages.addGlobalError("ziadne dalsie slovicka na ucenie kamosko");
@@ -83,8 +81,8 @@ public class WordController {
         updateWord(wordModel.getCurrentWord(), 5);
     }
 
-    public void updateWord(WordEntity word, int quality) {
-        WordEntity repeatedWord = SRSUtil.repetition(word, quality);
+    public void updateWord(WordDto word, int quality) {
+        WordDto repeatedWord = SRSUtil.repetition(word, quality);
         wordService.updateWord(repeatedWord);
         loadWord();
     }

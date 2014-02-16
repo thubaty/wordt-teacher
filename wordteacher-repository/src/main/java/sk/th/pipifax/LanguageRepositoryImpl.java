@@ -14,7 +14,6 @@ public class LanguageRepositoryImpl implements LanguageRepository {
 
     @Override
     public List<Language> getAllLanguages() {
-        List resultList = entityManager.createQuery("select w from Language w").getResultList();
-        return resultList;  //To change body of implemented methods use File | Settings | File Templates.
+        return entityManager.createQuery("select w from Language w").getResultList();
     }
 }

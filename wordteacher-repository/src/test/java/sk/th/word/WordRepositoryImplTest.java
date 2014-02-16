@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.entity.UserWordEntity;
+import sk.th.pipifax.entity.WordDbEntity;
+import sk.th.pipifax.dto.WordDto;
 
 import java.util.List;
 
@@ -21,15 +23,21 @@ public class WordRepositoryImplTest {
 
     @Test
     public void testFindAll() throws Exception {
-        List<WordEntity> wordBag = wordRepository.findAll("anonymousUser", LanguagCode.EN);
+        List<WordDto> wordBag = wordRepository.findAll("anonymousUser", LanguagCode.EN);
         Assert.assertNotNull(wordBag);
         Assert.assertEquals(2, wordBag.size());
     }
 
     @Test
     public void testNextWord() throws Exception {
-        List<WordEntity> wordEntities = wordRepository.loadScheduledWords("anonymousUser", LanguagCode.EN);
-        System.out.println(wordEntities.size());
+        WordDbEntity entity = wordRepository.loadScheduledWords("anonymousUser", LanguagCode.DE);
+        System.out.println(entity);
+    }
 
+    @Test
+    public void testLoadLearningData() throws Exception {
+        WordDbEntity entity1 = wordRepository.loadScheduledWords("anonymousUser", LanguagCode.DE);
+        UserWordEntity entity2 = wordRepository.loadLearningData("anonymousUser", entity1);
+        System.out.println(entity2);
     }
 }

@@ -17,5 +17,4 @@ public interface UserRepository {
     UserEntity findUserByUsername(String userName);
 
     List<TagEntity> getTagsForUser(String username);
-
 }

@@ -1,4 +1,4 @@
-package sk.th.word;
+package sk.th.pipifax;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,22 +6,21 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.entity.WordDbEntity;
+import sk.th.pipifax.entity.TagEntity;
 
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:test-repositoryContext.xml")
-public class WordDbRepositoryImplTest {
+public class LanguageRepositoryImplTest {
 
     @Autowired
-    WordDbRepository wordRepository;
+    LanguageRepository languageRepository;
 
     @Test
     public void testFindAll() throws Exception {
-        List<WordDbEntity> words = wordRepository.findAll("katka", LanguagCode.DE);
-        Assert.assertNotNull(words);
-        Assert.assertEquals(2, words.size());
+        List<Language> allLanguages = languageRepository.getAllLanguages();
+        Assert.assertNotNull(allLanguages);
+        Assert.assertEquals(2, allLanguages.size());
     }
 }

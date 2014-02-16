@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.entity.WordEntity;
+import sk.th.pipifax.dto.WordDto;
 
 import java.util.List;
 
@@ -28,8 +28,8 @@ public class WordServiceTest {
 
     @Test
     public void testFirst1() throws Exception {
-        List<WordEntity> allWords = wordService.findAllWords("", LanguagCode.EN);
-        Assert.assertNotNull(allWords);
+        Long count = wordService.countAllWords("", LanguagCode.EN);
+        Assert.assertNotNull(count);
     }
 
 

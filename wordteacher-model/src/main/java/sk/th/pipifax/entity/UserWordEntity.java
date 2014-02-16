@@ -13,11 +13,13 @@ public class UserWordEntity {
     @Id
     private Long id;
 
-    private String english;
-
     @ManyToOne
     @JoinColumn(name="user_id")
     private UserEntity user;
+
+    @ManyToOne
+    @JoinColumn(name="word_id")
+    private WordDbEntity word;
 
     private float EFactor;
     private int count;
@@ -33,14 +35,6 @@ public class UserWordEntity {
     private RepetitionMode mode;
 
     public UserWordEntity() {
-    }
-
-    public String getEnglish() {
-        return english;
-    }
-
-    public void setEnglish(String english) {
-        this.english = english;
     }
 
     public UserEntity getUser() {
@@ -105,6 +99,22 @@ public class UserWordEntity {
 
     public void setMode(RepetitionMode mode) {
         this.mode = mode;
+    }
+
+    public WordDbEntity getWord() {
+        return word;
+    }
+
+    public void setWord(WordDbEntity word) {
+        this.word = word;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
 

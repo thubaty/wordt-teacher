@@ -2,10 +2,7 @@ package sk.th.pipifax.util;
 
 import org.springframework.util.Assert;
 import sk.th.pipifax.entity.RepetitionMode;
-import sk.th.pipifax.entity.WordEntity;
-
-import java.sql.Timestamp;
-import java.util.Calendar;
+import sk.th.pipifax.dto.WordDto;
 
 public class SRSUtil {
 
@@ -20,7 +17,7 @@ public class SRSUtil {
     public static final int HARD = 1;
 
 
-    public static WordEntity repetition(WordEntity currentWord, int responseQuality) {
+    public static WordDto repetition(WordDto currentWord, int responseQuality) {
         RepetitionMode mode = currentWord.getMode();
         switch (mode) {
             case LEARNING:

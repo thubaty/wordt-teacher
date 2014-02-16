@@ -8,13 +8,11 @@ package sk.th.pipifax;
  * To change this template use File | Settings | File Templates.
  */
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Table(name="pp_language")
 public class Language implements Serializable {
 
     @Id

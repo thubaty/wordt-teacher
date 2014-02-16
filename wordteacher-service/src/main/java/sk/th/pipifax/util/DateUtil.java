@@ -20,7 +20,7 @@ public class DateUtil {
 
     public static Timestamp addDaysToCurrentDate(int days) {
         Calendar instance = Calendar.getInstance();
-        instance.add(Calendar.HOUR, days*24);
+        instance.add(Calendar.HOUR, days * 24);
         return new Timestamp(instance.getTime().getTime());
     }
 }
