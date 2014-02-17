@@ -11,6 +11,9 @@ import java.util.Date;
 
 public class WordDto {
 
+    private Long wordDbId;
+    private Long userId;
+    private Long userWordId;
     private String slovak;
     private String translation;
     private String tag;
@@ -27,24 +30,21 @@ public class WordDto {
     }
 
     public WordDto(WordDbEntity word, UserWordEntity learningData, RepetitionMode repetitionMode) {
+        wordDbId = word.getId();
         slovak = word.getSlovak();
         translation = word.getTranslation();
         tag = word.getTag().getName();
         language = word.getTag().getLanguage().getCode();
         mode = repetitionMode;
-        if (learningData != null) {
-            EFactor = learningData.getEFactor();
-            count = learningData.getCount();
-            interval = learningData.getInterval();
-            modified = learningData.getModified();
-            nextRepetition = learningData.getNextRepetition();
-            lastQuality = learningData.getLastQuality();
-        } else {
-            //TODO inde
-            count = 0;
-            EFactor = 2.5f;
-            nextRepetition = new Timestamp(new Date().getTime());
-        }
+        userId = learningData.getUser().getId();
+        userWordId = learningData.getId();
+        EFactor = learningData.getEFactor();
+        count = learningData.getCount();
+        interval = learningData.getInterval();
+        modified = learningData.getModified();
+        nextRepetition = learningData.getNextRepetition();
+        lastQuality = learningData.getLastQuality();
+
     }
 
     public String getSlovak() {
@@ -133,6 +133,30 @@ public class WordDto {
 
     public void setMode(RepetitionMode mode) {
         this.mode = mode;
+    }
+
+    public Long getWordDbId() {
+        return wordDbId;
+    }
+
+    public void setWordDbId(Long wordDbId) {
+        this.wordDbId = wordDbId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public Long getUserWordId() {
+        return userWordId;
+    }
+
+    public void setUserWordId(Long userWordId) {
+        this.userWordId = userWordId;
     }
 }
 

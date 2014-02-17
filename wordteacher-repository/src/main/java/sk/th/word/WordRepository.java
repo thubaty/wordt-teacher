@@ -21,7 +21,7 @@ public interface WordRepository {
 
     void importWords(List<WordDto> words, Language language);
 
-    void updateWord(WordDto currentWord);
+    void updateWord(UserWordEntity currentWord);
 
     WordDbEntity loadScheduledWords(String currentUserName, LanguagCode currentLanguage);
 

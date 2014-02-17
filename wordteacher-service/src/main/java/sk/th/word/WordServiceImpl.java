@@ -18,7 +18,9 @@ import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -99,7 +101,26 @@ public class WordServiceImpl implements WordService {
     @Override
     @Transactional
     public void updateWord(WordDto currentWord) {
-        wordRepository.updateWord(currentWord);
+        WordDbEntity w = new WordDbEntity();
+        w.setId(currentWord.getWordDbId());
+        UserEntity u = new UserEntity();
+        u.setId(currentWord.getUserId());
+
+        UserEntity user = userRepository.findById(currentWord.getUserId());
+        WordDbEntity word = wordDbRepository.findById(currentWord.getWordDbId());
+
+
+        UserWordEntity userWordEntity = new UserWordEntity();
+        userWordEntity.setWord(word);
+        userWordEntity.setUser(user);
+        userWordEntity.setId(currentWord.getUserWordId());
+        userWordEntity.setCount(currentWord.getCount());
+        userWordEntity.setEFactor(currentWord.getEFactor());
+        userWordEntity.setInterval(currentWord.getInterval());
+        userWordEntity.setLastQuality(currentWord.getLastQuality());
+        userWordEntity.setModified(currentWord.getModified());
+        userWordEntity.setNextRepetition(currentWord.getNextRepetition());
+        wordRepository.updateWord(userWordEntity);
     }
 
     @Override
@@ -112,12 +133,30 @@ public class WordServiceImpl implements WordService {
             } else {
                 System.out.println("----word scheduled (quality assetment) ----");
                 UserWordEntity learningData = wordRepository.loadLearningData(currentUserName, candidate);
+                if (learningData == null) {
+                    learningData = createDefaultLearningData(candidate);
+                }
                 return new WordDto(candidate, learningData, RepetitionMode.QA);
             }
         } else {
             System.out.println("----word scheduled----");
             UserWordEntity learningData = wordRepository.loadLearningData(currentUserName, candidate);
+            if (learningData == null) {
+                learningData = createDefaultLearningData(candidate);
+            }
             return new WordDto(candidate, learningData, RepetitionMode.LEARNING);
         }
+    }
+
+    private UserWordEntity createDefaultLearningData(WordDbEntity candidate) {
+        String currentUserName = SecurityUtil.getCurrentUserName();
+        UserEntity userByUsername = userRepository.findUserByUsername(currentUserName);
+        UserWordEntity w = new UserWordEntity();
+        w.setUser(userByUsername);
+        w.setCount(0);
+        w.setEFactor(2.5f);
+        w.setNextRepetition(new Timestamp(new Date().getTime()));
+        w.setWord(candidate);
+        return w;
     }
 }

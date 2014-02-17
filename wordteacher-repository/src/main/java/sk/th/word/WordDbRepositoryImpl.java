@@ -1,6 +1,8 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Repository;
+import sk.th.pipifax.BaseRepository;
+import sk.th.pipifax.JpaBaseRepository;
 import sk.th.pipifax.LanguagCode;
 import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
@@ -11,7 +13,7 @@ import javax.persistence.Query;
 import java.util.List;
 
 @Repository
-public class WordDbRepositoryImpl implements WordDbRepository {
+public class WordDbRepositoryImpl extends JpaBaseRepository<WordDbEntity, Long> implements WordDbRepository {
 
 
     @PersistenceContext

@@ -11,7 +11,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
-public class UserRepositoryImpl implements UserRepository {
+public class UserRepositoryImpl extends JpaBaseRepository<UserEntity, Long> implements UserRepository {
 
     @PersistenceContext
     EntityManager entityManager;

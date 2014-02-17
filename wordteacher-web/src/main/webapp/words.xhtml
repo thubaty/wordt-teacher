@@ -24,7 +24,7 @@
                          unselectable="on"
                          onselectstart="return false"
                          onmousedown="return false;">
-                        <div style="color: green" class="mondaSmall pull-right">Difficulity: HARD | Probability : 12.9 | Count:22</div>
+                        <div style="color: green" class="mondaSmall pull-right">Tag: #{wordModel.currentWord.tag} | Efactor : #{wordModel.currentWord.EFactor} | Count: #{wordModel.currentWord.count}</div>
                         <div class="mondaNormal" style="border-bottom: 1px solid #333333; padding-top: 15px; padding-left: 20px">#{wordModel.currentWord.slovak}
                         </div>
                         <div class="mondaNormal originalWord flipper" style="padding-bottom: 15px; padding-left: 20px">????</div>
@@ -36,12 +36,12 @@
                 <div style="color: white; margin-top: 20px; padding-left: 7px; height: 45px; background-color: #282828; " class="mondaSmall">
                     <div class="menuSmall" style="border-bottom:2px solid #c8c8c8">
                         <ul>
-                            <li><a href="/import.xhtml">0</a></li>
-                            <li><a href="/import.xhtml">1</a></li>
-                            <li><a href="/import.xhtml">2</a></li>
-                            <li><a href="/import.xhtml">3</a></li>
-                            <li><a href="/import.xhtml">4</a></li>
-                            <li><a href="/import.xhtml">5</a></li>
+                            <li><a href="#" onclick="repetition0(); return false;">0</a></li>
+                            <li><a href="#" onclick="repetition1(); return false;">1</a></li>
+                            <li><a href="#" onclick="repetition2(); return false;">2</a></li>
+                            <li><a href="#" onclick="repetition3(); return false;">3</a></li>
+                            <li><a href="#" onclick="repetition4(); return false;">4</a></li>
+                            <li><a href="#" onclick="repetition5(); return false;">5</a></li>
                         </ul>
                     </div>
                     <div class="pull-right" style="vertical-align: middle">
@@ -51,15 +51,6 @@
                     </div>
 
                 </div>
-
-             <!--   <div class="text-center" style="width: 10px; margin-left: 5px;">
-                    <button type="button" class="btn btn-sm wordBtn" style="background-color: #020202; color: white" onclick="repetition0()" title="complete blackout">0</button>
-                    <button type="button" class="btn btn-sm wordBtn" style="background-color: #585e62; color: white" onclick="repetition1()" title="incorrect response">1</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition2()" title="incorrect response - the correct one seemed easy to recall">2</button>
-                    <button type="button" class="btn btn-info btn-sm wordBtn" onclick="repetition3()" title="correct response recalled with serious difficulty">3</button>
-                    <button type="button" class="btn btn-primary btn-sm wordBtn" onclick="repetition4()" title="correct response after a hesitation">4</button>
-                    <button type="button" class="btn btn-sm wordBtn" style="background-color: green; color: white" onclick="repetition5()" title="perfect response">Perfect</button>
-                </div>-->
 
             </div>
         </ui:fragment>

@@ -11,6 +11,8 @@ import java.sql.Timestamp;
 public class UserWordEntity {
 
     @Id
+    @GeneratedValue(generator="InvSeq")
+    @SequenceGenerator(name="InvSeq",sequenceName="MAIN_SEQ", allocationSize=5)
     private Long id;
 
     @ManyToOne

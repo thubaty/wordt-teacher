@@ -12,7 +12,7 @@ import java.util.List;
  * Time: 16:08
  * To change this template use File | Settings | File Templates.
  */
-public interface UserRepository {
+public interface UserRepository extends BaseRepository<UserEntity, Long> {
 
     UserEntity findUserByUsername(String userName);
 

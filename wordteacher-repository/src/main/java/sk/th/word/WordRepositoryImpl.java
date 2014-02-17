@@ -36,7 +36,7 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public void updateWord(WordDto currentWord) {
+    public void updateWord(UserWordEntity currentWord) {
         entityManager.merge(currentWord);
     }
 
@@ -46,7 +46,11 @@ public class WordRepositoryImpl implements WordRepository {
         query.setMaxResults(1);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
-        return query.getSingleResult();
+        try {
+            return query.getSingleResult();
+        } catch (javax.persistence.NoResultException e) {
+            return null;
+        }
     }
 
     @Override
@@ -64,10 +68,14 @@ public class WordRepositoryImpl implements WordRepository {
 
     @Override
     public WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage) {
-        TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join w.language l where l.code = :lang and u.username = :username and uw.lastQuality < 4 order by uw.modified", WordDbEntity.class);
+        TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join t.language l where l.code = :lang and u.username = :username and uw.lastQuality < 4 order by uw.modified", WordDbEntity.class);
         query.setMaxResults(1);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
-        return query.getSingleResult();
+        try {
+            return query.getSingleResult();
+        } catch (javax.persistence.NoResultException e) {
+            return null;
+        }
     }
 }
