@@ -50,12 +50,12 @@
             <div style="margin-top: 240px;margin-bottom: 10px; border-top:2px solid #3276b1">
                 <div class="menu">
                     <ul class="pull-right">
-                        <li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/import.xhtml">Home</a></li>
-                        <li class="#{selectedMenu == 'WORDS' ? 'active':''}">
-                            <a href="/words.xhtml">Words</a></li>
-                        <!--<li class="#{selectedMenu == 'DB' ? 'active':''}"><a href="/db.xhtml">DB</a></li>-->
-                        <li class="#{selectedMenu == 'IMPORT' ? 'active':''}"><a href="/import.xhtml">Import</a></li>
-                        <li class="#{selectedMenu == 'INFO' ? 'active':''}"><a href="/import.xhtml">About</a></li>
+                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#">#{wordController.currentUser}</a></li>
+                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#" onclick="switchLanguage()">#{settingsModel.currentLanguage}</a></li>
+                        <li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/home.xhtml">Home</a></li>
+                        <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words</a></li>
+                        <li class="#{selectedMenu == 'STATS' ? 'active':''}"><a href="/stats.xhtml">Stats</a></li>
+                        <li class="#{selectedMenu == 'ABOUT' ? 'active':''}"><a href="/about.xhtml">About</a></li>
                     </ul>
                 </div>
 
@@ -106,6 +106,8 @@
 
 
         </script>
+
+        <p:remoteCommand name="switchLanguage" actionListener="#{settingsController.switchLanguage}" update="@all"/>
     </h:form>
 
 </h:body>

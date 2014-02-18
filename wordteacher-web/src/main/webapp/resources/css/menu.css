@@ -1,17 +1,41 @@
-.menu, .menuSmall {
+.menu, .menuSmall, .menuTop {
     width: 100%;
     background-color: #282828;
 }
 
-.menu ul, .menuSmall ul {
+.menu ul, .menuSmall ul, .menuTop ul {
     margin: 0;
     padding: 0;
     float: left;
 }
 
-.menu ul li, .menuSmall ul li {
+.menu ul li, .menuSmall ul li, .menuTop ul li {
     display: inline;
 }
+
+.menu ul li a:visited, .menuSmall ul li a:visited, .menuTop ul li a:visited {
+    color: white;
+}
+
+.menu ul li a:hover, .menu ul li .current {
+    color: #fff;
+    background-color: #0b75b2;
+}
+
+.menuSmall ul li a:hover, .menuSmall ul li .current {
+    color: #fff;
+    #border-top:2px solid #3276b1;
+    border-bottom:2px solid #3276b1;
+    background-color: #0b75b2;
+}
+
+.menuTop ul li a:hover, .menuTop ul li .current {
+    color: #fff;
+    #border-top:2px solid #3276b1;
+    border-bottom:2px solid #3276b1;
+    background-color: #0b75b2;
+}
+
 
 .menu ul li a {
     float: left;
@@ -30,19 +54,11 @@
     border-bottom:2px solid #c8c8c8;
 }
 
-.menu ul li a:visited, .menuSmall ul li a:visited {
+.menuTop ul li a  {
+    float: left;
+    text-decoration: none;
     color: white;
-}
-
-.menu ul li a:hover, .menu ul li .current {
-    color: #fff;
-    background-color: #0b75b2;
-}
-
-
-.menuSmall ul li a:hover, .menuSmall ul li .current {
-    color: #fff;
-    #border-top:2px solid #3276b1;
-    border-bottom:2px solid #3276b1;
-    background-color: #0b75b2;
+    padding: 1px 20px 1px 20px;
+    background-color: #383838;
+    border-bottom:2px solid #c8c8c8;
 }

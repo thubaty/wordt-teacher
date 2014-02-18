@@ -57,22 +57,22 @@ public class SqlGenerator {
         sb.append("delete " + USERTAG_TABLE + ";\n");
 
         for (ExcelLanguage language : languages) {
-            String s = "insert into " + LANGUAGE_TABLE + " values (" + language.getId() + ",'"+language.getName() + "');\n";
+            String s = "insert into " + LANGUAGE_TABLE + " values (" + language.getId() + ",'" + language.getName() + "');\n";
             sb.append(s);
         }
 
         for (ExcelTag excelTag : excelTags) {
-            String s = "insert into " + TAG_TABLE + " values (" + excelTag.getId() + ",'"+excelTag.getName() + "',"+languageIdMap.get(excelTag.getLanguage()) + ");\n";
+            String s = "insert into " + TAG_TABLE + " values (" + excelTag.getId() + ",'" + excelTag.getName() + "'," + languageIdMap.get(excelTag.getLanguage()) + ");\n";
             sb.append(s);
         }
 
         for (ExcelWord wordTag : wordTags) {
-            String s = "insert into " + WORD_TABLE + " values (" + wordTag.getId() + ",'"+wordTag.getSlovak() + "','"+wordTag.getTranslation()+ "',"+tagIdMap.get(wordTag.getTag()) + ");\n";
+            String s = "insert into " + WORD_TABLE + " values (" + wordTag.getId() + ",'" + wordTag.getSlovak() + "','" + wordTag.getTranslation() + "'," + tagIdMap.get(wordTag.getTag()) + ");\n";
             sb.append(s);
         }
 
         for (ExcelUser user : users) {
-            String s = "insert into " + USER_TABLE + " values (" + user.getId() + ",'"+user.getUsername() + "','"+user.getPassword()+ "');\n";
+            String s = "insert into " + USER_TABLE + " values (" + user.getId() + ",'" + user.getUsername() + "','" + user.getPassword() + "');\n";
             sb.append(s);
         }
 
@@ -81,12 +81,23 @@ public class SqlGenerator {
             sb.append(s);
         }
 
-        sb.append("delete from " + USERWORD_TABLE + " where word_id not in worddb");
-        sb.append("delete from " + USERTAG_TABLE + " where tag_id not in tag");
+        sb.append("delete from " + USERWORD_TABLE + " where word_id not in worddb;\n");
+        sb.append("delete from " + USERTAG_TABLE + " where tag_id not in tag;\n");
         System.out.println(sb.toString());
+        writeToOutputFile(sb.toString());
     }
 
-
+    public static void writeToOutputFile(String output) {
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(new File("/C:/Users/tohy/IdeaProjects/wordteacher/wordteacher-dbmantain/src/main/resources/masterData.sql")));
+            String outText = output.toString();
+            out.write(outText);
+            out.close();
+            System.out.println("done");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     private static Map getTagIdMap(List<ExcelTag> excelTags) {
