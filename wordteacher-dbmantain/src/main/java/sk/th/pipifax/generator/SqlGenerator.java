@@ -81,8 +81,8 @@ public class SqlGenerator {
             sb.append(s);
         }
 
-        sb.append("delete from " + USERWORD_TABLE + " where word_id not in worddb;\n");
-        sb.append("delete from " + USERTAG_TABLE + " where tag_id not in tag;\n");
+        sb.append("delete from " + USERWORD_TABLE + " where word_id not in (select id from pp_worddb);\n");
+        sb.append("delete from " + USERTAG_TABLE + " where tag_id not in (select id from pp_wordtag);\n");
         System.out.println(sb.toString());
         writeToOutputFile(sb.toString());
     }

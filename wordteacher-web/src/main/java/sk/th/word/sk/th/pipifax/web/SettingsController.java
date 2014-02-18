@@ -29,6 +29,8 @@ public class SettingsController {
         Collections.rotate(allLanguages, allLanguages.indexOf(settingsModel.getCurrentLanguage())+1);
         LanguagCode newLanguage = allLanguages.get(0);
         settingsModel.setCurrentLanguage(newLanguage);
+        wordController.loadWord();
+        wordController.updateWordCount();
     }
 
     public void switchToEnglish(ActionEvent e) {
