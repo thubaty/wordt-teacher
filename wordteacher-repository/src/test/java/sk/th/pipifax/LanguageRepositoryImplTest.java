@@ -23,4 +23,11 @@ public class LanguageRepositoryImplTest {
         Assert.assertNotNull(allLanguages);
         Assert.assertEquals(2, allLanguages.size());
     }
+
+    @Test
+    public void testFindAllLanguagesForUser() throws Exception {
+        List<Language> allLanguages = languageRepository.getAllLanguagesForUser("tomas");
+        Assert.assertNotNull(allLanguages);
+        Assert.assertEquals(2, allLanguages.size());
+    }
 }

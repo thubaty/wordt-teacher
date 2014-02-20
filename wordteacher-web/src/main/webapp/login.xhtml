@@ -1,0 +1,29 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="template.xhtml">
+
+    <ui:define name="selectedMenuName">
+        <ui:param name="selectedMenu" value="HOME"/>
+    </ui:define>
+
+    <ui:define name="content">
+        <!-- Id's must not be changed to support spring security check -->
+        <h:panelGrid columns="2">
+            <h:outputLabel for="j_username" value="User: * " style="color: white"/>
+            <p:inputText id="j_username" required="true" label="username" />
+
+            <h:outputLabel for="j_password" value="Password: * " style="color: white"/>
+            <p:inputText id="j_password" label="password" required="true" />
+
+        </h:panelGrid>
+
+        <p:commandButton action="#{loginController.login}" value="login" ajax="false"/>
+
+        <br/>
+
+    </ui:define>
+</ui:composition>
+
+

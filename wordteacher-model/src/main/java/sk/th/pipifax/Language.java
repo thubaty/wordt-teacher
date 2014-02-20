@@ -19,7 +19,7 @@ public class Language implements Serializable {
     private Long id;
 
     @Enumerated(value = EnumType.STRING)
-    private LanguagCode code;
+    private LanguageCode code;
 
     public Long getId() {
         return id;
@@ -29,11 +29,11 @@ public class Language implements Serializable {
         this.id = id;
     }
 
-    public LanguagCode getCode() {
+    public LanguageCode getCode() {
         return code;
     }
 
-    public void setCode(LanguagCode code) {
+    public void setCode(LanguageCode code) {
         this.code = code;
     }
 

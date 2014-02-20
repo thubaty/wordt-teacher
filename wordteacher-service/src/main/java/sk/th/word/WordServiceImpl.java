@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.Language;
 import sk.th.pipifax.UserRepository;
 import sk.th.pipifax.entity.RepetitionMode;
@@ -45,7 +45,7 @@ public class WordServiceImpl implements WordService {
 
     @Override
     @Transactional(readOnly = true)
-    public Long countAllWords(String currentUserName, LanguagCode currentLanguage) {
+    public Long countAllWords(String currentUserName, LanguageCode currentLanguage) {
         List<WordDbEntity> all = wordDbRepository.findAll(currentUserName, currentLanguage);
         return new Long(all.size());
     }
@@ -124,7 +124,7 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public WordDto loadNextWord(String currentUserName, LanguagCode currentLanguage) {
+    public WordDto loadNextWord(String currentUserName, LanguageCode currentLanguage) {
         WordDbEntity candidate = wordRepository.loadScheduledWords(currentUserName, currentLanguage);
         if (candidate == null) {
             candidate = wordRepository.loadWordsWithLowQuality(currentUserName, currentLanguage);

@@ -7,7 +7,7 @@ package sk.th.pipifax;
  * Time: 22:16
  * To change this template use File | Settings | File Templates.
  */
-public enum LanguagCode {
+public enum LanguageCode {
 
     EN, DE;
 

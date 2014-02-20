@@ -1,6 +1,6 @@
 package sk.th.word;
 
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.Language;
 import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
@@ -17,15 +17,15 @@ import java.util.List;
  */
 public interface WordRepository {
 
-    List<WordDto> findAll(String currentUserName, LanguagCode currentLanguage);
+    List<WordDto> findAll(String currentUserName, LanguageCode currentLanguage);
 
     void importWords(List<WordDto> words, Language language);
 
     void updateWord(UserWordEntity currentWord);
 
-    WordDbEntity loadScheduledWords(String currentUserName, LanguagCode currentLanguage);
+    WordDbEntity loadScheduledWords(String currentUserName, LanguageCode currentLanguage);
 
     UserWordEntity loadLearningData(String currentUserName, WordDbEntity wordDbEntity);
 
-    WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage);
+    WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguageCode currentLanguage);
 }

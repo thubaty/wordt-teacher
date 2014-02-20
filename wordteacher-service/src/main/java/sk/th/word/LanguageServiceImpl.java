@@ -2,7 +2,7 @@ package sk.th.word;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.Language;
 import sk.th.pipifax.LanguageRepository;
 
@@ -19,9 +19,19 @@ public class LanguageServiceImpl implements LanguageService {
     LanguageRepository languageRepository;
 
     @Override
-    public List<LanguagCode> getAllLanguages() {
+    public List<LanguageCode> getAllLanguages() {
         List<Language> allLanguages = languageRepository.getAllLanguages();
-        List<LanguagCode> allCodes = new ArrayList<LanguagCode>();
+        List<LanguageCode> allCodes = new ArrayList<LanguageCode>();
+        for (Language allLanguage : allLanguages) {
+            allCodes.add(allLanguage.getCode());
+        }
+        return allCodes;
+    }
+
+    @Override
+    public List<LanguageCode> getAllLanguagesForUser(String userName) {
+        List<Language> allLanguages = languageRepository.getAllLanguagesForUser(userName);
+        List<LanguageCode> allCodes = new ArrayList<LanguageCode>();
         for (Language allLanguage : allLanguages) {
             allCodes.add(allLanguage.getCode());
         }

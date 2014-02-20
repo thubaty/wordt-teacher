@@ -37,12 +37,13 @@
 
 
     <f:metadata>
+        <f:event type="preRenderView" listener="#{settingsController.init}"/>
         <f:event type="preRenderView" listener="#{wordController.initTemplate}"/>
     </f:metadata>
 
     <ui:insert name="metadata"/>
 
-    <h:form id="wordForm">
+    <h:form id="wordForm" prependId="false">
 
         <ui:insert name="selectedMenuName"/>
 
@@ -50,12 +51,12 @@
             <div style="margin-top: 240px;margin-bottom: 10px; border-top:2px solid #3276b1">
                 <div class="menu">
                     <ul class="pull-right">
-                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#">#{wordController.currentUser}</a></li>
+                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#" onclick="switchUser()">#{wordController.currentUser}</a></li>
                         <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#" onclick="switchLanguage()">#{settingsModel.currentLanguage}</a></li>
-                        <li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/home.xhtml">Home</a></li>
+                        <!--<li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/home.xhtml">Home</a></li>
                         <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words</a></li>
                         <li class="#{selectedMenu == 'STATS' ? 'active':''}"><a href="/stats.xhtml">Stats</a></li>
-                        <li class="#{selectedMenu == 'ABOUT' ? 'active':''}"><a href="/about.xhtml">About</a></li>
+                        <li class="#{selectedMenu == 'ABOUT' ? 'active':''}"><a href="/about.xhtml">About</a></li>-->
                     </ul>
                 </div>
 
@@ -108,7 +109,9 @@
         </script>
 
         <p:remoteCommand name="switchLanguage" actionListener="#{settingsController.switchLanguage}" update="@all"/>
+        <p:remoteCommand name="switchUser" actionListener="#{settingsController.switchUser}" update="@all"/>
     </h:form>
+
 
 </h:body>
 

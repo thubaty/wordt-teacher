@@ -2,12 +2,13 @@ package sk.th.word.sk.th.pipifax.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.Language;
-import sk.th.pipifax.LanguageRepository;
+import sk.th.pipifax.LanguageCode;
+import sk.th.pipifax.util.SecurityUtil;
 import sk.th.word.LanguageService;
 import sk.th.word.WordController;
 
+import javax.annotation.PostConstruct;
+import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.util.Collections;
 import java.util.List;
@@ -24,22 +25,35 @@ public class SettingsController {
     @Autowired
     LanguageService languageService;
 
+    public void init() {
+        if (!FacesContext.getCurrentInstance().isPostback()) {
+            if (settingsModel.getCurrentLanguage() == null) {
+                List<LanguageCode> allLanguages = languageService.getAllLanguagesForUser(SecurityUtil.getCurrentUserName());
+                settingsModel.setCurrentLanguage(allLanguages.get(0));
+            }
+        }
+    }
+
     public void switchLanguage(ActionEvent e) {
-        List<LanguagCode> allLanguages = languageService.getAllLanguages();
-        Collections.rotate(allLanguages, allLanguages.indexOf(settingsModel.getCurrentLanguage())+1);
-        LanguagCode newLanguage = allLanguages.get(0);
+        List<LanguageCode> allLanguages = languageService.getAllLanguagesForUser(SecurityUtil.getCurrentUserName());
+        Collections.rotate(allLanguages, allLanguages.indexOf(settingsModel.getCurrentLanguage()) + 1);
+        LanguageCode newLanguage = allLanguages.get(0);
         settingsModel.setCurrentLanguage(newLanguage);
         wordController.loadWord();
         wordController.updateWordCount();
     }
 
+    public void switchUser(ActionEvent e) {
+        System.out.println("switch");
+    }
+
     public void switchToEnglish(ActionEvent e) {
-        settingsModel.setCurrentLanguage(LanguagCode.EN);
+        settingsModel.setCurrentLanguage(LanguageCode.EN);
         wordController.updateWordCount();
     }
 
     public void switchToGerman(ActionEvent e) {
-        settingsModel.setCurrentLanguage(LanguagCode.DE);
+        settingsModel.setCurrentLanguage(LanguageCode.DE);
         wordController.updateWordCount();
     }
 }

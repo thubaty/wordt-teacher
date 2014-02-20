@@ -1,7 +1,7 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Repository;
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.Language;
 import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
@@ -20,7 +20,7 @@ public class WordRepositoryImpl implements WordRepository {
     EntityManager entityManager;
 
     @Override
-    public List<WordDto> findAll(String currentUserName, LanguagCode currentLanguage) {
+    public List<WordDto> findAll(String currentUserName, LanguageCode currentLanguage) {
         Query query = entityManager.createQuery("select w from WordEntity w left join w.user u left join w.language l where l.code = :lang and u.username = :username ");
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
@@ -41,7 +41,7 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public WordDbEntity loadScheduledWords(String currentUserName, LanguagCode currentLanguage) {
+    public WordDbEntity loadScheduledWords(String currentUserName, LanguageCode currentLanguage) {
         TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join t.language l where l.code = :lang and u.username = :username and (uw.nextRepetition is null or current_timestamp > uw.nextRepetition) order by uw.nextRepetition", WordDbEntity.class);
         query.setMaxResults(1);
         query.setParameter("username", currentUserName);
@@ -67,7 +67,7 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguagCode currentLanguage) {
+    public WordDbEntity loadWordsWithLowQuality(String currentUserName, LanguageCode currentLanguage) {
         TypedQuery<WordDbEntity> query = entityManager.createQuery("select w from WordDbEntity w left join w.userWords uw left join w.tag t left join t.userSet u left join t.language l where l.code = :lang and u.username = :username and uw.lastQuality < 4 order by uw.modified", WordDbEntity.class);
         query.setMaxResults(1);
         query.setParameter("username", currentUserName);

@@ -1,11 +1,13 @@
 package sk.th.word;
 
-import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.entity.WordDbEntity;
+import sk.th.pipifax.LanguageCode;
 
 import java.util.List;
 
 public interface LanguageService {
 
-    List<LanguagCode> getAllLanguages();
+    List<LanguageCode> getAllLanguages();
+
+    List<LanguageCode> getAllLanguagesForUser(String userName);
+
 }

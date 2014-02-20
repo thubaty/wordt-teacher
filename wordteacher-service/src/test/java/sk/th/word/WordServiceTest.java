@@ -6,10 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import sk.th.pipifax.LanguagCode;
-import sk.th.pipifax.dto.WordDto;
-
-import java.util.List;
+import sk.th.pipifax.LanguageCode;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,7 +25,7 @@ public class WordServiceTest {
 
     @Test
     public void testFirst1() throws Exception {
-        Long count = wordService.countAllWords("", LanguagCode.EN);
+        Long count = wordService.countAllWords("", LanguageCode.EN);
         Assert.assertNotNull(count);
     }
 

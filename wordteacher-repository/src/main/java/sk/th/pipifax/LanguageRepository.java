@@ -15,4 +15,6 @@ import java.util.List;
 public interface LanguageRepository {
 
     List<Language> getAllLanguages();
+
+    List<Language> getAllLanguagesForUser(String userName);
 }

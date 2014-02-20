@@ -1,18 +1,18 @@
 package sk.th.word.sk.th.pipifax.web;
 
 import org.springframework.stereotype.Component;
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 
 @Component
 public class SettingsModel {
 
-    private LanguagCode currentLanguage = LanguagCode.EN;
+    private LanguageCode currentLanguage;
 
-    public LanguagCode getCurrentLanguage() {
+    public LanguageCode getCurrentLanguage() {
         return currentLanguage;
     }
 
-    public void setCurrentLanguage(LanguagCode currentLanguage) {
+    public void setCurrentLanguage(LanguageCode currentLanguage) {
         this.currentLanguage = currentLanguage;
     }
 }

@@ -1,12 +1,11 @@
 package sk.th.pipifax.dto;
 
-import sk.th.pipifax.LanguagCode;
+import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.entity.RepetitionMode;
 import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 
 public class WordDto {
@@ -17,7 +16,7 @@ public class WordDto {
     private String slovak;
     private String translation;
     private String tag;
-    private LanguagCode language;
+    private LanguageCode language;
     private float EFactor;
     private int count;
     private int interval;
@@ -71,11 +70,11 @@ public class WordDto {
         this.tag = tag;
     }
 
-    public LanguagCode getLanguage() {
+    public LanguageCode getLanguage() {
         return language;
     }
 
-    public void setLanguage(LanguagCode language) {
+    public void setLanguage(LanguageCode language) {
         this.language = language;
     }
 

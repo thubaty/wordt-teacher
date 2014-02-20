@@ -1,17 +1,14 @@
 package sk.th.word;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import sk.th.pipifax.Language;
 
-/**
- * Created with IntelliJ IDEA.
- * User: tohy
- * Date: 06.11.13
- * Time: 21:34
- * To change this template use File | Settings | File Templates.
- */
+import javax.faces.bean.ViewScoped;
+
 @Component
-public class WordImportModel {
+@ViewScoped
+public class StatsModel {
 
     private String importString;
 
