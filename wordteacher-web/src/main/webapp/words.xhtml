@@ -6,6 +6,7 @@
 
     <ui:define name="metadata">
         <f:metadata>
+            <f:event type="preRenderView" listener="#{settingsController.init}"/>
             <f:event type="preRenderView" listener="#{wordController.initWord}"/>
         </f:metadata>
     </ui:define>

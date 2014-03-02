@@ -35,12 +35,6 @@
 </h:head>
 <h:body style="background: url('http://joelb.me/scrollpath/assets/classy_fabric.png'); margin-top: 0px;">
 
-
-    <f:metadata>
-        <f:event type="preRenderView" listener="#{settingsController.init}"/>
-        <f:event type="preRenderView" listener="#{wordController.initTemplate}"/>
-    </f:metadata>
-
     <ui:insert name="metadata"/>
 
     <h:form id="wordForm" prependId="false">
@@ -51,21 +45,38 @@
             <div style="margin-top: 240px;margin-bottom: 10px; border-top:2px solid #3276b1">
                 <div class="menu">
                     <ul class="pull-right">
-                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#" onclick="switchUser()">#{wordController.currentUser}</a></li>
-                        <li class="#{selectedMenu == 'DE' ? 'active':''}"><a href="#" onclick="switchLanguage()">#{settingsModel.currentLanguage}</a></li>
+                        <li><h:outputLink value="/logout"
+                                          styleClass="pull-right"
+                                          rendered="#{wordController.userLoggedIn}">logout</h:outputLink>
+                            <h:outputLink value="/login" styleClass="pull-right"
+                                          rendered="#{!wordController.userLoggedIn}">login</h:outputLink>
+                        </li>
+                        <li><span>#{wordController.currentUser}</span>
+                        </li>
+                        <!--<li><a href="#"
+                               onclick="switchLanguage()">#{settingsModel.currentLanguage}</a>
+                        </li>-->
+                        <li>
+                            <h:outputLink value="#" styleClass="pull-right" onclick="switchLanguage()" disabled="#{!settingsController.hasMoreThanOneLanguage}">#{settingsModel.currentLanguage}</h:outputLink>
+                        </li>
                         <!--<li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/home.xhtml">Home</a></li>
                         <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words</a></li>
                         <li class="#{selectedMenu == 'STATS' ? 'active':''}"><a href="/stats.xhtml">Stats</a></li>
                         <li class="#{selectedMenu == 'ABOUT' ? 'active':''}"><a href="/about.xhtml">About</a></li>-->
                     </ul>
+
+
                 </div>
 
                 <div class="media" style="margin-top: 0px;">
                     <a class="pull-left" href="#">
-                        <h:graphicImage width="60px" value="/resources/owl.png" style="margin-right: 0px;padding-top: 0px;" />
+                        <h:graphicImage width="60px" value="/resources/owl.png"
+                                        style="margin-right: 0px;padding-top: 0px;"/>
                     </a>
+
                     <div class="media-body">
-                        <div class="mondaLogo" style="font-weight: bold; height: 42px;">click2<font color="#87ceeb">english</font></div>
+                        <div class="mondaLogo" style="font-weight: bold; height: 42px;">click2<font
+                                color="#87ceeb">english</font></div>
                         <font color="white" size="1px">spaced repetition v0.1</font>
                     </div>
                 </div>
@@ -94,16 +105,15 @@
             );
 
             $('.mondaNormal').hover(
-                    function(){
+                    function () {
                         var $this = $(this);
                         $this.data('bgcolor', $this.css('background-color')).css('background-color', '#282828');
                     },
-                    function(){
+                    function () {
                         var $this = $(this);
                         $this.css('background-color', $this.data('bgcolor'));
                     }
             );
-
 
 
         </script>

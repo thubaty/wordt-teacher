@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Custom Login Page</title>
+    <link type="text/css" rel="stylesheet" href="/javax.faces.resource/theme.css.xhtml?ln=primefaces-home">
+    <link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/app.css.xhtml">
+    <link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/bootstrap.css.xhtml">
+    <link type="text/css" rel="stylesheet" href="/javax.faces.resource/css/menu.css.xhtml">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href="http://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Monda" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet" type="text/css">
+</head>
+<body onload='document.loginForm.j_username.focus();'
+      style="background: url('http://joelb.me/scrollpath/assets/classy_fabric.png'); margin-top: 0px;">
+
+<div class="container">
+    <div style="margin-top: 240px;margin-bottom: 10px; border-top:2px solid #3276b1">
+
+        <div class="menu">
+            <ul class="pull-right">
+                <li>test
+                </li>
+
+                <!--<li class="#{selectedMenu == 'HOME' ? 'active':''}"><a href="/home.xhtml">Home</a></li>
+                <li class="#{selectedMenu == 'WORDS' ? 'active':''}"><a href="/words.xhtml">Words</a></li>
+                <li class="#{selectedMenu == 'STATS' ? 'active':''}"><a href="/stats.xhtml">Stats</a></li>
+                <li class="#{selectedMenu == 'ABOUT' ? 'active':''}"><a href="/about.xhtml">About</a></li>-->
+            </ul>
+        </div>
+
+        <div class="media" style="margin-top: 0px;">
+            <a class="pull-left" href="#">
+                <img width="60px" src="/resources/owl.png" style="margin-right: 0px;padding-top: 0px;"/>
+            </a>
+
+            <div class="media-body">
+                <div class="mondaLogo" style="font-weight: bold; height: 42px;">click2<font
+                        color="#87ceeb">english</font></div>
+                <font color="white" size="1px">spaced repetition v0.1</font>
+            </div>
+        </div>
+
+
+    </div>
+
+    <form name='loginForm' action="login"
+          method='POST'>
+
+        <table>
+            <tr>
+                <td style="color:white;">User:</td>
+                <td><input type='text' name='j_username' value=''>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white;">Password:</td>
+                <td><input type='password' name='j_password'/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input name="submit" type="submit"
+                           value="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+</body>
+</html>

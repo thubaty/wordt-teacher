@@ -45,6 +45,14 @@
     background-color: #282828;
 }
 
+.menu ul li span {
+    float: left;
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px 10px;
+    background-color: #555555;
+}
+
 .menuSmall ul li a  {
     float: left;
     text-decoration: none;

@@ -30,17 +30,25 @@ public class SettingsController {
             if (settingsModel.getCurrentLanguage() == null) {
                 List<LanguageCode> allLanguages = languageService.getAllLanguagesForUser(SecurityUtil.getCurrentUserName());
                 settingsModel.setCurrentLanguage(allLanguages.get(0));
+                settingsModel.setUserLanguages(allLanguages);
             }
         }
     }
 
     public void switchLanguage(ActionEvent e) {
-        List<LanguageCode> allLanguages = languageService.getAllLanguagesForUser(SecurityUtil.getCurrentUserName());
+        List<LanguageCode> allLanguages = settingsModel.getUserLanguages();
         Collections.rotate(allLanguages, allLanguages.indexOf(settingsModel.getCurrentLanguage()) + 1);
         LanguageCode newLanguage = allLanguages.get(0);
         settingsModel.setCurrentLanguage(newLanguage);
         wordController.loadWord();
         wordController.updateWordCount();
+    }
+
+    public Boolean getHasMoreThanOneLanguage() {
+        if (settingsModel.getUserLanguages() == null) {
+            return false;
+        }
+        return settingsModel.getUserLanguages().size() > 1;
     }
 
     public void switchUser(ActionEvent e) {

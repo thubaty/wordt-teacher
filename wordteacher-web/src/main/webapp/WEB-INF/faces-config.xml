@@ -8,7 +8,7 @@
 	<application>
 		<variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>
 
-        <resource-handler>org.omnifaces.resourcehandler.CombinedResourceHandler</resource-handler>
+<!--        <resource-handler>org.omnifaces.resourcehandler.CombinedResourceHandler</resource-handler>-->
 
 		<locale-config>
 			<default-locale>en</default-locale>

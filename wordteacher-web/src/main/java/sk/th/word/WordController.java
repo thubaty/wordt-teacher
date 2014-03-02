@@ -35,12 +35,6 @@ public class WordController {
         wordModel.setWordCount(count.intValue());
     }
 
-    public void initTemplate() {
-        if (wordModel.getWordCount() == null) {
-            updateWordCount();
-        }
-    }
-
     public void loadWord() {
         String currentUserName = SecurityUtil.getCurrentUserName();
         WordDto wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage());
@@ -54,6 +48,7 @@ public class WordController {
         FacesContext currentInstance = FacesContext.getCurrentInstance();
         if (!currentInstance.isPostback()) {
             loadWord();
+            updateWordCount();
         }
     }
 
@@ -90,5 +85,9 @@ public class WordController {
 
     public String getCurrentUser() {
         return SecurityUtil.getCurrentUserName();
+    }
+
+    public Boolean getUserLoggedIn() {
+        return SecurityUtil.isUserLoggedIn();
     }
 }

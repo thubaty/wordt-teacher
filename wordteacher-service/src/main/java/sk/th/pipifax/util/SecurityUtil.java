@@ -23,4 +23,8 @@ public class SecurityUtil {
             return principal.toString();
         }
     }
+
+    public static Boolean isUserLoggedIn() {
+        return !"anonymousUser".equalsIgnoreCase(getCurrentUserName());
+    }
 }
