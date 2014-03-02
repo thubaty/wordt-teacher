@@ -118,7 +118,7 @@ public class WordServiceImpl implements WordService {
         userWordEntity.setEFactor(currentWord.getEFactor());
         userWordEntity.setInterval(currentWord.getInterval());
         userWordEntity.setLastQuality(currentWord.getLastQuality());
-        userWordEntity.setModified(currentWord.getModified());
+        userWordEntity.setModified(DateUtil.getCurrentDate());
         userWordEntity.setNextRepetition(currentWord.getNextRepetition());
         wordRepository.updateWord(userWordEntity);
     }

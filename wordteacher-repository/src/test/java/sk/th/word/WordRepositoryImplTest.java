@@ -37,7 +37,7 @@ public class WordRepositoryImplTest {
     @Test
     public void testLoadLearningData() throws Exception {
         WordDbEntity entity1 = wordRepository.loadScheduledWords("anonymousUser", LanguageCode.DE);
-        UserWordEntity entity2 = wordRepository.loadLearningData("anonymousUser", entity1);
-        System.out.println(entity2);
+        WordDbEntity entity2 = wordRepository.loadWordsWithLowQuality("anonymousUser", LanguageCode.DE);
+        System.out.println(entity2.getSlovak());
     }
 }

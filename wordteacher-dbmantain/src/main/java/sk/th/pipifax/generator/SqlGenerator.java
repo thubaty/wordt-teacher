@@ -69,12 +69,26 @@ public class SqlGenerator {
             sb.append(s);
         }
 
+        int wordCounter = 0;
         for (ExcelWord wordTag : wordTags) {
+            if (wordTag.getId() == null) {
+                throw new IllegalStateException("Id not found (word: " + wordTag.getSlovak() + ")");
+            }
+            if (wordTag.getTranslation() == null) {
+                throw new IllegalStateException("Translation not found (word: " + wordTag.getId() + ")");
+            }
+            if (wordTag.getSlovak() == null) {
+                throw new IllegalStateException("Slovak not found (word: " + wordTag.getId() + ")");
+            }
+            if (wordTag.getTag() == null) {
+                throw new IllegalStateException("Tag not found (word: " + wordTag.getId() + ")");
+            }
             if (tagIdMap.get(wordTag.getTag()) == null) {
                 throw new IllegalStateException("Tag " + wordTag.getTag() + " does not exist (word: " + wordTag.getId() + ")");
             }
             String s = "insert into " + WORD_TABLE + " values (" + wordTag.getId() + ",'" + wordTag.getSlovak() + "','" + wordTag.getTranslation() + "'," + tagIdMap.get(wordTag.getTag()) + ");\n";
             sb.append(s);
+            wordCounter++;
         }
 
         for (ExcelUser user : users) {
@@ -95,8 +109,8 @@ public class SqlGenerator {
 
         sb.append("delete from " + USERWORD_TABLE + " where word_id not in (select id from pp_worddb);\n");
         sb.append("delete from " + USERTAG_TABLE + " where tag_id not in (select id from pp_wordtag);\n");
-        System.out.println(sb.toString());
         writeToOutputFile(sb.toString());
+        System.out.println("Done [" +wordCounter+ " master words parsed]");
     }
 
     public static void writeToOutputFile(String output) {
@@ -105,7 +119,6 @@ public class SqlGenerator {
             String outText = output.toString();
             out.write(outText);
             out.close();
-            System.out.println("done");
         } catch (IOException e) {
             e.printStackTrace();
         }
