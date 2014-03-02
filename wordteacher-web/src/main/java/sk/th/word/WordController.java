@@ -2,18 +2,18 @@ package sk.th.word;
 
 import org.omnifaces.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import sk.th.pipifax.dto.WordDto;
 import sk.th.pipifax.util.SRSUtil;
 import sk.th.pipifax.util.SecurityUtil;
-import sk.th.word.sk.th.pipifax.web.SettingsModel;
 
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.io.IOException;
-import java.util.List;
 
 @Controller
+@Scope(value = "request")
 public class WordController {
 
     private final WordService wordService;

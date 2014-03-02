@@ -22,5 +22,6 @@ insert into pp_usertag values (2,1);
 insert into pp_usertag values (2,2);
 insert into pp_usertag values (3,3);
 insert into pp_usertag values (1,3);
+insert into pp_usertag values (2,3);
 delete from pp_userword where word_id not in (select id from pp_worddb);
 delete from pp_usertag where tag_id not in (select id from pp_wordtag);

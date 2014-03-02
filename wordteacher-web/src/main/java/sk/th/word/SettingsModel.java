@@ -1,4 +1,4 @@
-package sk.th.word.sk.th.pipifax.web;
+package sk.th.word;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
@@ -8,7 +8,7 @@ import sk.th.pipifax.LanguageCode;
 import java.util.List;
 
 @Component
-@Scope(value = "session",  proxyMode = ScopedProxyMode.TARGET_CLASS)
+@Scope(value = "session")
 public class SettingsModel {
 
     public SettingsModel() {

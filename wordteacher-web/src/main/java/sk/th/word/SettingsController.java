@@ -1,29 +1,35 @@
-package sk.th.word.sk.th.pipifax.web;
+package sk.th.word;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.util.SecurityUtil;
-import sk.th.word.LanguageService;
-import sk.th.word.WordController;
 
-import javax.annotation.PostConstruct;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.util.Collections;
 import java.util.List;
 
 @Controller
+@Scope(value = "request")
 public class SettingsController {
 
-    @Autowired
+
     private WordController wordController;
 
-    @Autowired
+
     SettingsModel settingsModel;
 
-    @Autowired
+
     LanguageService languageService;
+
+    @Autowired
+    public SettingsController(WordController wordController, SettingsModel settingsModel, LanguageService languageService) {
+        this.wordController = wordController;
+        this.settingsModel = settingsModel;
+        this.languageService = languageService;
+    }
 
     public void init() {
         if (!FacesContext.getCurrentInstance().isPostback()) {
