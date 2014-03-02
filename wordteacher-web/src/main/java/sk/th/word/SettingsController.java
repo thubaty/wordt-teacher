@@ -57,6 +57,28 @@ public class SettingsController {
         return settingsModel.getUserLanguages().size() > 1;
     }
 
+    public String getLanguageHtmlColor() {
+        LanguageCode currentLanguage = settingsModel.getCurrentLanguage();
+        if (LanguageCode.EN.equals(currentLanguage)) {
+            return "#3276b1";
+        } else if (LanguageCode.DE.equals(currentLanguage)) {
+            return "#8A4B08";
+        } else {
+            return "#FFFFFF";
+        }
+    }
+
+    public String getLanguageName() {
+        LanguageCode currentLanguage = settingsModel.getCurrentLanguage();
+        if (LanguageCode.EN.equals(currentLanguage)) {
+            return "english";
+        } else if (LanguageCode.DE.equals(currentLanguage)) {
+            return "german";
+        } else {
+            return currentLanguage.getCode();
+        }
+    }
+
     public void switchUser(ActionEvent e) {
         System.out.println("switch");
     }
