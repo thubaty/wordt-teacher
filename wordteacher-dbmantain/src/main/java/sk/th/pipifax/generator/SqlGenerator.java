@@ -62,11 +62,17 @@ public class SqlGenerator {
         }
 
         for (ExcelTag excelTag : excelTags) {
+            if (languageIdMap.get(excelTag.getLanguage()) == null) {
+                throw new IllegalStateException("Language " + excelTag.getLanguage() + " does not exist (tag: " + excelTag.getName() + ")");
+            }
             String s = "insert into " + TAG_TABLE + " values (" + excelTag.getId() + ",'" + excelTag.getName() + "'," + languageIdMap.get(excelTag.getLanguage()) + ");\n";
             sb.append(s);
         }
 
         for (ExcelWord wordTag : wordTags) {
+            if (tagIdMap.get(wordTag.getTag()) == null) {
+                throw new IllegalStateException("Tag " + wordTag.getTag() + " does not exist (word: " + wordTag.getId() + ")");
+            }
             String s = "insert into " + WORD_TABLE + " values (" + wordTag.getId() + ",'" + wordTag.getSlovak() + "','" + wordTag.getTranslation() + "'," + tagIdMap.get(wordTag.getTag()) + ");\n";
             sb.append(s);
         }
@@ -77,6 +83,12 @@ public class SqlGenerator {
         }
 
         for (ExcelUserTag userTag : userTags) {
+            if (userIdMap.get(userTag.getUser()) == null) {
+                throw new IllegalStateException("User " + userTag.getUser() + " does not exist (user/tag mapping)");
+            }
+            if (tagIdMap.get(userTag.getTag()) == null) {
+                throw new IllegalStateException("Tag " + userTag.getTag() + " does not exist (user/tag mapping)");
+            }
             String s = "insert into " + USERTAG_TABLE + " values (" + userIdMap.get(userTag.getUser()) + "," + tagIdMap.get(userTag.getTag()) + ");\n";
             sb.append(s);
         }

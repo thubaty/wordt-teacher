@@ -48,4 +48,12 @@ public class UserEntity {
     public void setTagSet(Set<TagEntity> tagSet) {
         this.tagSet = tagSet;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
