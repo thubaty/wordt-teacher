@@ -27,6 +27,7 @@ public class SqlGenerator {
         return workbook;
     }
 
+    //todo validate empty tags
     public static void main(String[] args) throws IOException {
         Workbook workbook = openWorkBook();
 

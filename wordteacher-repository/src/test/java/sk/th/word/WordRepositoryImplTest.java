@@ -30,14 +30,14 @@ public class WordRepositoryImplTest {
 
     @Test
     public void testNextWord() throws Exception {
-        WordDbEntity entity = wordRepository.loadScheduledWords("anonymousUser", LanguageCode.DE);
+        WordDbEntity entity = wordRepository.loadScheduledWords("anonymousUser", LanguageCode.EN);
         System.out.println(entity);
     }
 
     @Test
     public void testLoadLearningData() throws Exception {
-        WordDbEntity entity1 = wordRepository.loadScheduledWords("anonymousUser", LanguageCode.DE);
+        WordDbEntity entity1 = wordRepository.loadScheduledWords("tomas", LanguageCode.DE);
         WordDbEntity entity2 = wordRepository.loadWordsWithLowQuality("anonymousUser", LanguageCode.DE);
-        System.out.println(entity2.getSlovak());
+        System.out.println(entity1);
     }
 }
