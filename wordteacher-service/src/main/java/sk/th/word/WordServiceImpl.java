@@ -124,8 +124,8 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public WordDto loadNextWord(String currentUserName, LanguageCode currentLanguage) {
-        WordDbEntity candidate = wordRepository.loadScheduledWords(currentUserName, currentLanguage);
+    public WordDto loadNextWord(String currentUserName, LanguageCode currentLanguage, Date currentDate) {
+        WordDbEntity candidate = wordRepository.loadScheduledWord(currentUserName, currentLanguage, currentDate);
         if (candidate == null) {
             candidate = wordRepository.loadWordsWithLowQuality(currentUserName, currentLanguage);
             if (candidate == null) {

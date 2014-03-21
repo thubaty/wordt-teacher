@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -41,21 +42,24 @@ public class WordRepositoryImpl implements WordRepository {
     }
 
     @Override
-    public WordDbEntity loadScheduledWords(String currentUserName, LanguageCode currentLanguage) {
+    public WordDbEntity loadScheduledWord(String currentUserName, LanguageCode currentLanguage, Date learningDate) {
+
         String queryString = "select w from WordDbEntity w " +
                 "left join w.userWords uw " +
                 "left join w.tag t " +
-                "left join uw.user u " +
+                "left join t.userSet u " +
+                //"left join uw.user u " +
                 "left join t.language l " +
                 "where " +
                 "l.code = :lang and " +
                 "u.username = :username and " +
-                "(uw.nextRepetition is null or current_timestamp > uw.nextRepetition) " +
+                "(uw.nextRepetition is null or :currentDate > uw.nextRepetition) " +
                 "order by uw.nextRepetition";
         TypedQuery<WordDbEntity> query = entityManager.createQuery(queryString, WordDbEntity.class);
         query.setMaxResults(1);
         query.setParameter("username", currentUserName);
         query.setParameter("lang", currentLanguage);
+        query.setParameter("currentDate", learningDate);
         try {
             return query.getSingleResult();
         } catch (javax.persistence.NoResultException e) {

@@ -5,6 +5,7 @@ import sk.th.pipifax.Language;
 import sk.th.pipifax.dto.WordDto;
 import sk.th.word.sk.th.word.exception.InvalidFormatException;
 
+import java.util.Date;
 import java.util.List;
 
 public interface WordService {
@@ -17,5 +18,5 @@ public interface WordService {
 
     void updateWord(WordDto currentWord);
 
-    WordDto loadNextWord(String currentUserName, LanguageCode currentLanguage);
+    WordDto loadNextWord(String currentUserName, LanguageCode currentLanguage, Date currentDate);
 }

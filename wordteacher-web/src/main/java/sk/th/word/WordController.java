@@ -11,6 +11,7 @@ import sk.th.pipifax.util.SecurityUtil;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.io.IOException;
+import java.util.Date;
 
 @Controller
 @Scope(value = "request")
@@ -37,7 +38,7 @@ public class WordController {
 
     public void loadWord() {
         String currentUserName = SecurityUtil.getCurrentUserName();
-        WordDto wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage());
+        WordDto wordEntity = wordService.loadNextWord(currentUserName, settingsModel.getCurrentLanguage(), new Date());
         wordModel.setCurrentWord(wordEntity);
         if (wordEntity == null) {
             Messages.addGlobalError("ziadne dalsie slovicka na ucenie kamosko");

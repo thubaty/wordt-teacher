@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import sk.th.pipifax.LanguageCode;
-import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
 import sk.th.pipifax.dto.WordDto;
 
+import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -30,13 +30,13 @@ public class WordRepositoryImplTest {
 
     @Test
     public void testNextWord() throws Exception {
-        WordDbEntity entity = wordRepository.loadScheduledWords("anonymousUser", LanguageCode.EN);
+        WordDbEntity entity = wordRepository.loadScheduledWord("anonymousUser", LanguageCode.EN, new Date());
         System.out.println(entity);
     }
 
     @Test
     public void testLoadLearningData() throws Exception {
-        WordDbEntity entity1 = wordRepository.loadScheduledWords("tomas", LanguageCode.DE);
+        WordDbEntity entity1 = wordRepository.loadScheduledWord("tomas", LanguageCode.DE, new Date());
         WordDbEntity entity2 = wordRepository.loadWordsWithLowQuality("anonymousUser", LanguageCode.DE);
         System.out.println(entity1);
     }

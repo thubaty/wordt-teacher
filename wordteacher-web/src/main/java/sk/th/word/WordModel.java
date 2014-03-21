@@ -3,12 +3,16 @@ package sk.th.word;
 import org.springframework.stereotype.Component;
 import sk.th.pipifax.dto.WordDto;
 
+import java.util.Date;
+
 @Component
 public class WordModel {
 
     private WordDto currentWord;
 
     private Integer wordCount;
+
+    private Date currentDate;
 
     public WordDto getCurrentWord() {
         return currentWord;

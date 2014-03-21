@@ -6,6 +6,7 @@ import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
 import sk.th.pipifax.dto.WordDto;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public interface WordRepository {
 
     void updateWord(UserWordEntity currentWord);
 
-    WordDbEntity loadScheduledWords(String currentUserName, LanguageCode currentLanguage);
+    WordDbEntity loadScheduledWord(String currentUserName, LanguageCode currentLanguage, Date learningDate);
 
     UserWordEntity loadLearningData(String currentUserName, WordDbEntity wordDbEntity);
 
