@@ -1,11 +1,11 @@
 package sk.th.word;
 
 import org.springframework.stereotype.Repository;
-import sk.th.pipifax.LanguageCode;
 import sk.th.pipifax.Language;
+import sk.th.pipifax.LanguageCode;
+import sk.th.pipifax.dto.WordDto;
 import sk.th.pipifax.entity.UserWordEntity;
 import sk.th.pipifax.entity.WordDbEntity;
-import sk.th.pipifax.dto.WordDto;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -38,7 +38,11 @@ public class WordRepositoryImpl implements WordRepository {
 
     @Override
     public void updateWord(UserWordEntity currentWord) {
-        entityManager.merge(currentWord);
+        if (currentWord.getId() == null) {
+            entityManager.persist(currentWord);
+        } else {
+            entityManager.merge(currentWord);
+        }
     }
 
     @Override

@@ -1,5 +1,6 @@
 package sk.th.pipifax.generator;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -29,6 +30,9 @@ public class SqlGenerator {
 
     //todo validate empty tags
     public static void main(String[] args) throws IOException {
+
+        System.out.println(StringEscapeUtils.escapeSql("halloo 'weeelt\n"));
+
         Workbook workbook = openWorkBook();
 
         //Get first/desired sheet from the workbook
@@ -92,6 +96,7 @@ public class SqlGenerator {
             wordCounter++;
         }
 
+
         for (ExcelUser user : users) {
             String s = "insert into " + USER_TABLE + " values (" + user.getId() + ",'" + user.getUsername() + "','" + user.getPassword() + "');\n";
             sb.append(s);
@@ -111,7 +116,7 @@ public class SqlGenerator {
         sb.append("delete from " + USERWORD_TABLE + " where word_id not in (select id from pp_worddb);\n");
         sb.append("delete from " + USERTAG_TABLE + " where tag_id not in (select id from pp_wordtag);\n");
         writeToOutputFile(sb.toString());
-        System.out.println("Done [" +wordCounter+ " master words parsed]");
+        System.out.println("Done [" + wordCounter + " master words parsed]");
     }
 
     public static void writeToOutputFile(String output) {

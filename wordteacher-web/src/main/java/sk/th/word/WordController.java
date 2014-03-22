@@ -1,5 +1,6 @@
 package sk.th.word;
 
+import org.apache.log4j.Logger;
 import org.omnifaces.util.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -77,7 +78,10 @@ public class WordController {
         updateWord(wordModel.getCurrentWord(), 5);
     }
 
+    Logger logger = Logger.getLogger(this.getClass());
+
     public void updateWord(WordDto word, int quality) {
+        logger.debug("updating word ---------------------");
         WordDto repeatedWord = SRSUtil.repetition(word, quality);
         wordService.updateWord(repeatedWord);
         loadWord();

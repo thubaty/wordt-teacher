@@ -60,7 +60,7 @@ public class SettingsController {
     public String getLanguageHtmlColor() {
         LanguageCode currentLanguage = settingsModel.getCurrentLanguage();
         if (LanguageCode.EN.equals(currentLanguage)) {
-            return "#3276b1";
+            return "#AAAAAA";
         } else if (LanguageCode.DE.equals(currentLanguage)) {
             return "#8A4B08";
         } else {

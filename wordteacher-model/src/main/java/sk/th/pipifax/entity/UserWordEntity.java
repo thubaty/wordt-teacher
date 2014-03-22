@@ -1,8 +1,5 @@
 package sk.th.pipifax.entity;
 
-import org.springframework.util.Assert;
-import sk.th.pipifax.Language;
-
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -11,8 +8,7 @@ import java.sql.Timestamp;
 public class UserWordEntity {
 
     @Id
-    @GeneratedValue(generator="InvSeq")
-    @SequenceGenerator(name="InvSeq",sequenceName="MAIN_SEQ", allocationSize=5)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
@@ -25,6 +21,7 @@ public class UserWordEntity {
 
     private float EFactor;
     private int count;
+    @Column(name = "intervalo")
     private int interval;
     private Timestamp modified;
     @Column(name = "next_repetition")

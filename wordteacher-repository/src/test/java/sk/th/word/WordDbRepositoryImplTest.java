@@ -18,6 +18,7 @@ public class WordDbRepositoryImplTest {
     @Autowired
     WordDbRepository wordRepository;
 
+
     @Test
     public void testFindAll() throws Exception {
         List<WordDbEntity> words = wordRepository.findAll("katka", LanguageCode.DE);

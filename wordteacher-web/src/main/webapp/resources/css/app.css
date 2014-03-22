@@ -113,7 +113,7 @@ body {
 .mondaLogo {
     font-family: 'Chau Philomene One', sans-serif;
     font-size: 38px;
-    color: white;
+    color: #AAAAAA;
 }
 
 .mondaNormal {
@@ -129,5 +129,6 @@ body {
 }
 
 .copyrightFont {
-    font-size: 9px; color: #555555;
+    font-size: 9px;
+    color: #555555;
 }

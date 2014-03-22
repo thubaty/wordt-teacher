@@ -17,10 +17,25 @@
           <property name="password" value=""/>
       </bean>-->
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-        <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
-        <property name="username" value="worddb"/>
-        <property name="password" value="worddb"/>
+    <!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+         <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+         <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+         <property name="username" value="worddb"/>
+         <property name="password" value="worddb"/>
+     </bean>-->
+
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
+        <property name="username" value="root"/>
+        <!--<property name="password" value="wordo"/>-->
+    </bean>
+
+    <bean id="mysqlDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
+        <property name="username" value="root"/>
+        <!--<property name="password" value="wordo"/>-->
     </bean>
 </beans>

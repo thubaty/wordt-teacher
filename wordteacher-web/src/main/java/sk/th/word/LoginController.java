@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
-import javax.faces.event.ActionEvent;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -17,7 +16,9 @@ import java.io.IOException;
 @Controller
 public class LoginController {
 
+
     public String login() throws ServletException, IOException {
+
         //do any job with the associated values that you've got from the user, like persisting attempted login, etc.
         FacesContext facesContext = FacesContext.getCurrentInstance();
         ExternalContext extenalContext = facesContext.getExternalContext();
