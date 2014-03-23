@@ -23,7 +23,7 @@
 
     <properties>
         <springframework.version>3.2.1.RELEASE</springframework.version>
-        <springframework.security.version>3.1.4.RELEASE</springframework.security.version>
+        <springframework.security.version>3.0.5.RELEASE</springframework.security.version>
         <primafaces.version>3.5.18</primafaces.version>
     </properties>
 
