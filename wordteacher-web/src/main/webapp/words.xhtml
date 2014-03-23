@@ -1,5 +1,4 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets"
                 template="template.xhtml">
@@ -25,7 +24,8 @@
                          unselectable="on"
                          onselectstart="return false"
                          onmousedown="return false;">
-                        <div style="color: #585e62" class="mondaSmall pull-right">Id: #{wordModel.currentWord.wordDbId} | Tag: #{wordModel.currentWord.tag} | Efactor : #{wordModel.currentWord.EFactor} | Count: #{wordModel.currentWord.count}</div>
+                        <div style="color: #585e62"
+                             class="mondaSmall pull-right"><!--Id: #{wordModel.currentWord.wordDbId} | Tag: #{wordModel.currentWord.tag} | Efactor : #{wordModel.currentWord.EFactor} | Count: #{wordModel.currentWord.count}--></div>
                         <div class="mondaNormal" style="border-bottom: 1px solid #333333; padding-top: 15px; padding-left: 20px">#{wordModel.currentWord.slovak}
                         </div>
                         <div class="mondaNormal originalWord flipper" style="padding-bottom: 15px; padding-left: 20px">????</div>
@@ -37,16 +37,16 @@
                 <div style="color: white; margin-top: 20px; padding-left: 7px; height: 45px; background-color: #282828; " class="mondaSmall">
                     <div class="menuSmall" style="border-bottom:2px solid #c8c8c8">
                         <ul>
-                            <li><a href="#" onclick="repetition0(); return false;" style="color: #d59392" title="nemam para">0</a></li>
+                            <li><a href="#" onclick="repetition0(); return false;">0</a></li>
                             <li><a href="#" onclick="repetition1(); return false;">1</a></li>
                             <li><a href="#" onclick="repetition2(); return false;">2</a></li>
                             <li><a href="#" onclick="repetition3(); return false;">3</a></li>
                             <li><a href="#" onclick="repetition4(); return false;">4</a></li>
-                            <li><a href="#" onclick="repetition5(); return false;" style="color:green">5</a></li>
+                            <li><a href="#" onclick="repetition5(); return false;">5</a></li>
                         </ul>
                     </div>
                     <div class="pull-right" style="vertical-align: middle">
-                                <h:outputText value="[ #{wordModel.wordCount} "/> WORDS | 95% ]
+                        <!--<h:outputText value="[ #{wordModel.wordCount} "/> WORDS | 95% ]-->
                     </div>
 
                 </div>
