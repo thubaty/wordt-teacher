@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="template&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_org_springframework_security_config_3_0_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_org_springframework_security_core_3_0_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_org_springframework_security_web_3_0_5_RELEASE.xml" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_aopalliance_com_springsource_org_aopalliance_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_config_3_1_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_core_3_1_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_web_3_1_4_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-dbmantain/wordteacher-dbmantain.iml" afterPath="$PROJECT_DIR$/wordteacher-dbmantain/wordteacher-dbmantain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" afterPath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" afterPath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" afterPath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" afterPath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher.iml" afterPath="$PROJECT_DIR$/wordteacher.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
@@ -214,7 +227,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="55" selection-start="958" selection-end="958" vertical-scroll-proportion="0.5271318" vertical-offset="153" max-vertical-offset="4318">
+            <state line="34" column="25" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.93410856" vertical-offset="96" max-vertical-offset="4539">
               <folding />
             </state>
           </provider>
@@ -1377,7 +1390,7 @@
       <workItem from="1392748796692" duration="23554000" />
       <workItem from="1393529139993" duration="5505000" />
       <workItem from="1393768402451" duration="22381000" />
-      <workItem from="1394994138152" duration="35214000" />
+      <workItem from="1394994138152" duration="35734000" />
     </task>
     <task id="LOCAL-00001" summary="small change">
       <created>1383505501558</created>
@@ -1559,11 +1572,15 @@
       <created>1395586809926</created>
       <updated>1395586809926</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="template&#10;">
+      <created>1395588185504</created>
+      <updated>1395588185504</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166370000" />
+    <option name="totallyTimeSpent" value="166890000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2042,7 +2059,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="55" selection-start="958" selection-end="958" vertical-scroll-proportion="0.5271318" vertical-offset="153" max-vertical-offset="4318">
+        <state line="34" column="25" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.93410856" vertical-offset="96" max-vertical-offset="4539">
           <folding />
         </state>
       </provider>

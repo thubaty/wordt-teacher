@@ -11,15 +11,28 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <name>Maven Repository Switchboard</name>
-            <layout>default</layout>
-            <url>http://maven.repository.redhat.com/techpreview/all/</url>
+            <id>eap</id>
+            <url>http://maven.repository.redhat.com/techpreview/all</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>eap</id>
+            <url>http://maven.repository.redhat.com/techpreview/all</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <properties>
         <springframework.version>3.2.1.RELEASE</springframework.version>
@@ -154,7 +167,7 @@
             <artifactId>primefaces</artifactId>
             <version>4.0</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>blitzer</artifactId>
             <version>1.0.2</version>
@@ -163,7 +176,7 @@
             <groupId>org.primefaces.themes</groupId>
             <artifactId>home</artifactId>
             <version>1.0.4</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
