@@ -5,7 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63df0d39-0a22-4fbb-a20a-d2771f955292" name="Default" comment="template&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_blitzer_1_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_home_1_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_1_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_1_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_1_4_RELEASE.xml" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__com_sun_jdmk_jmxtools_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__com_sun_jmx_jmxri_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__javax_jms_jms_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_config_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_core_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\tohy\IdeaProjects\wordteacher\.idea\libraries\Maven__org_springframework_security_org_springframework_security_web_3_0_5_RELEASE.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_3_173.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_3_173.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_1_26.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_1_26.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_1_26.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_1_26.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_1_8_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_1_8_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_1_8_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_1_8_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_omnifaces_omnifaces_1_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_omnifaces_omnifaces_1_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_5_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_5_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_1_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-dbmantain/wordteacher-dbmantain.iml" afterPath="$PROJECT_DIR$/wordteacher-dbmantain/wordteacher-dbmantain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" afterPath="$PROJECT_DIR$/wordteacher-model/wordteacher-model.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" afterPath="$PROJECT_DIR$/wordteacher-repository/wordteacher-repository.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" afterPath="$PROJECT_DIR$/wordteacher-service/wordteacher-service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" afterPath="$PROJECT_DIR$/wordteacher-web/wordteacher-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordteacher.iml" afterPath="$PROJECT_DIR$/wordteacher.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wordteacher.iws" />
@@ -70,37 +137,7 @@
         <option name="CONDITION" value="wordTag.getTranslation().contains(&quot;rumours&quot;)&#13;&#13;JAVA" />
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/word/WordServiceImpl.java" line="103" class="sk.th.word.WordServiceImpl" package="sk.th.word">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/wordteacher-repository/src/main/java/sk/th/word/WordRepositoryImpl.java" line="42" class="sk.th.word.WordRepositoryImpl" package="sk.th.word">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java" line="83" class="sk.th.word.WordController" package="sk.th.word">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -167,16 +204,16 @@
       <file leaf-file-name="WordController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="34" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1564">
+            <state line="85" column="28" selection-start="2723" selection-end="2723" vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WordServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/word/WordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="3306" selection-end="3306" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2499">
+            <state line="110" column="44" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.52597404" vertical-offset="1189" max-vertical-offset="2499">
               <folding />
             </state>
           </provider>
@@ -211,10 +248,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="42" selection-start="9063" selection-end="9063" vertical-scroll-proportion="0.43992248" vertical-offset="4108" max-vertical-offset="4981">
+            <state line="15" column="75" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="5304">
               <folding />
             </state>
           </provider>
@@ -743,7 +780,7 @@
       <recent name="C:\Users\tohy\IdeaProjects\wordteacher\wordteacher-web\src\main\webapp\resources\application" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.wordteacher [clean,install]">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="false" name="ExcelCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1377,7 +1414,7 @@
       <workItem from="1392748796692" duration="23554000" />
       <workItem from="1393529139993" duration="5505000" />
       <workItem from="1393768402451" duration="22381000" />
-      <workItem from="1394994138152" duration="35958000" />
+      <workItem from="1394994138152" duration="37365000" />
     </task>
     <task id="LOCAL-00001" summary="small change">
       <created>1383505501558</created>
@@ -1567,11 +1604,15 @@
       <created>1395588706454</created>
       <updated>1395588706454</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="template&#10;">
+      <created>1395588930399</created>
+      <updated>1395588930399</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167114000" />
+    <option name="totallyTimeSpent" value="168521000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1611,12 +1652,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27635783" sideWeight="0.53691983" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39135134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39135134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28324324" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28324324" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.128125" sideWeight="0.46308017" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972972" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2020,20 +2061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="34" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/word/WordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="3306" selection-end="3306" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2499">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/webapp/words.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="139" selection-start="2141" selection-end="2151" vertical-scroll-proportion="-0.0" vertical-offset="612" max-vertical-offset="1258">
@@ -2050,7 +2077,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="42" selection-start="9063" selection-end="9063" vertical-scroll-proportion="0.43992248" vertical-offset="4108" max-vertical-offset="4981">
+        <state line="15" column="75" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="5304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-web/src/main/java/sk/th/word/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="28" selection-start="2723" selection-end="2723" vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordteacher-service/src/main/java/sk/th/word/WordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="44" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.52597404" vertical-offset="1189" max-vertical-offset="2499">
           <folding />
         </state>
       </provider>

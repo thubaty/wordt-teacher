@@ -20,6 +20,11 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>prime-repo</id>
+            <name>Prime Repo</name>
+            <url>http://repository.primefaces.org</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -36,7 +41,7 @@
 
     <properties>
         <springframework.version>3.2.1.RELEASE</springframework.version>
-        <springframework.security.version>3.0.5.RELEASE</springframework.security.version>
+        <springframework.security.version>3.1.4.RELEASE</springframework.security.version>
         <primafaces.version>3.5.18</primafaces.version>
     </properties>
 
@@ -100,7 +105,7 @@
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>org.springframework.security.core</artifactId>
+            <artifactId>spring-security-core</artifactId>
             <version>${springframework.security.version}</version>
             <exclusions>
                 <exclusion>
@@ -120,7 +125,7 @@
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>org.springframework.security.config</artifactId>
+            <artifactId>spring-security-config</artifactId>
             <version>${springframework.security.version}</version>
             <exclusions>
                 <exclusion>
@@ -144,7 +149,7 @@
 
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>org.springframework.security.web</artifactId>
+            <artifactId>spring-security-web</artifactId>
             <version>${springframework.security.version}</version>
             <exclusions>
                 <exclusion>
@@ -167,8 +172,8 @@
             <artifactId>primefaces</artifactId>
             <version>4.0</version>
         </dependency>
-        <!--<dependency>
-            <groupId>org.primefaces.themes</groupId>
+        <dependency>
+        <groupId>org.primefaces.themes</groupId>
             <artifactId>blitzer</artifactId>
             <version>1.0.2</version>
         </dependency>
@@ -176,7 +181,7 @@
             <groupId>org.primefaces.themes</groupId>
             <artifactId>home</artifactId>
             <version>1.0.4</version>
-        </dependency>-->
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -240,6 +245,20 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>1.2.16</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.jmx</groupId>
+                        <artifactId>jmxri</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.sun.jdmk</groupId>
+                        <artifactId>jmxtools</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.jms</groupId>
+                        <artifactId>jms</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -270,7 +289,7 @@
             <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
             <id>openshift</id>
             <build>
-                <finalName>test</finalName>
+                <finalName>uplnyzolo</finalName>
                 <plugins>
                     <plugin>
                         <artifactId>maven-war-plugin</artifactId>
