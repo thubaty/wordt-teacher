@@ -9,6 +9,18 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <layout>default</layout>
+            <url>http://maven.repository.redhat.com/techpreview/all/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <properties>
         <springframework.version>3.2.1.RELEASE</springframework.version>
         <springframework.security.version>3.1.4.RELEASE</springframework.security.version>
@@ -190,11 +202,11 @@
             <version>1.5.8</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc14</artifactId>
-            <version>10.2.0.1.0</version>
-        </dependency>
+        <!-- <dependency>
+             <groupId>com.oracle</groupId>
+             <artifactId>ojdbc14</artifactId>
+             <version>10.2.0.1.0</version>
+         </dependency>-->
 
         <dependency>
             <groupId>org.omnifaces</groupId>
